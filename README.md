@@ -33,3 +33,10 @@
 - On the settings page, the psychologist information will appear and his can modify it. 
 
 
+
+### User Stories :
+
+## The patient:
+
+
+ 
