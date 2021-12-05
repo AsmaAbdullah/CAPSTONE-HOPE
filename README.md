@@ -5,13 +5,6 @@
 - This application provides free social sessions for cancer patients with certified psychologists. The application will help to solve one of the problems that community faces, which is lack of faith in psychological treatment and only medical treatment. In addition to that, psychological clinics are very expensive.
 
 
-### Features List :
-
--
--
--
-
-
 ### Define the scenes :
 
 ## The patient:
