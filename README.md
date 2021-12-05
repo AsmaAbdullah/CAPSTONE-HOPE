@@ -44,7 +44,7 @@
 
 ## The psychologists:
 
-
+- When entering the user of the application, he logs in, if he does not have an account, he can register a new account. After the user enters the application, a page appears for him to add sessions for patients. The user can modify his data from his file page.
 
 
 
