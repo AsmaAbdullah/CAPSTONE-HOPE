@@ -17,7 +17,7 @@
 ## The patient:
 
 - Home page Create an account or login
-   - Create an account page where you enter the required data (account type, name, email, password, phone number, gender, personal photo).
+   - Create an account page where you enter the required data (account type, name, email, password).
    - On the login page, enter your email and password.
 - When entering the application, the social sessions available for psychologists will show.
 - When his choose one of the social sessions, a page with information about the session will show.
@@ -27,7 +27,7 @@
 ## The psychologists:
 
 - Home page Create an account or login
-   - Create an account page where you enter the required data (account type, name, email, password, phone number, gender, professional title, classification card, personal photo). 
+   - Create an account page where you enter the required data (account type, name, email, password, job title, number classification card). 
    - On the login page, enter your email and password.
 - When entering the application, the sessions that his previously added will show, and his can add new sessions.
 - On the settings page, the psychologist information will appear and his can modify it. 
