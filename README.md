@@ -15,7 +15,7 @@
 
 ### Define the scenes :
 
-![HOPE_page-0001](https://user-images.githubusercontent.com/91872065/144925087-e8af8902-5a5a-4cb1-accf-33f7434b6cf5.jpg)
+![HOPE_page-0001](https://user-images.githubusercontent.com/91872065/144925087-e8af8902-5a5a-4cb1-accf-33f7434b6cf5.jpg = 250*250)
 
 
 ### User Stories :
