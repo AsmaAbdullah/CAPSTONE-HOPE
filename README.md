@@ -25,27 +25,12 @@
 - On the settings page, the patient's information will appear and he can modify it. In the sessions section, the patient can cancel the session.
 
 
-## The psychologists:
-
-- Home page Create an account or login
-   - Create an account page where you enter the required data (account type, name, email, password, job title, number classification card). 
-   - On the login page, enter your email and password.
-- When entering the application, the sessions that his previously added will show, and he can add new sessions.
-- On the settings page, the psychologist information will appear and he can modify it. 
-
-
 
 ### User Stories :
 
 ## The patient:
 
 - When entering the user of the application, he logs in, if he does not have an account, he can register a new account. After the user enters the application, social sessions will appear. He can choose one of the sessions, he will be taken to a page that shows him information about the session and registration in it. After registering for the session, it will be added to the list of sessions. The user can modify his data from his file page. 
-
-
-## The psychologists:
-
-- When entering the user of the application, he logs in, if he does not have an account, he can register a new account. After the user enters the application, a page appears for him to add sessions for patients. The user can modify his data from his file page.
-
 
 
  
