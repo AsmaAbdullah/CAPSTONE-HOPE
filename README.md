@@ -6,12 +6,12 @@
 
 ### User Stories :
 
-- Sign up: As an anonymous, I can sign up in the application to enroll for sessions.
-- Login: As a beneficiary, I can log in to continue attending sessions.
-- Home: As a beneficiary I can browse sessions
+- Sign up: As an anonymous I can sign up in the application to enroll for sessions.
+- Login: As a beneficiary I can log in to continue attending sessions.
+- Home: As a beneficiary I can browse sessions.
 - Session content: As a beneficiary I can see the session content and join it.
 - Your session: As a beneficiary I can view the sessions I have joined.
-- Session: As a beneficiary, I can attend the session.
+- Session: As a beneficiary I can attend the session.
 
 ### Define the scenes :
 
