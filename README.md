@@ -12,6 +12,11 @@
 - As a beneficiary I can see the session content and join it.
 - As a beneficiary I can view the sessions I have joined.
 - As a beneficiary I can attend the session.
+- As a beneficiary I can see the locations of the cancer care associations.
+- As a beneficiary I can see my profile and log out.
+
+
+
 
 ### Define the scenes :
 
