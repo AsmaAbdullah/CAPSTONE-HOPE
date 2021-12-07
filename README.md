@@ -6,15 +6,16 @@
 
 ### User Stories :
 
-- Sign up: As an anonymous I can sign up in the application to enroll for sessions.
-- Login: As a beneficiary I can log in to continue attending sessions.
-- Home: As a beneficiary I can browse sessions.
-- Session content: As a beneficiary I can see the session content and join it.
-- Your session: As a beneficiary I can view the sessions I have joined.
-- Session: As a beneficiary I can attend the session.
+- As a beneficiary I can sign up in the application to enroll for sessions.
+- As a beneficiary I can log in to continue attending sessions.
+- As a beneficiary I can browse sessions.
+- As a beneficiary I can see the session content and join it.
+- As a beneficiary I can view the sessions I have joined.
+- As a beneficiary I can attend the session.
 
 ### Define the scenes :
 
+https://www.figma.com/file/cZ2VSSNgt0xhrmhdmSmYhC/HOPE?node-id=1%3A81
 
 
 ### Features List :
