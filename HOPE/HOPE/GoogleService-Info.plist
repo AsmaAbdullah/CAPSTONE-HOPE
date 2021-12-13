@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>565606087244-eol8c07h68rucl6525b220br7nm6ru4l.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.565606087244-eol8c07h68rucl6525b220br7nm6ru4l</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB9RfnB4PPsUo46qaztRLsqC9zF9Eog6uM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>565606087244</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.asma.HOPE</string>
+	<key>PROJECT_ID</key>
+	<string>hope-8c47e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hope-8c47e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:565606087244:ios:13a344d17f5a453ffa52e9</string>
+</dict>
+</plist>
