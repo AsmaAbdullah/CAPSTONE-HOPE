@@ -23,6 +23,12 @@
 		044B201F27615A480095734C /* ArrayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B201E27615A480095734C /* ArrayModel.swift */; };
 		044B2021276179710095734C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B2020276179710095734C /* HomeTableViewCell.swift */; };
 		048F0DC527667F26001E934D /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F0DC427667F26001E934D /* ProfileVC.swift */; };
+		048FA2902768AD3200D918A2 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA28F2768AD3200D918A2 /* Session.swift */; };
+		048FA2932768B04400D918A2 /* YourSessionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2922768B04400D918A2 /* YourSessionsVC.swift */; };
+		048FA2952768B3D700D918A2 /* YourSessionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2942768B3D700D918A2 /* YourSessionsTableViewCell.swift */; };
+		048FA2A92768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2A72768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld */; };
+		048FA2AC2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2AA2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift */; };
+		048FA2AD2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2AB2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift */; };
 		04BB3F8A27620BAE00772E4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F8927620BAE00772E4A /* User.swift */; };
 		04BB3F8C27620BCC00772E4A /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F8B27620BCC00772E4A /* UserApi.swift */; };
 		04BB3F8F27620CAA00772E4A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB3F8E27620CAA00772E4A /* FirebaseFirestore */; };
@@ -48,6 +54,12 @@
 		044B201E27615A480095734C /* ArrayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayModel.swift; sourceTree = "<group>"; };
 		044B2020276179710095734C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		048F0DC427667F26001E934D /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		048FA28F2768AD3200D918A2 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		048FA2922768B04400D918A2 /* YourSessionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourSessionsVC.swift; sourceTree = "<group>"; };
+		048FA2942768B3D700D918A2 /* YourSessionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourSessionsTableViewCell.swift; sourceTree = "<group>"; };
+		048FA2A82768BDC700D918A2 /* BeneficiarySessions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeneficiarySessions.xcdatamodel; sourceTree = "<group>"; };
+		048FA2AA2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YourSessionsList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		048FA2AB2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YourSessionsList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		04BB3F8927620BAE00772E4A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04BB3F8B27620BCC00772E4A /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		04BB3F9027621C8000772E4A /* SessionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContent.swift; sourceTree = "<group>"; };
@@ -99,6 +111,9 @@
 				043FD7AB275F3BA800D91C48 /* Info.plist */,
 				043FD7B1275F7D1200D91C48 /* GoogleService-Info.plist */,
 				044B201C276155840095734C /* Image */,
+				048FA28F2768AD3200D918A2 /* Session.swift */,
+				048FA29A2768B88D00D918A2 /* CoreData */,
+				048FA2A72768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld */,
 			);
 			path = HOPE;
 			sourceTree = "<group>";
@@ -109,6 +124,7 @@
 				048F0DC827673F95001E934D /* Auth */,
 				044B20152761478B0095734C /* HomeVC.swift */,
 				04BB3F9027621C8000772E4A /* SessionContent.swift */,
+				048FA2922768B04400D918A2 /* YourSessionsVC.swift */,
 				04BB3F9527653F8300772E4A /* LocationsVC.swift */,
 				048F0DC427667F26001E934D /* ProfileVC.swift */,
 				044B201927614AB50095734C /* Cell */,
@@ -121,6 +137,7 @@
 			children = (
 				044B201727614AAF0095734C /* HomeCollectionViewCell.swift */,
 				044B2020276179710095734C /* HomeTableViewCell.swift */,
+				048FA2942768B3D700D918A2 /* YourSessionsTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -137,9 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				044B201E27615A480095734C /* ArrayModel.swift */,
+				04BB3F922762228D00772E4A /* StructSession.swift */,
 				04BB3F8927620BAE00772E4A /* User.swift */,
 				04BB3F8B27620BCC00772E4A /* UserApi.swift */,
-				04BB3F922762228D00772E4A /* StructSession.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +168,15 @@
 				044B201227602FE00095734C /* SignupVC.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		048FA29A2768B88D00D918A2 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				048FA2AA2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift */,
+				048FA2AB2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		04BB3F8D27620CAA00772E4A /* Frameworks */ = {
@@ -240,21 +266,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048FA2932768B04400D918A2 /* YourSessionsVC.swift in Sources */,
 				048F0DC527667F26001E934D /* ProfileVC.swift in Sources */,
 				044B201327602FE00095734C /* SignupVC.swift in Sources */,
+				048FA2AD2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift in Sources */,
 				043FD79E275F3BA500D91C48 /* AppDelegate.swift in Sources */,
 				04BB3F932762228D00772E4A /* StructSession.swift in Sources */,
 				044B201827614AAF0095734C /* HomeCollectionViewCell.swift in Sources */,
 				044B201F27615A480095734C /* ArrayModel.swift in Sources */,
+				048FA2952768B3D700D918A2 /* YourSessionsTableViewCell.swift in Sources */,
 				04BB3F9627653F8400772E4A /* LocationsVC.swift in Sources */,
+				048FA2AC2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift in Sources */,
 				044B20162761478B0095734C /* HomeVC.swift in Sources */,
 				044B201127602FCA0095734C /* LoginVC.swift in Sources */,
 				044B2021276179710095734C /* HomeTableViewCell.swift in Sources */,
 				043FD7A0275F3BA500D91C48 /* SceneDelegate.swift in Sources */,
 				04BB3F8A27620BAE00772E4A /* User.swift in Sources */,
+				048FA2902768AD3200D918A2 /* Session.swift in Sources */,
 				044B201B2761557D0095734C /* UIImage.swift in Sources */,
 				04BB3F9127621C8000772E4A /* SessionContent.swift in Sources */,
 				04BB3F8C27620BCC00772E4A /* UserApi.swift in Sources */,
+				048FA2A92768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +535,19 @@
 			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		048FA2A72768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				048FA2A82768BDC700D918A2 /* BeneficiarySessions.xcdatamodel */,
+			);
+			currentVersion = 048FA2A82768BDC700D918A2 /* BeneficiarySessions.xcdatamodel */;
+			path = BeneficiarySessions.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 043FD792275F3BA500D91C48 /* Project object */;
 }

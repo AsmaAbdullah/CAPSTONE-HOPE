@@ -17,6 +17,8 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
     }
     
 //    override func viewDidAppear(_ animated: Bool) {
@@ -62,6 +64,8 @@ class LoginVC: UIViewController {
 //                self?.checkUserInfo()
             }
         }
+    
+    
 //        func checkUserInfo() {
 //            if Auth.auth().currentUser != nil {
 //                print(Auth.auth().currentUser?.uid)

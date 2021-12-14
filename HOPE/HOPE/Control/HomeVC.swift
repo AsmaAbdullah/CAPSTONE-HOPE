@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import CoreData
 
 class HomeVC: UIViewController {
 
@@ -18,7 +19,21 @@ class HomeVC: UIViewController {
     var timer: Timer?
     var currentItemIndex = 0
     
-
+// MARK: - CORE-DATA
+    
+    var yourSessionsList: [YourSessionsList] = []
+    
+    // MARK: - SAVE CORE DATA
+    
+    let persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "BeneficiarySessions")
+        container.loadPersistentStores (completionHandler: { desc, error in
+            if let readError = error {
+                print(readError)
+            }
+        })
+        return container
+    }()
     
     // MARK: - Array of TableView
 
@@ -51,6 +66,7 @@ class HomeVC: UIViewController {
         collectionView.dataSource = self
         sessionTableView.delegate = self
         sessionTableView.dataSource = self
+        
         startTimer()
         setInfoTable()
         setSessions()
@@ -88,7 +104,6 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     }
     // MARK: -  Size Item
     
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
@@ -116,7 +131,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        
         selectedArraySession = arraySession[indexPath.row]
         performSegue(withIdentifier: "toContent", sender: nil)
         
@@ -128,8 +143,29 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? SessionContent {
+            vc.selectedArraySession = selectedArraySession
+        }
+    }
+    
+    // MARK: - CORE-DATA
+    
+    func createNewList(titleSession: String, imageSession: String){
         
-        let vc = segue.destination as! SessionContent
+        let context = persistentContainer.viewContext
+        context.performAndWait {
+            let list = YourSessionsList(context: context)
+            list.titleSession = titleSession
+            list.imageSession = imageSession
+            do {
+                try context.save()
+            } catch {
+                print(error)
+            }
+        }
         
     }
 }
+
+
+
