@@ -111,7 +111,6 @@
 				043FD7AB275F3BA800D91C48 /* Info.plist */,
 				043FD7B1275F7D1200D91C48 /* GoogleService-Info.plist */,
 				044B201C276155840095734C /* Image */,
-				048FA28F2768AD3200D918A2 /* Session.swift */,
 				048FA29A2768B88D00D918A2 /* CoreData */,
 				048FA2A72768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld */,
 			);
@@ -155,6 +154,7 @@
 			children = (
 				044B201E27615A480095734C /* ArrayModel.swift */,
 				04BB3F922762228D00772E4A /* StructSession.swift */,
+				048FA28F2768AD3200D918A2 /* Session.swift */,
 				04BB3F8927620BAE00772E4A /* User.swift */,
 				04BB3F8B27620BCC00772E4A /* UserApi.swift */,
 			);

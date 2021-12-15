@@ -17,6 +17,6 @@ struct Session {
 
 struct sessionTable {
     var theTitle: String
-    var theImage: UIImage
+    var theImage: String
 }
 

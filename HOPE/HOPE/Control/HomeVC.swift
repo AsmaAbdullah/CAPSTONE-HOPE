@@ -39,9 +39,9 @@ class HomeVC: UIViewController {
 
 
     func setInfoTable() {
-        arrayOfTable.append(sessionTable.init(theTitle: "Shock and denial", theImage: UIImage(resource: .Session1)!))
-        arrayOfTable.append(sessionTable.init(theTitle: "About depression and cancer", theImage: UIImage(resource: .Session2)!))
-        arrayOfTable.append(sessionTable.init(theTitle: "Guilt, blame and anger", theImage: UIImage(resource: .Session3)!))
+        arrayOfTable.append(sessionTable.init(theTitle: "Shock and denial", theImage: UIImageResource.Session1.rawValue))
+        arrayOfTable.append(sessionTable.init(theTitle: "About depression and cancer", theImage: UIImageResource.Session2.rawValue))
+        arrayOfTable.append(sessionTable.init(theTitle: "Guilt, blame and anger", theImage: UIImageResource.Session3.rawValue))
     }
     
     
@@ -62,6 +62,7 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { user in
         }
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         sessionTableView.delegate = self
@@ -125,7 +126,10 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "sessionCell", for: indexPath) as! HomeTableViewCell
         let data = arrayOfTable[indexPath.row]
-        cell.setUpCell(imageSessi: data.theImage, titleSessi: data.theTitle)
+        
+        createNewList(titleSession: arrayOfTable[indexPath.row].theTitle, imageSession: arrayOfTable[indexPath.row].theImage)
+        
+//        cell.setUpCell(imageSessi: data.theImage, titleSessi: data.theTitle)
         
         return cell
     }

@@ -13,7 +13,7 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     var arraySession = [sessionTable]()
     
-    var selectedArraySession: Session?
+    //var selectedArraySession: Session?
     
     // MARK: - CORE-DATA
     
@@ -52,9 +52,9 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "yourSessionCell", for: indexPath) as! YourSessionsTableViewCell
-        cell.titleSession.text = yourSessionsList[indexPath.row].titleSession
-        cell.imageSession.image = UIImage(named: yourSessionsList[indexPath.row].imageSession ?? "")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "yourSessionCell", for: indexPath)
+        cell.textLabel?.text = yourSessionsList[indexPath.row].titleSession
+        cell.imageView?.image = UIImage(named: yourSessionsList[indexPath.row].imageSession ?? "")
     
         return cell
     }

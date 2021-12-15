@@ -28,7 +28,7 @@ class SessionContent: UIViewController {
     }
     
     @IBAction func enrollSession(_ sender: UIButton) {
-        let enrollSession = sessionTable(theTitle: titleSession.text ?? "", theImage: imageSession.image!)
+        let enrollSession = sessionTable(theTitle: titleSession.text ?? "", theImage: UIImage(named: imageSession.image)) 
         yourSessions.item.append(enrollSession)
         
         let alertController = UIAlertController(title: "", message: "Has been successfully added", preferredStyle: .alert)
