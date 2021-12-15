@@ -11,7 +11,7 @@ import CoreData
 
 class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var arraySession = [sessionTable]()
+    var arrayOfTable = [sessionTable]()
     
     //var selectedArraySession: Session?
     
@@ -30,15 +30,12 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
 
    var yourSessionsList: [YourSessionsList] = []
 
-    
     @IBOutlet weak var yourSessionTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         yourSessionTable.delegate = self
         yourSessionTable.dataSource = self
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,7 +52,6 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "yourSessionCell", for: indexPath)
         cell.textLabel?.text = yourSessionsList[indexPath.row].titleSession
         cell.imageView?.image = UIImage(named: yourSessionsList[indexPath.row].imageSession ?? "")
-    
         return cell
     }
     
@@ -65,10 +61,9 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
 //        selectedArraySession = arraySession[indexPath.row]
-        performSegue(withIdentifier: "toContent", sender: nil)
         
+        performSegue(withIdentifier: "toContent", sender: nil)
     }
     
     
@@ -77,15 +72,12 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func fetchAllLists() {
         let context = persistentContainer.viewContext
-        
         do {
             yourSessionsList = try context.fetch(YourSessionsList.fetchRequest())
         } catch {
             print(error)
         }
     }
-    
-    
 }
 
 

@@ -46,9 +46,9 @@ class HomeVC: UIViewController {
     
     
     fileprivate func setSessions() {
-        arraySession.append(Session.init(image: UIImage(resource: .Session1)!, titleSessions: "Shock and denial", Content: "First reaction after learning about the disease, Denial, Total Denial"))
-        arraySession.append(Session.init(image: UIImage(resource: .Session2)!, titleSessions: "About depression and cancer", Content: "Depression and cancer, The effect of depression on dealing with everyday things, After cancer treatment, Treatment"))
-        arraySession.append(Session.init(image: UIImage(resource: .Session3)!, titleSessions: "Guilt, blame and anger", Content: "Genetic and lifestyle factors, Talking helps, Anger, Friends and family"))
+        arraySession.append(Session.init(image: UIImageResource.Session1.rawValue, titleSessions: "Shock and denial", Content: "First reaction after learning about the disease, Denial, Total Denial"))
+        arraySession.append(Session.init(image: UIImageResource.Session2.rawValue, titleSessions: "About depression and cancer", Content: "Depression and cancer, The effect of depression on dealing with everyday things, After cancer treatment, Treatment"))
+        arraySession.append(Session.init(image: UIImageResource.Session3.rawValue, titleSessions: "Guilt, blame and anger", Content: "Genetic and lifestyle factors, Talking helps, Anger, Friends and family"))
     }
     
     
@@ -115,6 +115,8 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         return 0
     }
 }
+
+
 // MARK: - Extension for TableView
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
@@ -126,11 +128,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "sessionCell", for: indexPath) as! HomeTableViewCell
         let data = arrayOfTable[indexPath.row]
-        
-        createNewList(titleSession: arrayOfTable[indexPath.row].theTitle, imageSession: arrayOfTable[indexPath.row].theImage)
-        
-//        cell.setUpCell(imageSessi: data.theImage, titleSessi: data.theTitle)
-        
+        cell.setUpCell(imageSessi: UIImage(named: data.theImage)!, titleSessi: data.theTitle) //
         return cell
     }
     
@@ -155,7 +153,6 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     // MARK: - CORE-DATA
     
     func createNewList(titleSession: String, imageSession: String){
-        
         let context = persistentContainer.viewContext
         context.performAndWait {
             let list = YourSessionsList(context: context)
@@ -167,7 +164,6 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
                 print(error)
             }
         }
-        
     }
 }
 

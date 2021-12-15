@@ -10,15 +10,15 @@ import UIKit
 class YourSessionsTableViewCell: UITableViewCell {
 
     
-    @IBOutlet weak var imageSession: UIImageView!
-    @IBOutlet weak var titleSession: UILabel!
+//    @IBOutlet weak var imageSession: UIImageView!
+//    @IBOutlet weak var titleSession: UILabel!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imageSession.layer.cornerRadius = 12
-        imageSession.layer.borderColor = UIColor.lightGray.cgColor
-        imageSession.layer.borderWidth = 1.0
+//        imageSession.layer.cornerRadius = 12
+//        imageSession.layer.borderColor = UIColor.lightGray.cgColor
+//        imageSession.layer.borderWidth = 1.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -26,9 +26,9 @@ class YourSessionsTableViewCell: UITableViewCell {
     }
     
     
-    func setUpCell(imageSessi: UIImage, titleSessi: String) {
-        imageSession.image = imageSessi
-        titleSession.text = titleSessi
-    }
+//    func setUpCell(imageSessi: UIImage, titleSessi: String) {
+//        imageSession.image = imageSessi
+//        titleSession.text = titleSessi
+//    }
 
 }

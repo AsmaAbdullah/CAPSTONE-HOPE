@@ -9,10 +9,11 @@ import Foundation
 import UIKit
 
 struct Session {
-    var image: UIImage
+    var image: String
     var titleSessions: String
     var Content: String
 }
+
 
 
 struct sessionTable {

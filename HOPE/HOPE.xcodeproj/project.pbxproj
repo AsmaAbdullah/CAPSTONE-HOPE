@@ -111,8 +111,6 @@
 				043FD7AB275F3BA800D91C48 /* Info.plist */,
 				043FD7B1275F7D1200D91C48 /* GoogleService-Info.plist */,
 				044B201C276155840095734C /* Image */,
-				048FA29A2768B88D00D918A2 /* CoreData */,
-				048FA2A72768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld */,
 			);
 			path = HOPE;
 			sourceTree = "<group>";
@@ -127,6 +125,7 @@
 				04BB3F9527653F8300772E4A /* LocationsVC.swift */,
 				048F0DC427667F26001E934D /* ProfileVC.swift */,
 				044B201927614AB50095734C /* Cell */,
+				048FA29A2768B88D00D918A2 /* CoreData */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -173,6 +172,7 @@
 		048FA29A2768B88D00D918A2 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				048FA2A72768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld */,
 				048FA2AA2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift */,
 				048FA2AB2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift */,
 			);
