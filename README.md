@@ -1,4 +1,4 @@
-# CAPSTONE - HOPE
+# HOPE
 
 ### Project Description :
 
