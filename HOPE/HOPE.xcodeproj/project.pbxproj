@@ -29,6 +29,8 @@
 		048FA2AC2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2AA2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift */; };
 		048FA2AD2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2AB2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift */; };
 		04B7806B276B26A9009AB254 /* SessionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7806A276B26A9009AB254 /* SessionsVC.swift */; };
+		04B9377427748D7C0036E0B6 /* EndOfSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9377327748D7C0036E0B6 /* EndOfSessionVC.swift */; };
+		04B9377627748ED80036E0B6 /* SessionTopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9377527748ED80036E0B6 /* SessionTopicVC.swift */; };
 		04BB3F8A27620BAE00772E4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F8927620BAE00772E4A /* User.swift */; };
 		04BB3F8C27620BCC00772E4A /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F8B27620BCC00772E4A /* UserApi.swift */; };
 		04BB3F8F27620CAA00772E4A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB3F8E27620CAA00772E4A /* FirebaseFirestore */; };
@@ -60,6 +62,8 @@
 		048FA2AA2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YourSessionsList+CoreDataClass.swift"; sourceTree = "<group>"; };
 		048FA2AB2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YourSessionsList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		04B7806A276B26A9009AB254 /* SessionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsVC.swift; sourceTree = "<group>"; };
+		04B9377327748D7C0036E0B6 /* EndOfSessionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfSessionVC.swift; sourceTree = "<group>"; };
+		04B9377527748ED80036E0B6 /* SessionTopicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTopicVC.swift; sourceTree = "<group>"; };
 		04BB3F8927620BAE00772E4A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04BB3F8B27620BCC00772E4A /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		04BB3F9027621C8000772E4A /* SessionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContent.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				04BB3F9027621C8000772E4A /* SessionContent.swift */,
 				048FA2922768B04400D918A2 /* YourSessionsVC.swift */,
 				04B7806A276B26A9009AB254 /* SessionsVC.swift */,
+				04B9377527748ED80036E0B6 /* SessionTopicVC.swift */,
+				04B9377327748D7C0036E0B6 /* EndOfSessionVC.swift */,
 				04BB3F9527653F8300772E4A /* LocationsVC.swift */,
 				048F0DC427667F26001E934D /* ProfileVC.swift */,
 				044B201927614AB50095734C /* Cell */,
@@ -268,8 +274,10 @@
 			files = (
 				048FA2932768B04400D918A2 /* YourSessionsVC.swift in Sources */,
 				04B7806B276B26A9009AB254 /* SessionsVC.swift in Sources */,
+				04B9377427748D7C0036E0B6 /* EndOfSessionVC.swift in Sources */,
 				048F0DC527667F26001E934D /* ProfileVC.swift in Sources */,
 				044B201327602FE00095734C /* SignupVC.swift in Sources */,
+				04B9377627748ED80036E0B6 /* SessionTopicVC.swift in Sources */,
 				048FA2AD2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift in Sources */,
 				043FD79E275F3BA500D91C48 /* AppDelegate.swift in Sources */,
 				04BB3F932762228D00772E4A /* StructSession.swift in Sources */,
