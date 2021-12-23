@@ -12,19 +12,14 @@ import CoreData
 class HomeVC: UIViewController {
 
     var arraySession = [Session]()
-    var arrayOfTable = [sessionTable]()
-    
-    var selectedArraySession: Session?
+    var selectedSession: Session!
     
     var timer: Timer?
     var currentItemIndex = 0
     
-// MARK: - CORE-DATA
-    
+// MARK:  CORE-DATA
     var yourSessionsList: [YourSessionsList] = []
-    
-    // MARK: - SAVE CORE DATA
-    
+    // MARK:  SAVE CORE DATA
     let persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "BeneficiarySessions")
         container.loadPersistentStores (completionHandler: { desc, error in
@@ -34,25 +29,9 @@ class HomeVC: UIViewController {
         })
         return container
     }()
+        
     
-    // MARK: - Array of TableView
-
-
-    func setInfoTable() {
-        arrayOfTable.append(sessionTable.init(theTitle: "Shock and denial", theImage: UIImageResource.Session1.rawValue))
-        arrayOfTable.append(sessionTable.init(theTitle: "About depression and cancer", theImage: UIImageResource.Session2.rawValue))
-        arrayOfTable.append(sessionTable.init(theTitle: "Guilt, blame and anger", theImage: UIImageResource.Session3.rawValue))
-    }
-    
-    
-    fileprivate func setSessions() {
-        arraySession.append(Session.init(image: UIImageResource.Session1.rawValue, titleSessions: "Shock and denial", Content: "First reaction after learning about the disease, Denial, Total Denial"))
-        arraySession.append(Session.init(image: UIImageResource.Session2.rawValue, titleSessions: "About depression and cancer", Content: "Depression and cancer, The effect of depression on dealing with everyday things, After cancer treatment, Treatment"))
-        arraySession.append(Session.init(image: UIImageResource.Session3.rawValue, titleSessions: "Guilt, blame and anger", Content: "Genetic and lifestyle factors, Talking helps, Anger, Friends and family"))
-    }
-    
-    
-    // MARK: -
+    // MARK:
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var sessionTableView: UITableView!
@@ -69,16 +48,26 @@ class HomeVC: UIViewController {
         sessionTableView.dataSource = self
         
         startTimer()
-        setInfoTable()
         setSessions()
     }
+    
+    
+    
+    // MARK:  Array of TableView
+    fileprivate func setSessions() {
+        arraySession.append(Session.init(image: UIImageResource.Session1.rawValue, titleSessions: "Self-Image and Cancer", Content: "- Physical changes - Emotional changes - Coping with self-image changes"))
+        arraySession.append(Session.init(image: UIImageResource.Session2.rawValue, titleSessions: "Coping With Uncertainty", Content: "Causes of uncertainty, Dealing with the “what ifs” of cancer"))
+        arraySession.append(Session.init(image: UIImageResource.Session3.rawValue, titleSessions: "Managing Stress", Content: "Tips for reducing stress, Stress management strategies, Relaxation techniques"))
+    }
 }
+
+
 
     // MARK: - Extension for CollectionView
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    // MARK: - Timer for collectionView
     
+    // MARK:  Timer for collectionView
     func startTimer() {
         timer = Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: #selector(moveToNextIndex), userInfo: nil, repeats: true)
     }
@@ -91,7 +80,8 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         }
         collectionView.scrollToItem(at: IndexPath(item: currentItemIndex, section: 0), at: .centeredHorizontally, animated: true)
     }
-  // MARK: -
+    
+  // MARK: w
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrayCollection.count
@@ -103,14 +93,13 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         item.imageCell.image = arrayCollection[indexPath.row]
         return item
     }
-    // MARK: -  Size Item
     
+    // MARK:   Size Item
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
     
-    // MARK: - Spaces between items
-    
+    // MARK:  Spaces between items
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
@@ -121,22 +110,15 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayOfTable.count
+        return arraySession.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "sessionCell", for: indexPath) as! HomeTableViewCell
-        let data = arrayOfTable[indexPath.row]
-        cell.setUpCell(imageSessi: UIImage(named: data.theImage)!, titleSessi: data.theTitle) //
+        let data = arraySession[indexPath.row]
+        cell.setUpCell(imageSessi: UIImage(named: data.image)!, titleSessi: data.titleSessions) //
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        selectedArraySession = arraySession[indexPath.row]
-        performSegue(withIdentifier: "toContent", sender: nil)
-        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -144,14 +126,21 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        selectedSession = arraySession[indexPath.row]
+        performSegue(withIdentifier: "toContent", sender: nil)
+        
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if let vc = segue.destination as? SessionContent {
-            vc.selectedArraySession = selectedArraySession
+            vc.selectedSession = selectedSession
         }
     }
     
-    // MARK: - CORE-DATA
-    
+    // MARK:  CORE-DATA
     func createNewList(titleSession: String, imageSession: String){
         let context = persistentContainer.viewContext
         context.performAndWait {
@@ -166,6 +155,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         }
     }
 }
+
 
 
 

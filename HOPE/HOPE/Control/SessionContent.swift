@@ -11,9 +11,8 @@ import CoreData
 class SessionContent: UIViewController {
 
     
-    var selectedArraySession: Session!
-    
-    var arrayOfTable = [sessionTable]() //
+    var selectedSession: Session!
+    var arraySession = [Session]()
 
     @IBOutlet weak var imageSession: UIImageView!
     @IBOutlet weak var titleSession: UILabel!
@@ -37,18 +36,16 @@ class SessionContent: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        imageSession.image = UIImage(named: selectedArraySession.image)
-        titleSession.text = selectedArraySession.titleSessions
-        sessionContent.text = selectedArraySession.Content
+        imageSession.image = UIImage(named: selectedSession.image)
+        titleSession.text = selectedSession.titleSessions
+        sessionContent.text = selectedSession.Content
     }
     
     @IBAction func enrollSession(_ sender: UIButton) {
    
-        createNewList(titleSession: selectedArraySession.titleSessions  , imageSession:  selectedArraySession.image)
-         
-        
+        createNewList(titleSession: selectedSession.titleSessions  , imageSession:  selectedSession.image)
+    
         let alertController = UIAlertController(title: "", message: "Has been successfully added", preferredStyle: .alert)
-        
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
@@ -69,4 +66,7 @@ class SessionContent: UIViewController {
             }
         }
     }
+    
+    
+    
 }

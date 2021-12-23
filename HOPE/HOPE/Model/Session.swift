@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import UIKit
+
 
 class YourSessions {
-    var item = [sessionTable]()
+    var item = [Session]()
 }
-
 var yourSessions = YourSessions()

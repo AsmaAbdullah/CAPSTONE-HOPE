@@ -25,10 +25,10 @@
 		048F0DC527667F26001E934D /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F0DC427667F26001E934D /* ProfileVC.swift */; };
 		048FA2902768AD3200D918A2 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA28F2768AD3200D918A2 /* Session.swift */; };
 		048FA2932768B04400D918A2 /* YourSessionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2922768B04400D918A2 /* YourSessionsVC.swift */; };
-		048FA2952768B3D700D918A2 /* YourSessionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2942768B3D700D918A2 /* YourSessionsTableViewCell.swift */; };
 		048FA2A92768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2A72768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld */; };
 		048FA2AC2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2AA2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift */; };
 		048FA2AD2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2AB2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift */; };
+		04B7806B276B26A9009AB254 /* SessionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7806A276B26A9009AB254 /* SessionsVC.swift */; };
 		04BB3F8A27620BAE00772E4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F8927620BAE00772E4A /* User.swift */; };
 		04BB3F8C27620BCC00772E4A /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F8B27620BCC00772E4A /* UserApi.swift */; };
 		04BB3F8F27620CAA00772E4A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB3F8E27620CAA00772E4A /* FirebaseFirestore */; };
@@ -56,10 +56,10 @@
 		048F0DC427667F26001E934D /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		048FA28F2768AD3200D918A2 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		048FA2922768B04400D918A2 /* YourSessionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourSessionsVC.swift; sourceTree = "<group>"; };
-		048FA2942768B3D700D918A2 /* YourSessionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourSessionsTableViewCell.swift; sourceTree = "<group>"; };
 		048FA2A82768BDC700D918A2 /* BeneficiarySessions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeneficiarySessions.xcdatamodel; sourceTree = "<group>"; };
 		048FA2AA2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YourSessionsList+CoreDataClass.swift"; sourceTree = "<group>"; };
 		048FA2AB2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YourSessionsList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		04B7806A276B26A9009AB254 /* SessionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsVC.swift; sourceTree = "<group>"; };
 		04BB3F8927620BAE00772E4A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04BB3F8B27620BCC00772E4A /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		04BB3F9027621C8000772E4A /* SessionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContent.swift; sourceTree = "<group>"; };
@@ -122,6 +122,7 @@
 				044B20152761478B0095734C /* HomeVC.swift */,
 				04BB3F9027621C8000772E4A /* SessionContent.swift */,
 				048FA2922768B04400D918A2 /* YourSessionsVC.swift */,
+				04B7806A276B26A9009AB254 /* SessionsVC.swift */,
 				04BB3F9527653F8300772E4A /* LocationsVC.swift */,
 				048F0DC427667F26001E934D /* ProfileVC.swift */,
 				044B201927614AB50095734C /* Cell */,
@@ -135,7 +136,6 @@
 			children = (
 				044B201727614AAF0095734C /* HomeCollectionViewCell.swift */,
 				044B2020276179710095734C /* HomeTableViewCell.swift */,
-				048FA2942768B3D700D918A2 /* YourSessionsTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -267,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				048FA2932768B04400D918A2 /* YourSessionsVC.swift in Sources */,
+				04B7806B276B26A9009AB254 /* SessionsVC.swift in Sources */,
 				048F0DC527667F26001E934D /* ProfileVC.swift in Sources */,
 				044B201327602FE00095734C /* SignupVC.swift in Sources */,
 				048FA2AD2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift in Sources */,
@@ -274,7 +275,6 @@
 				04BB3F932762228D00772E4A /* StructSession.swift in Sources */,
 				044B201827614AAF0095734C /* HomeCollectionViewCell.swift in Sources */,
 				044B201F27615A480095734C /* ArrayModel.swift in Sources */,
-				048FA2952768B3D700D918A2 /* YourSessionsTableViewCell.swift in Sources */,
 				04BB3F9627653F8400772E4A /* LocationsVC.swift in Sources */,
 				048FA2AC2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift in Sources */,
 				044B20162761478B0095734C /* HomeVC.swift in Sources */,

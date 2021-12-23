@@ -11,9 +11,17 @@ import CoreData
 
 class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var arrayOfTable = [sessionTable]()
+    var arraySession = [Session]()
+    var selectedSession: Session!
+
+    var listSession = [SessionDetile]()
+    var selectedListSession: SessionDetile!
     
-    //var selectedArraySession: Session?
+//    var listSession = [SessionDetile]()
+//    var selectedListSessions: Sessions!
+    
+    
+    
     
     // MARK: - CORE-DATA
     
@@ -36,6 +44,14 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         yourSessionTable.delegate = self
         yourSessionTable.dataSource = self
+        
+        setListSession()
+
+        
+//        let theSession = listSession.first(where: { sessionDetail in
+//            return sessionDetail.title == self.selectedSession.titleSessions
+//        }) //
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,6 +68,11 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "yourSessionCell", for: indexPath)
         cell.textLabel?.text = yourSessionsList[indexPath.row].titleSession
         cell.imageView?.image = UIImage(named: yourSessionsList[indexPath.row].imageSession ?? "")
+
+        cell.imageView?.layer.cornerRadius = 12
+        cell.imageView?.layer.borderColor = UIColor.lightGray.cgColor
+        cell.imageView?.layer.borderWidth = 1.0
+        
         return cell
     }
     
@@ -61,12 +82,24 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        selectedArraySession = arraySession[indexPath.row]
-        
-        performSegue(withIdentifier: "toContent", sender: nil)
+         
+        selectedListSession = listSession[indexPath.row]
+        performSegue(withIdentifier: "toSessionDetiles", sender: nil)
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let vc = segue.destination as? SessionsVC {
+            vc.selectedListSession = selectedListSession
+        }
+        
+        
+//        if segue.identifier == "toSessionDetiles" {
+//            let destunation = segue.destination as! SessionsVC
+//            destunation.selectedSession = selectedSession
+//        }
+        
+    }
     
     //MARK: - Fetch for COREDATA
     
@@ -78,10 +111,14 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             print(error)
         }
     }
+    
+    
+    
+    fileprivate func setListSession() {
+        listSession.append(SessionDetile.init(title: "Self-Image and Cancer", imageSession: UIImage(resource: .Session1)!, firstSubHead: "Physical changes", firstContent: "Both cancer and its treatment may change how you look. How you feel about your appearance is called body image. Many people with cancer feel self-conscious about changes to their bodies. Some of the more common physical changes of cancer include: Hair loss, Weight gain or weight loss, Surgery scars, Rash, typically from drug therapies, Loss of an organ, limb, or breast, The need for an ostomy, which is a surgical opening that allows bodily waste to exit the body into a bag, Fatigue or loss of energy, which can cause you to give up activities you once enjoyed. Many of these changes will resolve or get better as time passes after treatment. But make sure to share any concerns you have with your health care team. Ask them for more information about ways to relieve these symptoms or the emotional discomfort you may feel because of them.", secondSubhead: "Emotional changes", secondContent: "Cancer disrupts so many parts of a person’s life, from relationships to work and hobbies. Depending on the seriousness of the illness and the chance of recovery, it may also force you to make changes to your future and deal with the chance of dying. During this time, you may feel many different emotions: Sadness, Anxiety, Loneliness or a sense of being different from others, Fear, Anger, Frustration, Guilt, Feeling out of control, A change in the way you think about yourself and the future.But many people with cancer have also reported positive changes. These positive changes can be emotional, spiritual, or intellectual. For example, you may feel: An appreciation for the strength of your body, Peace, Gratitude, Awareness and appreciation that life is short and special, Grateful for new important relationships with caregivers and other patients, A shift in priorities, Clarity about meaning in life and personal goals", thirdSubhead: "Coping with self-image changes", thirdContent: "You may view yourself and your body differently after cancer. These tips may help you cope: Allow time to adjust. Accepting a cancer diagnosis and undergoing treatment may change your life. It takes time to adapt, so treat yourself with compassion and kindness. Talk with others who have been in similar situations. Many times, having 1-on-1 conversations or attending support groups with people who have been in the same situation can provide understanding and hope. Build a network of friends and family who can support you and help you feel positive. Ask for and accept help. Pass off tasks that take up your energy and are not pleasing to you. Stay calm and, if you are able, embrace humor. Laughter has many positive effects on the mind and body. And it may help you relax during an uncomfortable time. Let your health care team know your worries and concerns. Ask your health care team about possible reconstructive surgery, prosthetic devices, and/or cosmetic solutions. As much as possible, remain active."))
+    }
 }
 
 
 func setTopicOfSessions() {
-    
-    
 }
