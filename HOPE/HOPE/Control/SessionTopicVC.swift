@@ -20,6 +20,8 @@ class SessionTopicVC: UIViewController {
     }
     
     @IBAction func continueSession(_ sender: UIButton) {
+        performSegue(withIdentifier: "toEndOfSession", sender: nil)
+
     }
     
     

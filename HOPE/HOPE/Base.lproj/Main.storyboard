@@ -335,12 +335,12 @@
                         <outlet property="sessionImage" destination="wfz-qL-EWM" id="87K-mW-jfQ"/>
                         <outlet property="sessionTitle" destination="i1r-9C-ci5" id="gOc-3V-CWn"/>
                         <outlet property="theDefinition" destination="udl-tl-wdL" id="S70-PZ-xIS"/>
-                        <segue destination="1tz-Fh-BEj" kind="show" id="X3h-ql-7dW"/>
+                        <segue destination="1tz-Fh-BEj" kind="show" identifier="toSessionDetile" id="X3h-ql-7dW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S5T-6i-PcE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1195.6521739130435" y="2481.6964285714284"/>
+            <point key="canvasLocation" x="1196" y="2482"/>
         </scene>
         <!--Session TopicVC-->
         <scene sceneID="7B0-cO-TeU">
@@ -363,12 +363,12 @@
                     <navigationItem key="navigationItem" id="pe2-r0-Wai"/>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
-                        <segue destination="eLG-RR-u3o" kind="show" id="JaV-Uo-eN2"/>
+                        <segue destination="eLG-RR-u3o" kind="show" identifier="toEndOfSession" id="JaV-Uo-eN2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBN-Gm-ZD3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1195.6521739130435" y="3201.5625"/>
+            <point key="canvasLocation" x="1196" y="3247"/>
         </scene>
         <!--End Of SessionVC-->
         <scene sceneID="r4R-n2-M2F">
@@ -413,7 +413,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Pk-Ea-2bM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="4205"/>
+            <point key="canvasLocation" x="1196" y="3998"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="O4L-Uz-kHK">
@@ -487,7 +487,7 @@
                     <navigationItem key="navigationItem" id="DHA-aK-FkV"/>
                     <connections>
                         <outlet property="yourSessionTable" destination="Skn-NF-s1d" id="A6w-Md-41W"/>
-                        <segue destination="xwU-UE-o07" kind="show" id="mnh-Oa-EKK"/>
+                        <segue destination="xwU-UE-o07" kind="show" identifier="toSession" id="mnh-Oa-EKK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgC-6L-QYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

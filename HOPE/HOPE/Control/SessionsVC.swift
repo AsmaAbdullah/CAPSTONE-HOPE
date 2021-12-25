@@ -23,6 +23,8 @@ class SessionsVC: UIViewController {
     }
     
     @IBAction func continueSession(_ sender: UIButton) {
+        performSegue(withIdentifier: "toSessionDetile", sender: nil)
+
         
     }
     
