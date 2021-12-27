@@ -25,23 +25,23 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ph3-u9-5hM">
-                                <rect key="frame" x="119" y="308" width="176" height="39.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <rect key="frame" x="119" y="308" width="176" height="38"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8mL-Rw-oan">
-                                <rect key="frame" x="50" y="385" width="314" height="34"/>
+                                <rect key="frame" x="50" y="383.5" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTA-U6-dkr">
-                                <rect key="frame" x="50" y="440" width="314" height="34"/>
+                                <rect key="frame" x="50" y="438.5" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgj-N4-Ryf">
-                                <rect key="frame" x="150" y="495" width="114" height="31"/>
+                                <rect key="frame" x="150" y="493.5" width="114" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login" cornerStyle="capsule"/>
                                 <connections>
@@ -49,13 +49,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDG-oa-4VN">
-                                <rect key="frame" x="50" y="547" width="179" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="50" y="545.5" width="178.5" height="22"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sf8-xA-RtR">
-                                <rect key="frame" x="247.5" y="540" width="77.5" height="34.5"/>
+                                <rect key="frame" x="247.5" y="538.5" width="77.5" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Signup">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
@@ -159,7 +159,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcl-kj-zCh">
                                                     <rect key="frame" x="123" y="38" width="271" height="43"/>
-                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -214,29 +214,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uCp-vk-Nnk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uCp-vk-Nnk">
                                 <rect key="frame" x="20" y="108" width="374" height="365"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="365" id="LaQ-Pf-6QT"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of session" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFq-Va-vmL">
-                                <rect key="frame" x="20" y="493" width="374" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of session" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFq-Va-vmL">
+                                <rect key="frame" x="20" y="493" width="374" height="27"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEX-k5-FcC">
-                                <rect key="frame" x="20" y="540.5" width="374" height="100"/>
+                                <rect key="frame" x="20" y="540" width="374" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="PX2-Rx-g8Y"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbb-UB-eZ9">
-                                <rect key="frame" x="150" y="660.5" width="114" height="31"/>
+                                <rect key="frame" x="150" y="660" width="114" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Enroll" cornerStyle="capsule"/>
                                 <connections>
@@ -263,6 +263,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="YOT-md-hJh"/>
                     <connections>
+                        <outlet property="enrollButton" destination="Jbb-UB-eZ9" id="HYI-8a-emC"/>
                         <outlet property="imageSession" destination="uCp-vk-Nnk" id="sd2-TA-Zdc"/>
                         <outlet property="sessionContent" destination="MEX-k5-FcC" id="yer-cl-qvx"/>
                         <outlet property="titleSession" destination="OFq-Va-vmL" id="WCr-Yq-cyQ"/>
@@ -285,27 +286,27 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Hmh-ev-eL1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wfz-qL-EWM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wfz-qL-EWM">
                                 <rect key="frame" x="20" y="168" width="374" height="365"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="365" id="isg-w3-BLP"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defintion" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udl-tl-wdL">
-                                <rect key="frame" x="20" y="553" width="374" height="120"/>
+                                <rect key="frame" x="20" y="548" width="374" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="Qo2-sE-0i3"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="Qo2-sE-0i3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouW-U8-tJl">
-                                <rect key="frame" x="150" y="693" width="114" height="31"/>
+                                <rect key="frame" x="150" y="591" width="114" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="استمر" cornerStyle="capsule"/>
                                 <connections>
@@ -321,7 +322,7 @@
                             <constraint firstItem="wfz-qL-EWM" firstAttribute="leading" secondItem="4yb-7b-fqs" secondAttribute="leading" constant="20" id="AVi-Zd-Gz4"/>
                             <constraint firstItem="4yb-7b-fqs" firstAttribute="trailing" secondItem="wfz-qL-EWM" secondAttribute="trailing" constant="20" id="C08-cz-05Z"/>
                             <constraint firstItem="ouW-U8-tJl" firstAttribute="leading" secondItem="4yb-7b-fqs" secondAttribute="leading" constant="150" id="M6U-0H-7NU"/>
-                            <constraint firstItem="udl-tl-wdL" firstAttribute="top" secondItem="wfz-qL-EWM" secondAttribute="bottom" constant="20" id="Ms1-uJ-tnF"/>
+                            <constraint firstItem="udl-tl-wdL" firstAttribute="top" secondItem="wfz-qL-EWM" secondAttribute="bottom" constant="15" id="Ms1-uJ-tnF"/>
                             <constraint firstItem="4yb-7b-fqs" firstAttribute="trailing" secondItem="i1r-9C-ci5" secondAttribute="trailing" constant="20" id="fPo-9f-VH8"/>
                             <constraint firstItem="ouW-U8-tJl" firstAttribute="top" secondItem="udl-tl-wdL" secondAttribute="bottom" constant="20" id="faA-AR-afK"/>
                             <constraint firstItem="4yb-7b-fqs" firstAttribute="trailing" secondItem="udl-tl-wdL" secondAttribute="trailing" constant="20" id="gN9-8c-CWN"/>
@@ -343,10 +344,10 @@
             </objects>
             <point key="canvasLocation" x="1196" y="2482"/>
         </scene>
-        <!--View Controller-->
+        <!--ProfileVC-->
         <scene sceneID="O4L-Uz-kHK">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="r4z-g3-Qh4" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="r4z-g3-Qh4" customClass="ProfileVC" customModule="HOPE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qA1-1O-ZdR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -369,6 +370,14 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Log out" cornerStyle="capsule"/>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QoK-I2-qya">
+                                <rect key="frame" x="183" y="433" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="darkMood:" destination="r4z-g3-Qh4" eventType="valueChanged" id="3Ig-aa-J1w"/>
+                                    <action selector="darkMood:" destination="D56-cK-sev" eventType="valueChanged" id="cUG-HH-9fK"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Efm-JV-IFI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -376,6 +385,7 @@
                     <navigationItem key="navigationItem" id="X36-Ta-QAe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJX-rk-fDK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="D56-cK-sev" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2764" y="1756"/>
         </scene>
@@ -431,28 +441,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WN-LR-zS3">
-                                <rect key="frame" x="64" y="169" width="286" height="31.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <rect key="frame" x="64" y="169" width="286" height="38"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PL4-8r-hms">
-                                <rect key="frame" x="50" y="276.5" width="314" height="34"/>
+                                <rect key="frame" x="50" y="283" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jpm-2f-yc1">
-                                <rect key="frame" x="50" y="221.5" width="314" height="34"/>
+                                <rect key="frame" x="50" y="228" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xlw-j9-eel">
-                                <rect key="frame" x="50" y="331.5" width="314" height="34"/>
+                                <rect key="frame" x="50" y="338" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuk-oZ-iIy">
-                                <rect key="frame" x="150" y="434" width="114" height="31"/>
+                                <rect key="frame" x="150" y="441.5" width="114" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Signup" cornerStyle="capsule"/>
                                 <connections>
@@ -460,25 +470,25 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emM-HX-MNC">
-                                <rect key="frame" x="50" y="486" width="195" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="50" y="493.5" width="194" height="22"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ait-aq-mRe">
-                                <rect key="frame" x="315" y="386.5" width="51" height="31"/>
+                                <rect key="frame" x="315" y="393" width="51" height="31"/>
                                 <connections>
                                     <action selector="switchUser:" destination="V01-Tw-AGU" eventType="valueChanged" id="pl5-Vk-HqN"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you Psycologist?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABD-eN-MFk">
-                                <rect key="frame" x="50" y="392" width="157.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="50" y="398.5" width="158.5" height="22"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAG-0a-s5W">
-                                <rect key="frame" x="259" y="479" width="66" height="35"/>
+                                <rect key="frame" x="259" y="486.5" width="66" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
@@ -706,7 +716,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ljF-Vd-E3i">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1429"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SubHead" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILd-nQ-6m9">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SubHead" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILd-nQ-6m9">
                                                 <rect key="frame" x="20" y="30" width="374" height="27"/>
                                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="23"/>
                                                 <nil key="textColor"/>
@@ -730,7 +740,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subhead2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkn-ue-SXa">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subhead2" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkn-ue-SXa">
                                                 <rect key="frame" x="20" y="120" width="374" height="27"/>
                                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="23"/>
                                                 <nil key="textColor"/>
@@ -796,7 +806,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uja-0N-HoC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1198.5507246376812" y="3516.9642857142858"/>
+            <point key="canvasLocation" x="1200" y="3473"/>
         </scene>
         <!--End Of SessionVC-->
         <scene sceneID="wBo-g7-1MC">
@@ -806,23 +816,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان فرعي ٣" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfa-zb-rip">
-                                <rect key="frame" x="20" y="108" width="374" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subhead3" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfa-zb-rip">
+                                <rect key="frame" x="20" y="108" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="L2w-3b-YHn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="موضوع ٣" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tac-Px-Dke">
-                                <rect key="frame" x="20" y="153.5" width="374" height="400"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic 3" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tac-Px-Dke">
+                                <rect key="frame" x="20" y="188" width="374" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="gkU-S6-aSI"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="600" id="gkU-S6-aSI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCL-9s-JYY">
-                                <rect key="frame" x="150" y="573.5" width="114" height="31"/>
+                                <rect key="frame" x="150" y="231" width="114" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="انتهى" cornerStyle="capsule"/>
                                 <connections>
@@ -846,17 +859,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="GFP-B8-YQR"/>
                     <connections>
+                        <outlet property="buttoneDone" destination="rCL-9s-JYY" id="HU9-rH-4rX"/>
                         <outlet property="sessionContent" destination="tac-Px-Dke" id="ii8-oV-jDr"/>
                         <outlet property="subTitleSession" destination="qfa-zb-rip" id="ZZ5-2Y-iLB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WL8-fF-zkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200" y="4546"/>
+            <point key="canvasLocation" x="1199" y="4472"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vjQ-Al-YFW"/>
+        <segue reference="0wg-qU-dQW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="doc" catalog="system" width="115" height="128"/>

@@ -55,9 +55,9 @@ class HomeVC: UIViewController {
     
     // MARK:  Array of TableView
     fileprivate func setSessions() {
-        arraySession.append(Session.init(image: UIImageResource.Session1.rawValue, titleSessions: "Self-Image and Cancer", Content: "- Physical changes - Emotional changes - Coping with self-image changes"))
-        arraySession.append(Session.init(image: UIImageResource.Session2.rawValue, titleSessions: "Coping With Uncertainty", Content: "Causes of uncertainty, Dealing with the “what ifs” of cancer"))
-        arraySession.append(Session.init(image: UIImageResource.Session3.rawValue, titleSessions: "Managing Stress", Content: "Tips for reducing stress, Stress management strategies, Relaxation techniques"))
+        arraySession.append(Session.init(image: UIImageResource.Session1.rawValue, titleSessions: "Self-Image and Cancer", Content: "- Physical changes.\n- Emotional changes.\n- Coping with self-image changes."))
+        arraySession.append(Session.init(image: UIImageResource.Session2.rawValue, titleSessions: "Coping With Uncertainty", Content: "- Causes of uncertainty.\n- Dealing with the “what ifs” of cancer."))
+        arraySession.append(Session.init(image: UIImageResource.Session3.rawValue, titleSessions: "Managing Stress", Content: "- Tips for reducing stress.\n- Stress management strategies.\n- Relaxation techniques."))
     }
 }
 

@@ -25,6 +25,10 @@ class SessionsVC: UIViewController {
         sessionImage.image = selectedListSession.setImageSession
         theDefinition.text = selectedListSession.setDefinition
         
+        sessionImage.layer.cornerRadius = 12
+        sessionImage.layer.borderColor = UIColor.lightGray.cgColor
+        sessionImage.layer.borderWidth = 1.0
+        
         animationTitle()
         animationImage()
         animationDefinition()

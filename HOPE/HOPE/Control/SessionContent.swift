@@ -17,6 +17,7 @@ class SessionContent: UIViewController {
     @IBOutlet weak var imageSession: UIImageView!
     @IBOutlet weak var titleSession: UILabel!
     @IBOutlet weak var sessionContent: UILabel!
+    @IBOutlet weak var enrollButton: UIButton!
     
     
     // MARK: - SAVE CORE DATA
@@ -35,10 +36,14 @@ class SessionContent: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         imageSession.image = UIImage(named: selectedSession.image)
         titleSession.text = selectedSession.titleSessions
         sessionContent.text = selectedSession.Content
+        
+        
+        imageSession.layer.cornerRadius = 12
+        imageSession.layer.borderColor = UIColor.lightGray.cgColor
+        imageSession.layer.borderWidth = 1.0
     }
     
     @IBAction func enrollSession(_ sender: UIButton) {

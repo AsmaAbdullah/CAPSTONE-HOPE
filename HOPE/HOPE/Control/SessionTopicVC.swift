@@ -28,7 +28,12 @@ class SessionTopicVC: UIViewController {
         firstSessionContent.text = selectedListSession.setFirstContent
         secondSubTitleSession.text = selectedListSession.setSecondSubhead
         secondSessionContent.text = selectedListSession.setSecondContent
-        
+        //===========================================
+        firstSubTitleSession.alpha = 0
+        firstSessionContent.alpha = 0
+        secondSubTitleSession.alpha = 0
+        secondSessionContent.alpha = 0
+
     }
     
     @IBAction func continueSession(_ sender: UIButton) {
@@ -43,4 +48,41 @@ class SessionTopicVC: UIViewController {
             vc.selectedListSession = selectedListSession
         }
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 1, animations: { self.firstSubTitleSession.alpha = 1
+        }) { (true) in
+                self.animationContent()
+            }
+    }
+        
+        func animationContent() {
+            UIView.animate(withDuration: 1, animations: {
+                self.firstSessionContent.alpha = 1
+            }, completion: { (true) in
+                self.animationTitle()
+                
+            })
+        }
+    
+    func animationTitle() {
+        UIView.animate(withDuration: 1, animations: {
+            self.secondSubTitleSession.alpha = 1
+        }, completion: { (true) in
+            self.animationSecondContent()
+            
+        })
+    }
+    
+    func animationSecondContent() {
+        UIView.animate(withDuration: 1, animations: {
+            self.secondSessionContent.alpha = 1
+        })
+    }
+        
+
+    
+    
 }
