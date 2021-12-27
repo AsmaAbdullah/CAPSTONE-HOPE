@@ -9,11 +9,11 @@ import UIKit
 import CoreData
 
 class SessionContent: UIViewController {
-
+    
     
     var selectedSession: Session!
     var arraySession = [Session]()
-
+    
     @IBOutlet weak var imageSession: UIImageView!
     @IBOutlet weak var titleSession: UILabel!
     @IBOutlet weak var sessionContent: UILabel!
@@ -35,22 +35,22 @@ class SessionContent: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         imageSession.image = UIImage(named: selectedSession.image)
         titleSession.text = selectedSession.titleSessions
         sessionContent.text = selectedSession.Content
     }
     
     @IBAction func enrollSession(_ sender: UIButton) {
-   
+        
         createNewList(titleSession: selectedSession.titleSessions  , imageSession:  selectedSession.image)
-    
+        
         let alertController = UIAlertController(title: "", message: "Has been successfully added", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
     
-      // MARK: - CORE-DATA
+    // MARK: - CORE-DATA
     
     func createNewList(titleSession: String, imageSession: String){
         

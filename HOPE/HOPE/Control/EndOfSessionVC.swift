@@ -2,12 +2,14 @@
 //  EndOfSessionVC.swift
 //  HOPE
 //
-//  Created by Asma on 23/12/2021.
+//  Created by Asma on 27/12/2021.
 //
 
 import UIKit
 
 class EndOfSessionVC: UIViewController {
+
+    var selectedListSession: SetDetile!
 
     
     @IBOutlet weak var subTitleSession: UILabel!
@@ -16,12 +18,13 @@ class EndOfSessionVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        subTitleSession.text = selectedListSession.setThirdSubhead
+        sessionContent.text = selectedListSession.setThirdContent
     }
 
     @IBAction func endOfSession(_ sender: UIButton) {
+            
     }
-    
-    
-    
 
 }

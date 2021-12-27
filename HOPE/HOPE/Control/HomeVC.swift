@@ -10,14 +10,14 @@ import FirebaseAuth
 import CoreData
 
 class HomeVC: UIViewController {
-
+    
     var arraySession = [Session]()
     var selectedSession: Session!
     
     var timer: Timer?
     var currentItemIndex = 0
     
-// MARK:  CORE-DATA
+    // MARK:  CORE-DATA
     var yourSessionsList: [YourSessionsList] = []
     // MARK:  SAVE CORE DATA
     let persistentContainer: NSPersistentContainer = {
@@ -29,10 +29,10 @@ class HomeVC: UIViewController {
         })
         return container
     }()
-        
+    
     
     // MARK:
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var sessionTableView: UITableView!
     
@@ -63,7 +63,7 @@ class HomeVC: UIViewController {
 
 
 
-    // MARK: - Extension for CollectionView
+// MARK: - Extension for CollectionView
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
@@ -81,7 +81,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         collectionView.scrollToItem(at: IndexPath(item: currentItemIndex, section: 0), at: .centeredHorizontally, animated: true)
     }
     
-  // MARK: w
+    // MARK: w
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrayCollection.count
@@ -155,7 +155,3 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         }
     }
 }
-
-
-
-
