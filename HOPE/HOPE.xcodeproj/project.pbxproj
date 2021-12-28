@@ -133,6 +133,7 @@
 				048F0DC427667F26001E934D /* ProfileVC.swift */,
 				044B201927614AB50095734C /* Cell */,
 				048FA29A2768B88D00D918A2 /* CoreData */,
+				04927CC4277AFD1E0081FB4F /* API */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -183,6 +184,13 @@
 				048FA2AB2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		04927CC4277AFD1E0081FB4F /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		04BB3F8D27620CAA00772E4A /* Frameworks */ = {
