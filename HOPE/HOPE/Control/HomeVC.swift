@@ -109,6 +109,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
 // MARK: - Extension for TableView
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arraySession.count
     }

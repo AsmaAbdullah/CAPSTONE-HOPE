@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04075FD6277C51D2005C130F /* ProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075FD5277C51D2005C130F /* ProfileTableVC.swift */; };
+		04075FD8277D9A71005C130F /* ImportantNumbersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075FD7277D9A71005C130F /* ImportantNumbersVC.swift */; };
+		04075FDA277D9F9A005C130F /* NumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075FD9277D9F9A005C130F /* NumberTableViewCell.swift */; };
 		043FD79E275F3BA500D91C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FD79D275F3BA500D91C48 /* AppDelegate.swift */; };
 		043FD7A0275F3BA500D91C48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FD79F275F3BA500D91C48 /* SceneDelegate.swift */; };
 		043FD7A5275F3BA500D91C48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043FD7A3275F3BA500D91C48 /* Main.storyboard */; };
@@ -49,6 +52,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04075FD5277C51D2005C130F /* ProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableVC.swift; sourceTree = "<group>"; };
+		04075FD7277D9A71005C130F /* ImportantNumbersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportantNumbersVC.swift; sourceTree = "<group>"; };
+		04075FD9277D9F9A005C130F /* NumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTableViewCell.swift; sourceTree = "<group>"; };
 		043FD79A275F3BA500D91C48 /* HOPE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HOPE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043FD79D275F3BA500D91C48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043FD79F275F3BA500D91C48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +155,8 @@
 				04B7806A276B26A9009AB254 /* SessionsVC.swift */,
 				04B8962E27799BEB0014C455 /* SessionTopicVC.swift */,
 				04B8963027799C290014C455 /* EndOfSessionVC.swift */,
+				04075FD5277C51D2005C130F /* ProfileTableVC.swift */,
+				04075FD7277D9A71005C130F /* ImportantNumbersVC.swift */,
 				04BB3F9527653F8300772E4A /* LocationsVC.swift */,
 				048F0DC427667F26001E934D /* ProfileVC.swift */,
 				044B201927614AB50095734C /* Cell */,
@@ -163,6 +171,7 @@
 			children = (
 				044B201727614AAF0095734C /* HomeCollectionViewCell.swift */,
 				044B2020276179710095734C /* HomeTableViewCell.swift */,
+				04075FD9277D9F9A005C130F /* NumberTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -309,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04927CCC277B1DBE0081FB4F /* Model.swift in Sources */,
+				04075FD6277C51D2005C130F /* ProfileTableVC.swift in Sources */,
 				048FA2932768B04400D918A2 /* YourSessionsVC.swift in Sources */,
 				04B7806B276B26A9009AB254 /* SessionsVC.swift in Sources */,
 				048F0DC527667F26001E934D /* ProfileVC.swift in Sources */,
@@ -321,6 +331,7 @@
 				04B8962F27799BEB0014C455 /* SessionTopicVC.swift in Sources */,
 				04927CCA277B1D3F0081FB4F /* Video.swift in Sources */,
 				044B201F27615A480095734C /* ArrayModel.swift in Sources */,
+				04075FDA277D9F9A005C130F /* NumberTableViewCell.swift in Sources */,
 				04BB3F9627653F8400772E4A /* LocationsVC.swift in Sources */,
 				048FA2AC2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift in Sources */,
 				044B20162761478B0095734C /* HomeVC.swift in Sources */,
@@ -329,6 +340,7 @@
 				044B2021276179710095734C /* HomeTableViewCell.swift in Sources */,
 				04B8963127799C290014C455 /* EndOfSessionVC.swift in Sources */,
 				043FD7A0275F3BA500D91C48 /* SceneDelegate.swift in Sources */,
+				04075FD8277D9A71005C130F /* ImportantNumbersVC.swift in Sources */,
 				04BB3F8A27620BAE00772E4A /* User.swift in Sources */,
 				04927CD0277B837F0081FB4F /* VideoTableViewCell.swift in Sources */,
 				04927CCE277B2EF60081FB4F /* Response.swift in Sources */,

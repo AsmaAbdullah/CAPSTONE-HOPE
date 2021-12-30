@@ -11,14 +11,10 @@ import UIKit
 // MARK: Struct for tableview
 
 struct Session {
-    
     var image: String
     var titleSessions: String
     var Content: String
-    
 }
-
-
 // MARK: Struct for sessions
 
 struct SessionDetile {
@@ -33,7 +29,6 @@ struct SessionDetile {
     var thirdContent: String
 }
 
-
 struct SetDetile {
     var setTitle: String
     var setImageSession: UIImage
@@ -45,4 +40,11 @@ struct SetDetile {
     var setThirdSubhead: String
     var setThirdContent: String
 }
+
+struct PhoneNumber {
+    var title: String
+    var number: String
+}
+
+
 
