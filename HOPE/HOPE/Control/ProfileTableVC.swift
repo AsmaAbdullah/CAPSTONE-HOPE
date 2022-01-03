@@ -11,6 +11,10 @@ import FirebaseAuth
 
 class ProfileTableVC: UITableViewController {
     
+    var profile: User?
+    
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var email: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +22,13 @@ class ProfileTableVC: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        //for save certain data on the internet
+        
+        UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { profile in
+            self.profile = profile
+            self.name.text = profile.name
+            self.email.text = profile.email
+        }
         
     }
     
@@ -29,99 +40,79 @@ class ProfileTableVC: UITableViewController {
             self.present(alert, animated: true)
         }
         
+        
         if (indexPath.section == 2) && (indexPath.row == 0) {
-        performSegue(withIdentifier: "toMeasures", sender: nil)
+            performSegue(withIdentifier: "toMeasures", sender: nil)
         }
         if (indexPath.section == 2) && (indexPath.row == 1) {
-        performSegue(withIdentifier: "toNumbers", sender: nil)
+            performSegue(withIdentifier: "toNumbers", sender: nil)
         }
         if (indexPath.section == 2) && (indexPath.row == 2) {
-        performSegue(withIdentifier: "toMap", sender: nil)
-        }
-
-        
-    }
-    
-    @IBAction func changeToDarkMode(_ sender: UISwitch) {
-        
-        
-        if #available(iOS 13.0, *) {
-             let appDelegate = UIApplication.shared.windows.first
-                 if sender.isOn {
-                    appDelegate?.overrideUserInterfaceStyle = .dark
-                      return
-                 }
-             appDelegate?.overrideUserInterfaceStyle = .light
-             return
+            performSegue(withIdentifier: "toMap", sender: nil)
         }
     }
-    
     
     @IBAction func changeLanguage(_ sender: UIButton) {
         
-        let chengelangu = UIAlertController(title: NSLocalizedString("The application will be restarted", comment: ""), message: NSLocalizedString( "Choose your preferred language",comment: ""), preferredStyle: .actionSheet)
-          chengelangu.addAction(UIAlertAction(title: "Einglish", style: .default, handler: { action in
-            let currentlang = Locale.current.languageCode
-            let newLanguage = currentlang == "en" ? "ar" : "en"
-            UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
-            exit(0)
-          }))
-          chengelangu.addAction(UIAlertAction(title: "عربي", style: .default, handler: {action in
-            let currentlang = Locale.current.languageCode
-            let newLanguage = currentlang == "en" ? "ar" : "ar"
-            UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
-            exit(0)
-          }))
-          chengelangu.addAction(UIAlertAction(title:NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: nil))
-          present(chengelangu, animated: true, completion: nil)
+//        let chengelangu = UIAlertController(title: NSLocalizedString("The application will be restarted", comment: ""), message: NSLocalizedString( "Choose your preferred language",comment: ""), preferredStyle: .actionSheet)
+//        chengelangu.addAction(UIAlertAction(title: "Einglish", style: .default, handler: { action in
+//            let currentlang = Locale.current.languageCode
+//            let newLanguage = currentlang == "en" ? "ar" : "en"
+//            UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
+//            exit(0)
+//        }))
+//        chengelangu.addAction(UIAlertAction(title: "عربي", style: .default, handler: {action in
+//            let currentlang = Locale.current.languageCode
+//            let newLanguage = currentlang == "en" ? "ar" : "ar"
+//            UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
+//            exit(0)
+//        }))
+//        chengelangu.addAction(UIAlertAction(title:NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: nil))
+//        present(chengelangu, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func changeToDarkMode(_ sender: UISwitch) {
+        if #available(iOS 13.0, *) {
+            let appDelegate = UIApplication.shared.windows.first
+            if sender.isOn {
+                appDelegate?.overrideUserInterfaceStyle = .dark
+                return
+            }
+            appDelegate?.overrideUserInterfaceStyle = .light
+            return
+        }
+    }
+    
     
     
     @IBAction func logOut(_ sender: UIButton) {
         
-        let firebaseAuth = Auth.auth()
-       do {
-         try firebaseAuth.signOut()
-           self.dismiss(animated: true, completion: nil)
-       } catch let signOutError as NSError {
-         print("Error signing out: %@", signOutError)
-       }
+        
+        let alertController = UIAlertController(title: "Logout", message: "Are you sure to log out?", preferredStyle: .actionSheet)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+           
+            let firebaseAuth = Auth.auth()
+            do {
+                try firebaseAuth.signOut()
+                self.dismiss(animated: true, completion: nil)
+            } catch let signOutError as NSError {
+                print("Error signing out: %@", signOutError)
+            }
+        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+        
+//        let firebaseAuth = Auth.auth()
+//        do {
+//            try firebaseAuth.signOut()
+//            self.dismiss(animated: true, completion: nil)
+//        } catch let signOutError as NSError {
+//            print("Error signing out: %@", signOutError)
+//        }
     }
     
-    }
     
-    
-    
-    //    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    //    }
-    
-    //    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    //
-    //    }
+}
 
-
-//override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-//  switch indexPath.section {
-// case (indexPath.section == 1): break
-//            if indexPath.row == 0 {
-//                let alert = UIAlertController(title: "IOh ", message: "This email is not already Signup", preferredStyle: .alert)
-//                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-//                self.present(alert, animated: true)
-//            }
-
-// case (indexPath.section == 2): break
-//                    switch (indexPath.section == 2) {
-//                    case (indexPath.row == 0):
-//                        performSegue(withIdentifier: "toMeasures", sender: nil)
-//                    case (indexPath.row == 1):
-//                        performSegue(withIdentifier: "toNumbers", sender: nil)
-//                    case (indexPath.row == 2):
-//                        performSegue(withIdentifier: "toMap", sender: nil)
-//                    default:
-//                        print("")
-//                    }
-
-//   }
-// }
 

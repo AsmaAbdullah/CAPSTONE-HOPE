@@ -20,15 +20,17 @@ class LoginVC: UIViewController {
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
         
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
         //MARK: Confirm the existence of the account
         if Auth.auth().currentUser != nil {
             performSegue(withIdentifier: "toHome", sender: nil)
         }
+        
     }
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        checkUserInfo()
-//    }
     
     // MARK: - Login Button
     
@@ -59,7 +61,7 @@ class LoginVC: UIViewController {
                 guard let strongSelf = self else { return }
     
                 if let error = error {
-                let alert = UIAlertController(title: "IOh ", message: "This email is not already Signup", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Oh", message: "This email is not already Signup", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                     self?.present(alert, animated: true)
                     print(error.localizedDescription)
@@ -70,7 +72,7 @@ class LoginVC: UIViewController {
             }
         }
     
-    
+//
 //        func checkUserInfo() {
 //            if Auth.auth().currentUser != nil {
 //                print(Auth.auth().currentUser?.uid)

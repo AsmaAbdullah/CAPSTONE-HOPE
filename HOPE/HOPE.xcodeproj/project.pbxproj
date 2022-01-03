@@ -25,7 +25,6 @@
 		044B201B2761557D0095734C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B201A2761557D0095734C /* UIImage.swift */; };
 		044B201F27615A480095734C /* ArrayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B201E27615A480095734C /* ArrayModel.swift */; };
 		044B2021276179710095734C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B2020276179710095734C /* HomeTableViewCell.swift */; };
-		048F0DC527667F26001E934D /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F0DC427667F26001E934D /* ProfileVC.swift */; };
 		048FA2902768AD3200D918A2 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA28F2768AD3200D918A2 /* Session.swift */; };
 		048FA2932768B04400D918A2 /* YourSessionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2922768B04400D918A2 /* YourSessionsVC.swift */; };
 		048FA2A92768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2A72768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld */; };
@@ -73,7 +72,6 @@
 		044B201A2761557D0095734C /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		044B201E27615A480095734C /* ArrayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayModel.swift; sourceTree = "<group>"; };
 		044B2020276179710095734C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		048F0DC427667F26001E934D /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		048FA28F2768AD3200D918A2 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		048FA2922768B04400D918A2 /* YourSessionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourSessionsVC.swift; sourceTree = "<group>"; };
 		048FA2A82768BDC700D918A2 /* BeneficiarySessions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeneficiarySessions.xcdatamodel; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 				04075FD5277C51D2005C130F /* ProfileTableVC.swift */,
 				04075FD7277D9A71005C130F /* ImportantNumbersVC.swift */,
 				04BB3F9527653F8300772E4A /* LocationsVC.swift */,
-				048F0DC427667F26001E934D /* ProfileVC.swift */,
 				044B201927614AB50095734C /* Cell */,
 				048FA29A2768B88D00D918A2 /* CoreData */,
 				04927CC4277AFD1E0081FB4F /* API */,
@@ -331,7 +328,6 @@
 				04075FD6277C51D2005C130F /* ProfileTableVC.swift in Sources */,
 				048FA2932768B04400D918A2 /* YourSessionsVC.swift in Sources */,
 				04B7806B276B26A9009AB254 /* SessionsVC.swift in Sources */,
-				048F0DC527667F26001E934D /* ProfileVC.swift in Sources */,
 				044B201327602FE00095734C /* SignupVC.swift in Sources */,
 				048FA2AD2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift in Sources */,
 				043FD79E275F3BA500D91C48 /* AppDelegate.swift in Sources */,
