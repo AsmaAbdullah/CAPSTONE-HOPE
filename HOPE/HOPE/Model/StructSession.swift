@@ -41,7 +41,7 @@ struct SetDetile {
     var setThirdContent: String
 }
 
-struct PhoneNumber {
+struct PhoneNumbers {
     var title: String
     var number: String
 }

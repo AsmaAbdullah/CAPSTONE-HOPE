@@ -39,7 +39,6 @@
 		04927CD0277B837F0081FB4F /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04927CCF277B837F0081FB4F /* VideoTableViewCell.swift */; };
 		04927CD2277B8C4F0081FB4F /* CacheManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = 04927CD1277B8C4F0081FB4F /* CacheManager .swift */; };
 		04927CD4277BA29E0081FB4F /* VideoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04927CD3277BA29E0081FB4F /* VideoDetailVC.swift */; };
-		04927CD6277BA7230081FB4F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04927CD5277BA7230081FB4F /* WebKit.framework */; };
 		04B7806B276B26A9009AB254 /* SessionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7806A276B26A9009AB254 /* SessionsVC.swift */; };
 		04B8962F27799BEB0014C455 /* SessionTopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8962E27799BEB0014C455 /* SessionTopicVC.swift */; };
 		04B8963127799C290014C455 /* EndOfSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8963027799C290014C455 /* EndOfSessionVC.swift */; };
@@ -49,6 +48,10 @@
 		04BB3F9127621C8000772E4A /* SessionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F9027621C8000772E4A /* SessionContent.swift */; };
 		04BB3F932762228D00772E4A /* StructSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F922762228D00772E4A /* StructSession.swift */; };
 		04BB3F9627653F8400772E4A /* LocationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F9527653F8300772E4A /* LocationsVC.swift */; };
+		04C66DFD27809C6000FFC06B /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C66DFC27809C6000FFC06B /* PhoneNumber.swift */; };
+		04C66DFF27809D1D00FFC06B /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C66DFE27809D1D00FFC06B /* Support.swift */; };
+		04C66E0027809FCB00FFC06B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04927CD5277BA7230081FB4F /* WebKit.framework */; };
+		04F3EB9F2781B70A00F57333 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 04F3EB9E2781B70A00F57333 /* Cosmos */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +96,8 @@
 		04BB3F9027621C8000772E4A /* SessionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContent.swift; sourceTree = "<group>"; };
 		04BB3F922762228D00772E4A /* StructSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructSession.swift; sourceTree = "<group>"; };
 		04BB3F9527653F8300772E4A /* LocationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsVC.swift; sourceTree = "<group>"; };
+		04C66DFC27809C6000FFC06B /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		04C66DFE27809D1D00FFC06B /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +105,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F3EB9F2781B70A00F57333 /* Cosmos in Frameworks */,
 				043FD7B5275F7F6B00D91C48 /* FirebaseAnalytics in Frameworks */,
 				043FD7B7275F7F6B00D91C48 /* FirebaseAuth in Frameworks */,
-				04927CD6277BA7230081FB4F /* WebKit.framework in Frameworks */,
+				04C66E0027809FCB00FFC06B /* WebKit.framework in Frameworks */,
 				04BB3F8F27620CAA00772E4A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,7 +138,6 @@
 			children = (
 				044B201D27615A370095734C /* Model */,
 				044B2014276093950095734C /* Control */,
-				04927CD3277BA29E0081FB4F /* VideoDetailVC.swift */,
 				043FD79D275F3BA500D91C48 /* AppDelegate.swift */,
 				043FD79F275F3BA500D91C48 /* SceneDelegate.swift */,
 				043FD7A3275F3BA500D91C48 /* Main.storyboard */,
@@ -192,6 +197,8 @@
 				048FA28F2768AD3200D918A2 /* Session.swift */,
 				04BB3F8927620BAE00772E4A /* User.swift */,
 				04BB3F8B27620BCC00772E4A /* UserApi.swift */,
+				04C66DFC27809C6000FFC06B /* PhoneNumber.swift */,
+				04C66DFE27809D1D00FFC06B /* Support.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +228,7 @@
 				04927CC7277B182A0081FB4F /* ConstantsAPI.swift */,
 				04927CC9277B1D3F0081FB4F /* Video.swift */,
 				04927CCB277B1DBE0081FB4F /* Model.swift */,
+				04927CD3277BA29E0081FB4F /* VideoDetailVC.swift */,
 				04927CC5277B0A000081FB4F /* APIVideoVC.swift */,
 				04927CCD277B2EF50081FB4F /* Response.swift */,
 				04927CCF277B837F0081FB4F /* VideoTableViewCell.swift */,
@@ -257,6 +265,7 @@
 				043FD7B4275F7F6B00D91C48 /* FirebaseAnalytics */,
 				043FD7B6275F7F6B00D91C48 /* FirebaseAuth */,
 				04BB3F8E27620CAA00772E4A /* FirebaseFirestore */,
+				04F3EB9E2781B70A00F57333 /* Cosmos */,
 			);
 			productName = HOPE;
 			productReference = 043FD79A275F3BA500D91C48 /* HOPE.app */;
@@ -288,6 +297,7 @@
 			mainGroup = 043FD791275F3BA500D91C48;
 			packageReferences = (
 				043FD7B3275F7F6B00D91C48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				04F3EB9D2781B70A00F57333 /* XCRemoteSwiftPackageReference "Cosmos" */,
 			);
 			productRefGroup = 043FD79B275F3BA500D91C48 /* Products */;
 			projectDirPath = "";
@@ -325,6 +335,7 @@
 				044B201327602FE00095734C /* SignupVC.swift in Sources */,
 				048FA2AD2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift in Sources */,
 				043FD79E275F3BA500D91C48 /* AppDelegate.swift in Sources */,
+				04C66DFD27809C6000FFC06B /* PhoneNumber.swift in Sources */,
 				04BB3F932762228D00772E4A /* StructSession.swift in Sources */,
 				044B201827614AAF0095734C /* HomeCollectionViewCell.swift in Sources */,
 				04927CD2277B8C4F0081FB4F /* CacheManager .swift in Sources */,
@@ -339,6 +350,7 @@
 				044B201127602FCA0095734C /* LoginVC.swift in Sources */,
 				044B2021276179710095734C /* HomeTableViewCell.swift in Sources */,
 				04B8963127799C290014C455 /* EndOfSessionVC.swift in Sources */,
+				04C66DFF27809D1D00FFC06B /* Support.swift in Sources */,
 				043FD7A0275F3BA500D91C48 /* SceneDelegate.swift in Sources */,
 				04075FD8277D9A71005C130F /* ImportantNumbersVC.swift in Sources */,
 				04BB3F8A27620BAE00772E4A /* User.swift in Sources */,
@@ -580,6 +592,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		04F3EB9D2781B70A00F57333 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -597,6 +617,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 043FD7B3275F7F6B00D91C48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		04F3EB9E2781B70A00F57333 /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04F3EB9D2781B70A00F57333 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
 		};
 /* End XCSwiftPackageProductDependency section */
 

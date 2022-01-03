@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Cosmos
 
 class EndOfSessionVC: UIViewController {
 
@@ -30,7 +31,29 @@ class EndOfSessionVC: UIViewController {
     }
 
     @IBAction func endOfSession(_ sender: UIButton) {
+        
+        let alert = UIAlertController(title: "Rate\n\n\n", message: "", preferredStyle: .actionSheet)
+        let ratingView = CosmosView(frame: CGRect(x: 0, y: 0, width: 100, height: 60))
+        
+        ratingView.rating = 0
+        ratingView.settings.starSize = 30
+        ratingView.settings.emptyBorderColor = UIColor.black
+        ratingView.settings.updateOnTouch = true
+        ratingView.frame.origin.x = alert.view.frame.width/2 - 100
+        ratingView.frame.origin.y = 40
+        
+        alert.addAction(UIAlertAction(title: "Rate", style: .default, handler: { (alert) in
             
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "Home")
+            vc.modalPresentationStyle = .automatic
+            self.present(vc, animated: true)
+        }))
+          
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        alert.view.addSubview(ratingView)
+        self.present(alert, animated: true, completion: nil)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

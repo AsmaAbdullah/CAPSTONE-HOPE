@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ProfileTableVC: UITableViewController {
     
@@ -15,6 +17,8 @@ class ProfileTableVC: UITableViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -34,11 +38,56 @@ class ProfileTableVC: UITableViewController {
         if (indexPath.section == 2) && (indexPath.row == 2) {
         performSegue(withIdentifier: "toMap", sender: nil)
         }
-        
-        
 
         
+    }
+    
+    @IBAction func changeToDarkMode(_ sender: UISwitch) {
         
+        
+        if #available(iOS 13.0, *) {
+             let appDelegate = UIApplication.shared.windows.first
+                 if sender.isOn {
+                    appDelegate?.overrideUserInterfaceStyle = .dark
+                      return
+                 }
+             appDelegate?.overrideUserInterfaceStyle = .light
+             return
+        }
+    }
+    
+    
+    @IBAction func changeLanguage(_ sender: UIButton) {
+        
+        let chengelangu = UIAlertController(title: NSLocalizedString("The application will be restarted", comment: ""), message: NSLocalizedString( "Choose your preferred language",comment: ""), preferredStyle: .actionSheet)
+          chengelangu.addAction(UIAlertAction(title: "Einglish", style: .default, handler: { action in
+            let currentlang = Locale.current.languageCode
+            let newLanguage = currentlang == "en" ? "ar" : "en"
+            UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
+            exit(0)
+          }))
+          chengelangu.addAction(UIAlertAction(title: "عربي", style: .default, handler: {action in
+            let currentlang = Locale.current.languageCode
+            let newLanguage = currentlang == "en" ? "ar" : "ar"
+            UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
+            exit(0)
+          }))
+          chengelangu.addAction(UIAlertAction(title:NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: nil))
+          present(chengelangu, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func logOut(_ sender: UIButton) {
+        
+        let firebaseAuth = Auth.auth()
+       do {
+         try firebaseAuth.signOut()
+           self.dismiss(animated: true, completion: nil)
+       } catch let signOutError as NSError {
+         print("Error signing out: %@", signOutError)
+       }
+    }
+    
     }
     
     
@@ -49,8 +98,6 @@ class ProfileTableVC: UITableViewController {
     //    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     //
     //    }
-    
-}
 
 
 //override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -61,15 +61,20 @@ class SignupVC: UIViewController {
     
     func signup() {
         Auth.auth().createUser(withEmail: emailSignup.text ?? "", password: passwordSignup.text ?? "") { authResult, error in
-            //guard let user = authResult?.user, error == nil else {                return print("Error \(error?.localizedDescription)")  }
-            
-            UserApi.addUser(name: self.nameSignup.text ?? "", uid: authResult?.user.uid ?? "", email: self.emailSignup.text ?? "", isPsyco: self.isPsyco) { check in
-                if check {
-                    print("Done Saving")
-                }
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                UserApi.addUser(name: self.nameSignup.text ?? "", uid: authResult?.user.uid ?? "", email: self.emailSignup.text ?? "", isPsyco: self.isPsyco, completion: { check in
+                    if check {
+                        print("Done Saving")
+                        self.performSegue(withIdentifier: "toHome", sender: nil)
+                    }
+            })
             }
-            
-            
+            guard error == nil else {
+                print("Error \(String(describing: error?.localizedDescription))")
+                return
+            }
         }
     }
 }

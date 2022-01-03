@@ -19,6 +19,11 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
+        
+        //MARK: Confirm the existence of the account
+        if Auth.auth().currentUser != nil {
+            performSegue(withIdentifier: "toHome", sender: nil)
+        }
     }
     
 //    override func viewDidAppear(_ animated: Bool) {

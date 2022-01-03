@@ -39,8 +39,12 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { user in
+        
+        if let uid = Auth.auth().currentUser?.uid {
+            UserApi.getUser(uid: uid) { user in
+            }
         }
+        
         
         collectionView.delegate = self
         collectionView.dataSource = self
