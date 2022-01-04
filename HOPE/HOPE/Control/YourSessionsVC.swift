@@ -72,6 +72,9 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.imageView?.layer.cornerRadius = 12
         cell.imageView?.layer.borderColor = UIColor.lightGray.cgColor
         cell.imageView?.layer.borderWidth = 1.0
+        cell.imageView?.frame = CGRect(x: 30.0, y: 30.0, width: 0.0, height: 30.0)
+
+        
         
         return cell
     }
@@ -112,6 +115,10 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             print(error)
         }
     }
+    
+    
+    
+    
     
     fileprivate func setListSession() {
         listSession.append(SessionDetile.init(title: "Self-Image and Cancer", imageSession: UIImage(resource: .Session1)!, definition: "Self-image is how a person views himself or herself. Because of the many physical and emotional changes after a cancer diagnosis, people may experience positive and negative changes to their self-image.", firstSubHead: "Physical changes", firstContent: "Both cancer and its treatment may change how you look. How you feel about your appearance is called body image. Many people with cancer feel self-conscious about changes to their bodies. Some of the more common physical changes of cancer include:\n- Hair loss\n- Weight gain or weight loss\n- Surgery scars\n- Rash, typically from drug therapies\n- Loss of an organ, limb, or breast\n- The need for an ostomy, which is a surgical opening that allows bodily waste to exit the body into a bag\n- Fatigue or loss of energy, which can cause you to give up activities you once enjoyed.\n  Many of these changes will resolve or get better as time passes after treatment. But make sure to share any concerns you have with your health care team. Ask them for more information about ways to relieve these symptoms or the emotional discomfort you may feel because of them.", secondSubhead: "Emotional changes", secondContent: "Cancer disrupts so many parts of a person’s life, from relationships to work and hobbies. Depending on the seriousness of the illness and the chance of recovery, it may also force you to make changes to your future and deal with the chance of dying. During this time, you may feel many different emotions:\n- Sadness, Anxiety\n- Loneliness or a sense of being different from others\n- Fear, Anger, Frustration, Guilt\n- Feeling out of control\n- A change in the way you think about yourself and the future.\n But many people with cancer have also reported positive changes. These positive changes can be emotional, spiritual, or intellectual. For example, you may feel:\n- An appreciation for the strength of your body.\n- Peace, Gratitude\n- Awareness and appreciation that life is short and special.\n- Grateful for new important relationships with caregivers and other patients.\n- A shift in priorities.\n- Clarity about meaning in life and personal goals", thirdSubhead: "Coping with self-image changes", thirdContent: "You may view yourself and your body differently after cancer. These tips may help you cope:\n- Allow time to adjust. Accepting a cancer diagnosis and undergoing treatment may change your life. It takes time to adapt.\n- Talk with others who have been in similar situations.\n- Build a network of friends and family who can support you and help you feel positive.\n- Ask for and accept help. Pass off tasks that take up your energy and are not pleasing to you.\n- Stay calm and, if you are able, embrace humor.\n- Ask your health care team about possible reconstructive surgery, prosthetic devices, and/or cosmetic solutions.\n- As much as possible, remain active.\n- Seek counseling."))

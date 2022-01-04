@@ -43,11 +43,12 @@ class EndOfSessionVC: UIViewController {
         ratingView.frame.origin.y = 40
         
         alert.addAction(UIAlertAction(title: "Rate", style: .default, handler: { (alert) in
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "Home")
-            vc.modalPresentationStyle = .automatic
-            self.present(vc, animated: true)
+           
+            self.performSegue(withIdentifier: "backHome", sender: nil)
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "Home")
+//            vc.modalPresentationStyle = .automatic
+//            self.present(vc, animated: true)
         }))
           
         alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))

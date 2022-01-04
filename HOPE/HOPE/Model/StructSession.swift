@@ -46,5 +46,10 @@ struct PhoneNumbers {
     var number: String
 }
 
+struct MeasuresInfo {
+    var title: String
+    var image: UIImage
+}
+
 
 

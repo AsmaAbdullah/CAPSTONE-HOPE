@@ -48,6 +48,20 @@ class SessionContent: UIViewController {
     
     @IBAction func enrollSession(_ sender: UIButton) {
         
+        let sessionsLists = fetchAllLists()
+        
+        for sessionList in sessionsLists {
+            if sessionList.titleSession == selectedSession.titleSessions {
+                
+                let alertController = UIAlertController(title: "", message: "You Already have added this session", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alertController, animated: true, completion: nil)
+                
+                return
+            }
+        }
+        
+        
         createNewList(titleSession: selectedSession.titleSessions  , imageSession:  selectedSession.image)
         
         let alertController = UIAlertController(title: "", message: "Has been successfully added", preferredStyle: .alert)
@@ -70,6 +84,20 @@ class SessionContent: UIViewController {
                 print(error)
             }
         }
+    }
+    
+    
+    func fetchAllLists() -> [YourSessionsList]{
+        let context = persistentContainer.viewContext
+        var yourSessionsList : [YourSessionsList] = []
+        
+        do {
+           yourSessionsList = try context.fetch(YourSessionsList.fetchRequest())
+        } catch {
+            print(error)
+        }
+        
+        return yourSessionsList
     }
     
     

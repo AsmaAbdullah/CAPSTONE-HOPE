@@ -41,6 +41,9 @@
 		04B7806B276B26A9009AB254 /* SessionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7806A276B26A9009AB254 /* SessionsVC.swift */; };
 		04B8962F27799BEB0014C455 /* SessionTopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8962E27799BEB0014C455 /* SessionTopicVC.swift */; };
 		04B8963127799C290014C455 /* EndOfSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8963027799C290014C455 /* EndOfSessionVC.swift */; };
+		04BB0B3A2783110D00425636 /* MeasuresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB0B392783110D00425636 /* MeasuresVC.swift */; };
+		04BB0B3C278312F400425636 /* MeasuresCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB0B3B278312F300425636 /* MeasuresCollectionViewCell.swift */; };
+		04BB0B3E278320EF00425636 /* MeasurementQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB0B3D278320EF00425636 /* MeasurementQuestions.swift */; };
 		04BB3F8A27620BAE00772E4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F8927620BAE00772E4A /* User.swift */; };
 		04BB3F8C27620BCC00772E4A /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F8B27620BCC00772E4A /* UserApi.swift */; };
 		04BB3F8F27620CAA00772E4A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB3F8E27620CAA00772E4A /* FirebaseFirestore */; };
@@ -89,6 +92,9 @@
 		04B7806A276B26A9009AB254 /* SessionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsVC.swift; sourceTree = "<group>"; };
 		04B8962E27799BEB0014C455 /* SessionTopicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTopicVC.swift; sourceTree = "<group>"; };
 		04B8963027799C290014C455 /* EndOfSessionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfSessionVC.swift; sourceTree = "<group>"; };
+		04BB0B392783110D00425636 /* MeasuresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuresVC.swift; sourceTree = "<group>"; };
+		04BB0B3B278312F300425636 /* MeasuresCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuresCollectionViewCell.swift; sourceTree = "<group>"; };
+		04BB0B3D278320EF00425636 /* MeasurementQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementQuestions.swift; sourceTree = "<group>"; };
 		04BB3F8927620BAE00772E4A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04BB3F8B27620BCC00772E4A /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		04BB3F9027621C8000772E4A /* SessionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContent.swift; sourceTree = "<group>"; };
@@ -159,6 +165,8 @@
 				04B8962E27799BEB0014C455 /* SessionTopicVC.swift */,
 				04B8963027799C290014C455 /* EndOfSessionVC.swift */,
 				04075FD5277C51D2005C130F /* ProfileTableVC.swift */,
+				04BB0B392783110D00425636 /* MeasuresVC.swift */,
+				04BB0B3D278320EF00425636 /* MeasurementQuestions.swift */,
 				04075FD7277D9A71005C130F /* ImportantNumbersVC.swift */,
 				04BB3F9527653F8300772E4A /* LocationsVC.swift */,
 				044B201927614AB50095734C /* Cell */,
@@ -174,6 +182,7 @@
 				044B201727614AAF0095734C /* HomeCollectionViewCell.swift */,
 				044B2020276179710095734C /* HomeTableViewCell.swift */,
 				04075FD9277D9F9A005C130F /* NumberTableViewCell.swift */,
+				04BB0B3B278312F300425636 /* MeasuresCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -349,11 +358,14 @@
 				04C66DFF27809D1D00FFC06B /* Support.swift in Sources */,
 				043FD7A0275F3BA500D91C48 /* SceneDelegate.swift in Sources */,
 				04075FD8277D9A71005C130F /* ImportantNumbersVC.swift in Sources */,
+				04BB0B3A2783110D00425636 /* MeasuresVC.swift in Sources */,
+				04BB0B3E278320EF00425636 /* MeasurementQuestions.swift in Sources */,
 				04BB3F8A27620BAE00772E4A /* User.swift in Sources */,
 				04927CD0277B837F0081FB4F /* VideoTableViewCell.swift in Sources */,
 				04927CCE277B2EF60081FB4F /* Response.swift in Sources */,
 				048FA2902768AD3200D918A2 /* Session.swift in Sources */,
 				044B201B2761557D0095734C /* UIImage.swift in Sources */,
+				04BB0B3C278312F400425636 /* MeasuresCollectionViewCell.swift in Sources */,
 				04BB3F9127621C8000772E4A /* SessionContent.swift in Sources */,
 				04927CC6277B0A000081FB4F /* APIVideoVC.swift in Sources */,
 				04BB3F8C27620BCC00772E4A /* UserApi.swift in Sources */,

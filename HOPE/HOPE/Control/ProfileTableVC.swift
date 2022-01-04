@@ -54,21 +54,21 @@ class ProfileTableVC: UITableViewController {
     
     @IBAction func changeLanguage(_ sender: UIButton) {
         
-//        let chengelangu = UIAlertController(title: NSLocalizedString("The application will be restarted", comment: ""), message: NSLocalizedString( "Choose your preferred language",comment: ""), preferredStyle: .actionSheet)
-//        chengelangu.addAction(UIAlertAction(title: "Einglish", style: .default, handler: { action in
-//            let currentlang = Locale.current.languageCode
-//            let newLanguage = currentlang == "en" ? "ar" : "en"
-//            UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
-//            exit(0)
-//        }))
-//        chengelangu.addAction(UIAlertAction(title: "عربي", style: .default, handler: {action in
-//            let currentlang = Locale.current.languageCode
-//            let newLanguage = currentlang == "en" ? "ar" : "ar"
-//            UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
-//            exit(0)
-//        }))
-//        chengelangu.addAction(UIAlertAction(title:NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: nil))
-//        present(chengelangu, animated: true, completion: nil)
+        let chengelangu = UIAlertController(title: NSLocalizedString("The application will be restarted", comment: ""), message: NSLocalizedString( "Choose your preferred language",comment: ""), preferredStyle: .actionSheet)
+        chengelangu.addAction(UIAlertAction(title: "Einglish", style: .default, handler: { action in
+            let currentlang = Locale.current.languageCode
+            let newLanguage = currentlang == "en" ? "ar" : "en"
+            UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
+            exit(0)
+        }))
+        chengelangu.addAction(UIAlertAction(title: "عربي", style: .default, handler: {action in
+            let currentlang = Locale.current.languageCode
+            let newLanguage = currentlang == "en" ? "ar" : "ar"
+            UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
+            exit(0)
+        }))
+        chengelangu.addAction(UIAlertAction(title:NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: nil))
+        present(chengelangu, animated: true, completion: nil)
     }
     
     
