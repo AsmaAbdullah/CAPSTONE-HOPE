@@ -2,7 +2,7 @@
 //  YourSessionsList+CoreDataProperties.swift
 //  HOPE
 //
-//  Created by Asma on 14/12/2021.
+//  Created by Asma on 05/01/2022.
 //
 //
 
@@ -18,6 +18,7 @@ extension YourSessionsList {
 
     @NSManaged public var imageSession: String?
     @NSManaged public var titleSession: String?
+    @NSManaged public var uid: String?
 
 }
 

@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import FirebaseAuth
 
 
 class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -20,7 +21,7 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     //    var listSession = [SessionDetile]()
     //    var selectedListSessions: Sessions!
     
-    
+    var mySession = [String]()
     
     
     // MARK: - CORE-DATA
@@ -47,17 +48,33 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         setListSession()
         
-        
-        //        let theSession = listSession.first(where: { sessionDetail in
-        //            return sessionDetail.title == self.selectedSession.titleSessions
-        //        }) //
-        
+
     }
+
     
     override func viewWillAppear(_ animated: Bool) {
         self.fetchAllLists()
         self.yourSessionTable.reloadData()
+        
+//        UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { user in
+//            DispatchQueue.main.async {
+//                self.mySession = user.mySession ?? [""]
+//                self.yourSessionTable.reloadData()
+//            }
+//        }
+        
     }
+    
+    @IBAction func editSession(_ sender: UIBarButtonItem) {
+        
+        if yourSessionTable.isEditing {
+            yourSessionTable.isEditing = false
+        } else {
+            yourSessionTable.isEditing = true
+        }
+        
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return yourSessionsList.count
@@ -73,8 +90,6 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.imageView?.layer.borderColor = UIColor.lightGray.cgColor
         cell.imageView?.layer.borderWidth = 1.0
         cell.imageView?.frame = CGRect(x: 30.0, y: 30.0, width: 0.0, height: 30.0)
-
-        
         
         return cell
     }
@@ -84,13 +99,21 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 100
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let data = listSession[indexPath.row]
-        selectedListSession = SetDetile(setTitle: data.title, setImageSession: data.imageSession, setDefinition: data.definition, setFirstSubHead: data.firstSubHead, setFirstContent: data.firstContent, setSecondSubhead: data.secondSubhead, setSecondContent: data.secondContent, setThirdSubhead: data.thirdSubhead, setThirdContent: data.thirdContent)
         
-        //        selectedListSession = listSession[indexPath.row]
-        performSegue(withIdentifier: "toSession", sender: nil)
+        let theSession = listSession.first(where: { sessionDetail in
+            return sessionDetail.title == yourSessionsList[indexPath.row].titleSession
+        })
+        
+        if let data = theSession {
+            selectedListSession = SetDetile(setTitle: data.title, setImageSession: data.imageSession, setDefinition: data.definition, setFirstSubHead: data.firstSubHead, setFirstContent: data.firstContent, setSecondSubhead: data.secondSubhead, setSecondContent: data.secondContent, setThirdSubhead: data.thirdSubhead, setThirdContent: data.thirdContent)
+            
+            //        selectedListSession = listSession[indexPath.row]
+            performSegue(withIdentifier: "toSession", sender: nil)
+        }
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -109,14 +132,15 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func fetchAllLists() {
         let context = persistentContainer.viewContext
+        let request = YourSessionsList.fetchRequest()
+        request.predicate = NSPredicate(format: "uid == %@", Auth.auth().currentUser?.uid ?? "")
         do {
-            yourSessionsList = try context.fetch(YourSessionsList.fetchRequest())
+            yourSessionsList = try context.fetch(request)
         } catch {
             print(error)
         }
     }
-    
-    
+
     
     
     

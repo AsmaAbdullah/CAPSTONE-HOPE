@@ -2,7 +2,7 @@
 //  YourSessionsList+CoreDataClass.swift
 //  HOPE
 //
-//  Created by Asma on 14/12/2021.
+//  Created by Asma on 05/01/2022.
 //
 //
 

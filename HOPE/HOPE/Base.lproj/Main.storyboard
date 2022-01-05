@@ -103,7 +103,7 @@
         <!--HomeVC-->
         <scene sceneID="ePy-aL-xFq">
             <objects>
-                <viewController storyboardIdentifier="Home" id="4eT-7Y-R6A" customClass="HomeVC" customModule="HOPE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="backHome" modalPresentationStyle="fullScreen" id="4eT-7Y-R6A" customClass="HomeVC" customModule="HOPE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wbB-fI-Xsj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,7 +276,7 @@
         <!--SessionsVC-->
         <scene sceneID="IXw-tR-PKo">
             <objects>
-                <viewController id="xwU-UE-o07" customClass="SessionsVC" customModule="HOPE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="xwU-UE-o07" customClass="SessionsVC" customModule="HOPE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kZJ-mp-ANO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1485,7 +1485,6 @@
                         <outlet property="buttoneDone" destination="rCL-9s-JYY" id="HU9-rH-4rX"/>
                         <outlet property="sessionContent" destination="tac-Px-Dke" id="ii8-oV-jDr"/>
                         <outlet property="subTitleSession" destination="qfa-zb-rip" id="ZZ5-2Y-iLB"/>
-                        <segue destination="42o-Jb-iD1" kind="show" identifier="backHome" id="pvQ-0O-rQw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WL8-fF-zkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1532,8 +1531,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pvQ-0O-rQw"/>
-        <segue reference="vjQ-Al-YFW"/>
+        <segue reference="0wg-qU-dQW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="a.circle" catalog="system" width="128" height="121"/>

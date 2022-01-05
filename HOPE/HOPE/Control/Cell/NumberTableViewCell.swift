@@ -25,9 +25,6 @@ class NumberTableViewCell: UITableViewCell {
 
         
         }
-        
-        
-
     
     func setUpCell(title: String, number: String) {
         titleLabel.text = title

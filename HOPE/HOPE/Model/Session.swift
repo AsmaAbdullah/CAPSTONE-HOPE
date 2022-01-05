@@ -10,6 +10,6 @@ import UIKit
 
 
 class YourSessions {
-    var item = [Session]()
+    var item = [SessionDetile]()
 }
 var yourSessions = YourSessions()

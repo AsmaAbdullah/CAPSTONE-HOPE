@@ -44,9 +44,9 @@ class EndOfSessionVC: UIViewController {
         
         alert.addAction(UIAlertAction(title: "Rate", style: .default, handler: { (alert) in
            
-            self.performSegue(withIdentifier: "backHome", sender: nil)
+//            self.performSegue(withIdentifier: "backHome", sender: nil)
 //            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let vc = storyboard.instantiateViewController(withIdentifier: "Home")
+//            let vc = storyboard.instantiateViewController(withIdentifier: "backHome")
 //            vc.modalPresentationStyle = .automatic
 //            self.present(vc, animated: true)
         }))

@@ -22,7 +22,7 @@ class ProfileTableVC: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        //for save certain data on the internet
+        //MARK: for save certain data on the internet
         
         UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { profile in
             self.profile = profile

@@ -25,11 +25,11 @@
 		044B201B2761557D0095734C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B201A2761557D0095734C /* UIImage.swift */; };
 		044B201F27615A480095734C /* ArrayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B201E27615A480095734C /* ArrayModel.swift */; };
 		044B2021276179710095734C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B2020276179710095734C /* HomeTableViewCell.swift */; };
+		048854BD2785D93000CB2857 /* YourSessionsList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048854BB2785D93000CB2857 /* YourSessionsList+CoreDataClass.swift */; };
+		048854BE2785D93000CB2857 /* YourSessionsList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048854BC2785D93000CB2857 /* YourSessionsList+CoreDataProperties.swift */; };
 		048FA2902768AD3200D918A2 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA28F2768AD3200D918A2 /* Session.swift */; };
 		048FA2932768B04400D918A2 /* YourSessionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2922768B04400D918A2 /* YourSessionsVC.swift */; };
 		048FA2A92768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2A72768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld */; };
-		048FA2AC2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2AA2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift */; };
-		048FA2AD2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA2AB2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift */; };
 		04927CC6277B0A000081FB4F /* APIVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04927CC5277B0A000081FB4F /* APIVideoVC.swift */; };
 		04927CC8277B182A0081FB4F /* ConstantsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04927CC7277B182A0081FB4F /* ConstantsAPI.swift */; };
 		04927CCA277B1D3F0081FB4F /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04927CC9277B1D3F0081FB4F /* Video.swift */; };
@@ -75,11 +75,11 @@
 		044B201A2761557D0095734C /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		044B201E27615A480095734C /* ArrayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayModel.swift; sourceTree = "<group>"; };
 		044B2020276179710095734C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		048854BB2785D93000CB2857 /* YourSessionsList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YourSessionsList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		048854BC2785D93000CB2857 /* YourSessionsList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YourSessionsList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		048FA28F2768AD3200D918A2 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		048FA2922768B04400D918A2 /* YourSessionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourSessionsVC.swift; sourceTree = "<group>"; };
 		048FA2A82768BDC700D918A2 /* BeneficiarySessions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeneficiarySessions.xcdatamodel; sourceTree = "<group>"; };
-		048FA2AA2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YourSessionsList+CoreDataClass.swift"; sourceTree = "<group>"; };
-		048FA2AB2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YourSessionsList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		04927CC5277B0A000081FB4F /* APIVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIVideoVC.swift; sourceTree = "<group>"; };
 		04927CC7277B182A0081FB4F /* ConstantsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsAPI.swift; sourceTree = "<group>"; };
 		04927CC9277B1D3F0081FB4F /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
@@ -123,6 +123,8 @@
 		043FD791275F3BA500D91C48 = {
 			isa = PBXGroup;
 			children = (
+				048854BB2785D93000CB2857 /* YourSessionsList+CoreDataClass.swift */,
+				048854BC2785D93000CB2857 /* YourSessionsList+CoreDataProperties.swift */,
 				043FD79C275F3BA500D91C48 /* HOPE */,
 				043FD79B275F3BA500D91C48 /* Products */,
 				04BB3F8D27620CAA00772E4A /* Frameworks */,
@@ -222,8 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				048FA2A72768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld */,
-				048FA2AA2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift */,
-				048FA2AB2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -334,11 +334,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04927CCC277B1DBE0081FB4F /* Model.swift in Sources */,
+				048854BD2785D93000CB2857 /* YourSessionsList+CoreDataClass.swift in Sources */,
 				04075FD6277C51D2005C130F /* ProfileTableVC.swift in Sources */,
 				048FA2932768B04400D918A2 /* YourSessionsVC.swift in Sources */,
 				04B7806B276B26A9009AB254 /* SessionsVC.swift in Sources */,
 				044B201327602FE00095734C /* SignupVC.swift in Sources */,
-				048FA2AD2768BE5600D918A2 /* YourSessionsList+CoreDataProperties.swift in Sources */,
 				043FD79E275F3BA500D91C48 /* AppDelegate.swift in Sources */,
 				04C66DFD27809C6000FFC06B /* PhoneNumber.swift in Sources */,
 				04BB3F932762228D00772E4A /* StructSession.swift in Sources */,
@@ -349,7 +349,6 @@
 				044B201F27615A480095734C /* ArrayModel.swift in Sources */,
 				04075FDA277D9F9A005C130F /* NumberTableViewCell.swift in Sources */,
 				04BB3F9627653F8400772E4A /* LocationsVC.swift in Sources */,
-				048FA2AC2768BE5600D918A2 /* YourSessionsList+CoreDataClass.swift in Sources */,
 				044B20162761478B0095734C /* HomeVC.swift in Sources */,
 				04927CD4277BA29E0081FB4F /* VideoDetailVC.swift in Sources */,
 				044B201127602FCA0095734C /* LoginVC.swift in Sources */,
@@ -365,6 +364,7 @@
 				04927CCE277B2EF60081FB4F /* Response.swift in Sources */,
 				048FA2902768AD3200D918A2 /* Session.swift in Sources */,
 				044B201B2761557D0095734C /* UIImage.swift in Sources */,
+				048854BE2785D93000CB2857 /* YourSessionsList+CoreDataProperties.swift in Sources */,
 				04BB0B3C278312F400425636 /* MeasuresCollectionViewCell.swift in Sources */,
 				04BB3F9127621C8000772E4A /* SessionContent.swift in Sources */,
 				04927CC6277B0A000081FB4F /* APIVideoVC.swift in Sources */,

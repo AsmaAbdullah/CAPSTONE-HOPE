@@ -12,10 +12,10 @@ class MeasuresVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     var measures = [MeasuresInfo]()
     var selsectedMeasures: MeasuresInfo!
     
-        
+    
     @IBOutlet weak var measuresCollectionView: UICollectionView!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +24,7 @@ class MeasuresVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         
         measures.append(MeasuresInfo.init(title: "Depression Measurement", image: UIImage(resource: .Session3)!))
         measures.append(MeasuresInfo.init(title: "Tension Measurement", image: UIImage(resource: .Session1)!))
-
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -57,6 +57,6 @@ class MeasuresVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
             vc.selsectedMeasures = selsectedMeasures
         }
     }
-
+    
 }
 

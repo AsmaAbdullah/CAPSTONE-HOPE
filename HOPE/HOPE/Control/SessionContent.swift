@@ -7,12 +7,16 @@
 
 import UIKit
 import CoreData
+import FirebaseAuth
+import FirebaseFirestore
 
 class SessionContent: UIViewController {
     
     
     var selectedSession: Session!
     var arraySession = [Session]()
+    var mySession = [String]()
+
     
     @IBOutlet weak var imageSession: UIImageView!
     @IBOutlet weak var titleSession: UILabel!
@@ -61,12 +65,14 @@ class SessionContent: UIViewController {
             }
         }
         
-        
         createNewList(titleSession: selectedSession.titleSessions  , imageSession:  selectedSession.image)
         
         let alertController = UIAlertController(title: "", message: "Has been successfully added", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
+        
+
+        
     }
     
     // MARK: - CORE-DATA
@@ -78,6 +84,7 @@ class SessionContent: UIViewController {
             let list = YourSessionsList(context: context)
             list.titleSession = titleSession
             list.imageSession = imageSession
+            list.uid = Auth.auth().currentUser?.uid ?? ""
             do {
                 try context.save()
             } catch {
