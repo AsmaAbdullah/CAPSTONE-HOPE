@@ -10,7 +10,6 @@ import UIKit
 class ImportantNumbersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
 
-//    var arrayNumber = [PhoneNumbers]()
     private var isOpeningPhoneURL = false
 
     let numbers = [
@@ -34,7 +33,6 @@ class ImportantNumbersVC: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         numberTableView.delegate = self
         numberTableView.dataSource = self
-//        setInformation()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

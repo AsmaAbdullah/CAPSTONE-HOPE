@@ -38,6 +38,7 @@
 		04927CD0277B837F0081FB4F /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04927CCF277B837F0081FB4F /* VideoTableViewCell.swift */; };
 		04927CD2277B8C4F0081FB4F /* CacheManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = 04927CD1277B8C4F0081FB4F /* CacheManager .swift */; };
 		04927CD4277BA29E0081FB4F /* VideoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04927CD3277BA29E0081FB4F /* VideoDetailVC.swift */; };
+		04B276F527870A0A002BD8CA /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 04B276F427870A0A002BD8CA /* SwiftMessages */; };
 		04B7806B276B26A9009AB254 /* SessionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7806A276B26A9009AB254 /* SessionsVC.swift */; };
 		04B8962F27799BEB0014C455 /* SessionTopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8962E27799BEB0014C455 /* SessionTopicVC.swift */; };
 		04B8963127799C290014C455 /* EndOfSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8963027799C290014C455 /* EndOfSessionVC.swift */; };
@@ -113,6 +114,7 @@
 				043FD7B5275F7F6B00D91C48 /* FirebaseAnalytics in Frameworks */,
 				043FD7B7275F7F6B00D91C48 /* FirebaseAuth in Frameworks */,
 				04C66E0027809FCB00FFC06B /* WebKit.framework in Frameworks */,
+				04B276F527870A0A002BD8CA /* SwiftMessages in Frameworks */,
 				04BB3F8F27620CAA00772E4A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,8 +125,6 @@
 		043FD791275F3BA500D91C48 = {
 			isa = PBXGroup;
 			children = (
-				048854BB2785D93000CB2857 /* YourSessionsList+CoreDataClass.swift */,
-				048854BC2785D93000CB2857 /* YourSessionsList+CoreDataProperties.swift */,
 				043FD79C275F3BA500D91C48 /* HOPE */,
 				043FD79B275F3BA500D91C48 /* Products */,
 				04BB3F8D27620CAA00772E4A /* Frameworks */,
@@ -224,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				048FA2A72768BDC700D918A2 /* BeneficiarySessions.xcdatamodeld */,
+				048854BB2785D93000CB2857 /* YourSessionsList+CoreDataClass.swift */,
+				048854BC2785D93000CB2857 /* YourSessionsList+CoreDataProperties.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -272,6 +274,7 @@
 				043FD7B6275F7F6B00D91C48 /* FirebaseAuth */,
 				04BB3F8E27620CAA00772E4A /* FirebaseFirestore */,
 				04F3EB9E2781B70A00F57333 /* Cosmos */,
+				04B276F427870A0A002BD8CA /* SwiftMessages */,
 			);
 			productName = HOPE;
 			productReference = 043FD79A275F3BA500D91C48 /* HOPE.app */;
@@ -304,6 +307,7 @@
 			packageReferences = (
 				043FD7B3275F7F6B00D91C48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				04F3EB9D2781B70A00F57333 /* XCRemoteSwiftPackageReference "Cosmos" */,
+				04B276F327870A0A002BD8CA /* XCRemoteSwiftPackageReference "SwiftMessages" */,
 			);
 			productRefGroup = 043FD79B275F3BA500D91C48 /* Products */;
 			projectDirPath = "";
@@ -600,6 +604,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		04B276F327870A0A002BD8CA /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		04F3EB9D2781B70A00F57333 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
@@ -620,6 +632,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 043FD7B3275F7F6B00D91C48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		04B276F427870A0A002BD8CA /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04B276F327870A0A002BD8CA /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
 		};
 		04BB3F8E27620CAA00772E4A /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;

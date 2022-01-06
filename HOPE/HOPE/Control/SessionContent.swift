@@ -9,6 +9,7 @@ import UIKit
 import CoreData
 import FirebaseAuth
 import FirebaseFirestore
+import SwiftMessages
 
 class SessionContent: UIViewController {
     
@@ -57,19 +58,36 @@ class SessionContent: UIViewController {
         for sessionList in sessionsLists {
             if sessionList.titleSession == selectedSession.titleSessions {
                 
-                let alertController = UIAlertController(title: "", message: "You Already have added this session", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                self.present(alertController, animated: true, completion: nil)
+                let message: MessageView = MessageView.viewFromNib(layout: .messageView)
+                message.configureTheme(.warning)
+                message.configureContent(body: "You Already have added this session")
+                
+                var config = SwiftMessages.defaultConfig
+                config.presentationContext = .view(view)
+                config.duration = .automatic
+                config.presentationStyle = .top
+                
+                SwiftMessages.show(config: config, view: message)
                 
                 return
             }
         }
         
+        
+        
         createNewList(titleSession: selectedSession.titleSessions  , imageSession:  selectedSession.image)
         
-        let alertController = UIAlertController(title: "", message: "Has been successfully added", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alertController, animated: true, completion: nil)
+        let message: MessageView = MessageView.viewFromNib(layout: .messageView)
+        message.configureTheme(.success)
+                
+        message.configureContent(body: "Has been successfully added")
+        
+        var config = SwiftMessages.defaultConfig
+        config.presentationContext = .view(view)
+        config.duration = .automatic
+        config.presentationStyle = .top
+        
+        SwiftMessages.show(config: config, view: message)
         
 
         

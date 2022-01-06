@@ -105,11 +105,11 @@
             <objects>
                 <viewController storyboardIdentifier="backHome" modalPresentationStyle="fullScreen" id="4eT-7Y-R6A" customClass="HomeVC" customModule="HOPE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wbB-fI-Xsj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pm5-mQ-FcG">
-                                <rect key="frame" x="0.0" y="98" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="66" width="414" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="TQt-E5-V77"/>
                                 </constraints>
@@ -142,7 +142,7 @@
                                 </cells>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oY7-0V-eaY">
-                                <rect key="frame" x="0.0" y="261" width="414" height="552"/>
+                                <rect key="frame" x="0.0" y="229" width="414" height="530"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sessionCell" rowHeight="120" id="ctV-27-nUR" customClass="HomeTableViewCell" customModule="HOPE" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="120"/>
@@ -211,23 +211,23 @@
             <objects>
                 <viewController id="c9K-k4-cH2" customClass="SessionContent" customModule="HOPE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Az9-rn-D2l">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uCp-vk-Nnk">
-                                <rect key="frame" x="20" y="108" width="374" height="365"/>
+                                <rect key="frame" x="20" y="76" width="374" height="365"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="365" id="LaQ-Pf-6QT"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of session" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFq-Va-vmL">
-                                <rect key="frame" x="20" y="493" width="374" height="27"/>
+                                <rect key="frame" x="20" y="461" width="374" height="27"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEX-k5-FcC">
-                                <rect key="frame" x="20" y="540" width="374" height="120"/>
+                                <rect key="frame" x="20" y="508" width="374" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="PX2-Rx-g8Y"/>
                                 </constraints>
@@ -236,7 +236,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbb-UB-eZ9">
-                                <rect key="frame" x="150" y="680" width="114" height="31"/>
+                                <rect key="frame" x="150" y="648" width="114" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Enroll" cornerStyle="capsule"/>
                                 <connections>
@@ -969,7 +969,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Rzf-zs-1Oy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BIN-Ee-hBy">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1329,13 +1329,13 @@
         <!--Session TopicVC-->
         <scene sceneID="zcc-6L-iLU">
             <objects>
-                <viewController id="0b8-hA-uxI" customClass="SessionTopicVC" customModule="HOPE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="0b8-hA-uxI" customClass="SessionTopicVC" customModule="HOPE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dr0-m2-L1p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1650"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xic-lZ-22z">
-                                <rect key="frame" x="0.0" y="88" width="414" height="1479"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="1528"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ljF-Vd-E3i">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1479"/>
@@ -1434,7 +1434,7 @@
         <!--End Of SessionVC-->
         <scene sceneID="wBo-g7-1MC">
             <objects>
-                <viewController id="pFc-Sc-mO5" customClass="EndOfSessionVC" customModule="HOPE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="pFc-Sc-mO5" customClass="EndOfSessionVC" customModule="HOPE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8mo-7w-lfJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1485,6 +1485,7 @@
                         <outlet property="buttoneDone" destination="rCL-9s-JYY" id="HU9-rH-4rX"/>
                         <outlet property="sessionContent" destination="tac-Px-Dke" id="ii8-oV-jDr"/>
                         <outlet property="subTitleSession" destination="qfa-zb-rip" id="ZZ5-2Y-iLB"/>
+                        <segue destination="42o-Jb-iD1" kind="presentation" identifier="backHome" id="f9x-bn-DWS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WL8-fF-zkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1531,6 +1532,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="f9x-bn-DWS"/>
         <segue reference="0wg-qU-dQW"/>
     </inferredMetricsTieBreakers>
     <resources>

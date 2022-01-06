@@ -22,7 +22,7 @@ class ProfileTableVC: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        //MARK: for save certain data on the internet
+        //MARK: for save certain data on the Fairbase
         
         UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { profile in
             self.profile = profile
@@ -102,14 +102,6 @@ class ProfileTableVC: UITableViewController {
         }))
         alertController.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
         self.present(alertController, animated: true, completion: nil)
-        
-//        let firebaseAuth = Auth.auth()
-//        do {
-//            try firebaseAuth.signOut()
-//            self.dismiss(animated: true, completion: nil)
-//        } catch let signOutError as NSError {
-//            print("Error signing out: %@", signOutError)
-//        }
     }
     
     

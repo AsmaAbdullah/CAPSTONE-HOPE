@@ -15,7 +15,7 @@ class UserApi {
         let refUsers = Firestore.firestore().collection("Users")
         
         
-        refUsers.document(uid).setData(User.CreateUser(name: name, email: email, isPsyco: isPsyco, mySession: []))
+        refUsers.document(uid).setData(User.CreateUser(name: name, email: email, isPsyco: isPsyco))
         
         completion(true)
         
@@ -30,10 +30,5 @@ class UserApi {
                 completion(user)
             }
         }
-    }
-    
-    static func addLikes(uid:String,mySession:[String]) {
-        let refUsers = Firestore.firestore().collection("Users")
-        refUsers.document(uid).setData(["mySession":mySession],merge: true)
     }
 }
