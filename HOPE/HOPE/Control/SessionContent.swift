@@ -58,7 +58,7 @@ class SessionContent: UIViewController {
         for sessionList in sessionsLists {
             if sessionList.titleSession == selectedSession.titleSessions {
                 
-                let message: MessageView = MessageView.viewFromNib(layout: .messageView)
+                let message: MessageView = MessageView.viewFromNib(layout: .cardView)
                 message.configureTheme(.warning)
                 message.configureContent(body: "You Already have added this session")
                 
@@ -77,7 +77,7 @@ class SessionContent: UIViewController {
         
         createNewList(titleSession: selectedSession.titleSessions  , imageSession:  selectedSession.image)
         
-        let message: MessageView = MessageView.viewFromNib(layout: .messageView)
+        let message: MessageView = MessageView.viewFromNib(layout: .cardView)
         message.configureTheme(.success)
                 
         message.configureContent(body: "Has been successfully added")
@@ -88,8 +88,6 @@ class SessionContent: UIViewController {
         config.presentationStyle = .top
         
         SwiftMessages.show(config: config, view: message)
-        
-
         
     }
     

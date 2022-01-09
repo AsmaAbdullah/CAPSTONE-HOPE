@@ -23,6 +23,8 @@ class NumberTableViewCell: UITableViewCell {
     
     @IBAction func clickToCall(_ sender: UIButton) {
 
+        UIPasteboard.general.string = numberLabel.text
+
         
         }
     

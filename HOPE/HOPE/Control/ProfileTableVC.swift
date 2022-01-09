@@ -35,9 +35,9 @@ class ProfileTableVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if (indexPath.section == 1) && (indexPath.row == 0) {
-            let alert = UIAlertController(title: "IOh ", message: "This email is not already Signup", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-            self.present(alert, animated: true)
+//            let alert = UIAlertController(title: "Oh ", message: "This email is not already Signup", preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+//            self.present(alert, animated: true)
         }
         
         

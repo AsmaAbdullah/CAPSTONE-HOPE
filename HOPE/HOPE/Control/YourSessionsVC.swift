@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import FirebaseAuth
+import SwiftMessages
 
 
 class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -18,11 +19,10 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     var listSession = [SessionDetile]()
     var selectedListSession: SetDetile?
     
+
     //    var listSession = [SessionDetile]()
     //    var selectedListSessions: Sessions!
-    
-    var mySession = [String]()
-    
+        
     
     // MARK: - CORE-DATA
     
@@ -120,7 +120,53 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         //        }
         
     }
+  
     
+//    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+//
+//        let deleteSession = UIContextualAction(style: .destructive, title: "Delete") { (action, view, complemntion) in
+//            self.yourSessionsList.remove(at: indexPath.row)
+//            self.yourSessionTable.deleteRows(at: [indexPath], with: .automatic)
+//            complemntion(true)
+//        }
+//        deleteSession.backgroundColor = .red
+//
+//        let swipAction = UISwipeActionsConfiguration(actions: [deleteSession])
+//        swipAction.performsFirstActionWithFullSwipe = true
+//        return swipAction
+//
+//    }
+//
+//    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+//        return true
+//    }
+    
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            
+            let elart = UIAlertController(title: "are uoy shyre?", message: "", preferredStyle: .alert)
+            elart.addAction(UIAlertAction(title: "Ok", style: .default, handler: { actions in
+                let sessions = self.yourSessionsList[indexPath.row]
+                self.yourSessionsList.remove(at: indexPath.row)
+                self.yourSessionTable.deleteRows(at: [indexPath], with: .automatic)
+                
+                //MARK: Delete from core data object
+                let context = self.persistentContainer.viewContext
+                context.delete(sessions)
+                do {
+                    try context.save()
+                } catch let saveErr {
+                    print("failed to delete", saveErr)
+                }
+            }))
+            elart.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+            self.present(elart, animated: true)
+        }
+    }
+    
+        
     //MARK: - Fetch for COREDATA
     
     func fetchAllLists() {

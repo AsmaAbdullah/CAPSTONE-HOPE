@@ -55,15 +55,19 @@ class ImportantNumbersVC: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let number = numbers[indexPath.row]
+        
+//        UIPasteboard.general.string =
 
-      UIApplication.shared.open(number.phoneNumber.url) { success in
-        if success {
-          self.isOpeningPhoneURL = true
-        } else {
-          tableView.deselectRow(at: indexPath, animated: true)
-        }
-      }
+        
+//        let number = numbers[indexPath.row]
+//
+//      UIApplication.shared.open(number.phoneNumber.url) { success in
+//        if success {
+//          self.isOpeningPhoneURL = true
+//        } else {
+//          tableView.deselectRow(at: indexPath, animated: true)
+//        }
+//      }
     }
 }
 
