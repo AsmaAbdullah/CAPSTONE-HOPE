@@ -18,7 +18,7 @@ class Model {
     func getVideos() {
         
         //URL object
-        let url = URL(string: Constants.API_URL)
+        let url = URL(string: "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLB46CADF62B6D3ABB&key=AIzaSyCcBlEFFevyB565S9tuYBtiYHYD_f4ihTo")
         guard url != nil else {
             return
         }
@@ -46,11 +46,11 @@ class Model {
                         self.delegate?.videosFetched(response.items!)
                     }
                 }
-//                dump(response)
+                //                dump(response)
             } catch {
                 
             }
-           
+            
         }
         // Kick off the task
         dataTask.resume()

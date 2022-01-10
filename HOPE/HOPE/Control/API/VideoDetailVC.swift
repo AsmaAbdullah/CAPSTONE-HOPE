@@ -40,10 +40,10 @@ class VideoDetailVC: UIViewController {
         }
         
         //Create the embed URL
-        let embedUrlString = Constants.YT_EMBED_URL + video!.videoId
+//        let embedUrlString = "https://www.youtube.com/embed/" + video!.videoId
         
         //Load it into webview
-        let url = URL(string: embedUrlString)
+        let url = URL(string: "https://www.youtube.com/embed/" + video!.videoId)
         let request = URLRequest(url: url!)
         webView.load(request)
         

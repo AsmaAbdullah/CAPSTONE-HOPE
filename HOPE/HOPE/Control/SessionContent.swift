@@ -16,7 +16,6 @@ class SessionContent: UIViewController {
     
     var selectedSession: Session!
     var arraySession = [Session]()
-    var mySession = [String]()
 
     
     @IBOutlet weak var imageSession: UIImageView!
@@ -37,8 +36,6 @@ class SessionContent: UIViewController {
         return container
     }()
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageSession.image = UIImage(named: selectedSession.image)
@@ -52,6 +49,9 @@ class SessionContent: UIViewController {
     }
     
     @IBAction func enrollSession(_ sender: UIButton) {
+    
+        
+        //MARK: Checks if the session is already added or not
         
         let sessionsLists = fetchAllLists()
         
@@ -73,9 +73,9 @@ class SessionContent: UIViewController {
             }
         }
         
+        //MARK: Add the session to your sessions
         
-        
-        createNewList(titleSession: selectedSession.titleSessions  , imageSession:  selectedSession.image)
+        createNewList(titleSession: selectedSession.titleSessions, imageSession:  selectedSession.image)
         
         let message: MessageView = MessageView.viewFromNib(layout: .cardView)
         message.configureTheme(.success)
@@ -88,7 +88,6 @@ class SessionContent: UIViewController {
         config.presentationStyle = .top
         
         SwiftMessages.show(config: config, view: message)
-        
     }
     
     // MARK: - CORE-DATA

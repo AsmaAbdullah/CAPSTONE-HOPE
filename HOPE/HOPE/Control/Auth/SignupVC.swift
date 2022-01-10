@@ -24,6 +24,14 @@ class SignupVC: UIViewController {
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//
+//        //MARK: Confirm the existence of the account
+//        if Auth.auth().currentUser != nil {
+//            performSegue(withIdentifier: "toHome", sender: nil)
+//        }
+//    }
 
     // MARK: - Switch
     

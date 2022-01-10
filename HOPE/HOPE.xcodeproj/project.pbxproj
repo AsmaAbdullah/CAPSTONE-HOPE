@@ -48,8 +48,6 @@
 		04BB3F9127621C8000772E4A /* SessionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F9027621C8000772E4A /* SessionContent.swift */; };
 		04BB3F932762228D00772E4A /* StructSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F922762228D00772E4A /* StructSession.swift */; };
 		04BB3F9627653F8400772E4A /* LocationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3F9527653F8300772E4A /* LocationsVC.swift */; };
-		04C66DFD27809C6000FFC06B /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C66DFC27809C6000FFC06B /* PhoneNumber.swift */; };
-		04C66DFF27809D1D00FFC06B /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C66DFE27809D1D00FFC06B /* Support.swift */; };
 		04C66E0027809FCB00FFC06B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04927CD5277BA7230081FB4F /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,8 +92,6 @@
 		04BB3F9027621C8000772E4A /* SessionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContent.swift; sourceTree = "<group>"; };
 		04BB3F922762228D00772E4A /* StructSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructSession.swift; sourceTree = "<group>"; };
 		04BB3F9527653F8300772E4A /* LocationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsVC.swift; sourceTree = "<group>"; };
-		04C66DFC27809C6000FFC06B /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
-		04C66DFE27809D1D00FFC06B /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,8 +190,6 @@
 				048FA28F2768AD3200D918A2 /* Session.swift */,
 				04BB3F8927620BAE00772E4A /* User.swift */,
 				04BB3F8B27620BCC00772E4A /* UserApi.swift */,
-				04C66DFC27809C6000FFC06B /* PhoneNumber.swift */,
-				04C66DFE27809D1D00FFC06B /* Support.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,7 +325,6 @@
 				04B7806B276B26A9009AB254 /* SessionsVC.swift in Sources */,
 				044B201327602FE00095734C /* SignupVC.swift in Sources */,
 				043FD79E275F3BA500D91C48 /* AppDelegate.swift in Sources */,
-				04C66DFD27809C6000FFC06B /* PhoneNumber.swift in Sources */,
 				04BB3F932762228D00772E4A /* StructSession.swift in Sources */,
 				044B201827614AAF0095734C /* HomeCollectionViewCell.swift in Sources */,
 				04927CD2277B8C4F0081FB4F /* CacheManager .swift in Sources */,
@@ -345,7 +338,6 @@
 				044B201127602FCA0095734C /* LoginVC.swift in Sources */,
 				044B2021276179710095734C /* HomeTableViewCell.swift in Sources */,
 				04B8963127799C290014C455 /* EndOfSessionVC.swift in Sources */,
-				04C66DFF27809D1D00FFC06B /* Support.swift in Sources */,
 				043FD7A0275F3BA500D91C48 /* SceneDelegate.swift in Sources */,
 				04075FD8277D9A71005C130F /* ImportantNumbersVC.swift in Sources */,
 				04BB3F8A27620BAE00772E4A /* User.swift in Sources */,

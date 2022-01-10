@@ -9,23 +9,24 @@ import UIKit
 
 class ImportantNumbersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
-
-    private var isOpeningPhoneURL = false
-
-    let numbers = [
-        Support(facilityName: ["(937) Service"], phoneNumber: PhoneNumber("937")),
-        Support(facilityName: ["National Center (NCMH)"], phoneNumber: PhoneNumber("920033360")),
-        Support(facilityName: ["Atfalona Association"], phoneNumber: PhoneNumber("0555886470")),
-        Support(facilityName: ["Zahra Association"], phoneNumber: PhoneNumber("0114833652")),
-        Support(facilityName: ["Amass Association"], phoneNumber: PhoneNumber("0114415566")),
-        Support(facilityName: ["Saudi Cancer Society"], phoneNumber: PhoneNumber("0114402025")),
-        Support(facilityName: ["Al-Hayat Association"], phoneNumber: PhoneNumber("0545939786")),
-        Support(facilityName: ["Tfaul Association"], phoneNumber: PhoneNumber("0135621112")),
-        Support(facilityName: ["Tahoor Association"], phoneNumber: PhoneNumber("0163638181")),
-        Support(facilityName: ["Sanad Association"], phoneNumber: PhoneNumber("920029997")),
-        Support(facilityName: ["Basma Association"], phoneNumber: PhoneNumber("0165310022")),
-        Support(facilityName: ["King Faisal Specialist Hospital"], phoneNumber: PhoneNumber("199019")),
-    ]
+    var importantNumber = [PhoneNumber]()
+    
+//    let numbers = [
+//        Support(facilityName: ["(937) Service"], phoneNumber: PhoneNumber("937")),
+//        Support(facilityName: ["National Center (NCMH)"], phoneNumber: PhoneNumber("920033360")),
+//        Support(facilityName: ["Atfalona Association"], phoneNumber: PhoneNumber("0555886470")),
+//        Support(facilityName: ["Zahra Association"], phoneNumber: PhoneNumber("0114833652")),
+//        Support(facilityName: ["Amass Association"], phoneNumber: PhoneNumber("0114415566")),
+//        Support(facilityName: ["Saudi Cancer Society"], phoneNumber: PhoneNumber("0114402025")),
+//        Support(facilityName: ["Al-Hayat Association"], phoneNumber: PhoneNumber("0545939786")),
+//        Support(facilityName: ["Tfaul Association"], phoneNumber: PhoneNumber("0135621112")),
+//        Support(facilityName: ["Tahoor Association"], phoneNumber: PhoneNumber("0163638181")),
+//        Support(facilityName: ["Sanad Association"], phoneNumber: PhoneNumber("920029997")),
+//        Support(facilityName: ["Basma Association"], phoneNumber: PhoneNumber("0165310022")),
+//        Support(facilityName: ["King Faisal Specialist Hospital"], phoneNumber: PhoneNumber("199019")),
+//    ]
+    
+    
     
     @IBOutlet weak var numberTableView: UITableView!
     
@@ -33,18 +34,23 @@ class ImportantNumbersVC: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         numberTableView.delegate = self
         numberTableView.dataSource = self
+        
+        setPhoneNumber()
+        
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numbers.count
+        return importantNumber.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "numberCell", for: indexPath) as! NumberTableViewCell
-        let data = numbers[indexPath.row]
-        cell.titleLabel.text = data.localizedName
-        cell.numberLabel.text = data.phoneNumber.rawValue
+        let data = importantNumber[indexPath.row]
+        cell.titleLabel.text = data.title
+        cell.numberLabel.text = data.number
         return cell
     }
     
@@ -53,12 +59,7 @@ class ImportantNumbersVC: UIViewController, UITableViewDelegate, UITableViewData
         return 85
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
-//        UIPasteboard.general.string =
-
-        
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        let number = numbers[indexPath.row]
 //
 //      UIApplication.shared.open(number.phoneNumber.url) { success in
@@ -68,6 +69,22 @@ class ImportantNumbersVC: UIViewController, UITableViewDelegate, UITableViewData
 //          tableView.deselectRow(at: indexPath, animated: true)
 //        }
 //      }
+//    }
+    
+    fileprivate func setPhoneNumber() {
+        importantNumber.append(PhoneNumber.init(title: "(937) Service", number: "937"))
+        importantNumber.append(PhoneNumber.init(title: "National Center (NCMH)", number: "920033360"))
+        importantNumber.append(PhoneNumber.init(title: "King Faisal Specialist Hospital", number: "199019"))
+        importantNumber.append(PhoneNumber.init(title: "Saudi Cancer Society", number: "0114402025"))
+        importantNumber.append(PhoneNumber.init(title: "Zahra Association", number: "0114833652"))
+        importantNumber.append(PhoneNumber.init(title: "Sanad Association", number: "920029997"))
+        importantNumber.append(PhoneNumber.init(title: "Basma Association", number: "0165310022"))
+        importantNumber.append(PhoneNumber.init(title: "Atfalona Association", number: "0555886470"))
+        importantNumber.append(PhoneNumber.init(title: "Amass Association", number: "0114415566"))
+        importantNumber.append(PhoneNumber.init(title: "Al-Hayat Association", number: "0545939786"))
+        importantNumber.append(PhoneNumber.init(title: "Tfaul Association", number: "0135621112"))
+        importantNumber.append(PhoneNumber.init(title: "Tahoor Association", number: "0163638181"))
     }
+    
 }
 

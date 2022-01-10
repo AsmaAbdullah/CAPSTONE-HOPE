@@ -29,7 +29,6 @@ class LoginVC: UIViewController {
         if Auth.auth().currentUser != nil {
             performSegue(withIdentifier: "toHome", sender: nil)
         }
-        
     }
     
     // MARK: - Login Button
@@ -68,14 +67,14 @@ class LoginVC: UIViewController {
                 } else {
                 self?.performSegue(withIdentifier: "toHome", sender: nil)
                 }
-//                self?.checkUserInfo()
+                self?.checkUserInfo()
             }
         }
     
-//
-//        func checkUserInfo() {
-//            if Auth.auth().currentUser != nil {
-//                print(Auth.auth().currentUser?.uid)
-//            }
-//        }
+
+        func checkUserInfo() {
+            if Auth.auth().currentUser != nil {
+                print(Auth.auth().currentUser?.uid)
+            }
+        }
     }

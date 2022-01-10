@@ -40,10 +40,10 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let uid = Auth.auth().currentUser?.uid {
-            UserApi.getUser(uid: uid) { user in
-            }
-        }
+//        if let uid = Auth.auth().currentUser?.uid {
+//            UserApi.getUser(uid: uid) { user in
+//            }
+//        }
         
         
         collectionView.delegate = self
@@ -62,12 +62,12 @@ class HomeVC: UIViewController {
         arraySession.append(Session.init(image: UIImageResource.Session1.rawValue, titleSessions: "Self-Image and Cancer", Content: "- Physical changes.\n- Emotional changes.\n- Coping with self-image changes."))
         arraySession.append(Session.init(image: UIImageResource.Session2.rawValue, titleSessions: "Coping With Uncertainty", Content: "- Causes of uncertainty.\n- Dealing with the “what ifs” of cancer."))
         arraySession.append(Session.init(image: UIImageResource.Session3.rawValue, titleSessions: "Managing Stress", Content: "- Tips for reducing stress.\n- Stress management strategies.\n- Relaxation techniques."))
-        arraySession.append(Session.init(image: UIImageResource.Session3.rawValue, titleSessions: "Coping with Anger", Content: "- Coping with anger\n- Considering counseling"))
-        arraySession.append(Session.init(image: UIImageResource.Session3.rawValue, titleSessions: "Anxiety", Content: "- Anxiety and cancer.\n- Acute anxiety symptoms.\n- Chronic anxiety symptoms.\n- Treatment types."))
-        arraySession.append(Session.init(image: UIImageResource.Session3.rawValue, titleSessions: "Depression", Content: "- Mood-related symptoms.\n- Behavioral symptoms.\n- Physical symptoms.\n- Treatment of depression."))
-        arraySession.append(Session.init(image: UIImageResource.Session3.rawValue, titleSessions: "Managing the Fear", Content: "- How can I cope with my fears of side effects?\n- Talking about your fear of cancer side effects.\n- Questions to ask the health care team."))
-        arraySession.append(Session.init(image: UIImageResource.Session3.rawValue, titleSessions: "Coping with Guilt", Content: "- Coping with guilt.\n- Letting go of guilt."))
-        arraySession.append(Session.init(image: UIImageResource.Session3.rawValue, titleSessions: "Coping with Cancer", Content: "- Naming metastatic cancer.\n- Goals of treatment\n- The challenges of living with cancer"))
+        arraySession.append(Session.init(image: UIImageResource.Session4.rawValue, titleSessions: "Coping with Anger", Content: "- Coping with anger\n- Considering counseling"))
+        arraySession.append(Session.init(image: UIImageResource.Session5.rawValue, titleSessions: "Anxiety", Content: "- Anxiety and cancer.\n- Acute anxiety symptoms.\n- Chronic anxiety symptoms.\n- Treatment types."))
+        arraySession.append(Session.init(image: UIImageResource.Session6.rawValue, titleSessions: "Depression", Content: "- Mood-related symptoms.\n- Behavioral symptoms.\n- Physical symptoms.\n- Treatment of depression."))
+        arraySession.append(Session.init(image: UIImageResource.Session7.rawValue, titleSessions: "Managing the Fear", Content: "- How can I cope with my fears of side effects?\n- Talking about your fear of cancer side effects.\n- Questions to ask the health care team."))
+        arraySession.append(Session.init(image: UIImageResource.Session8.rawValue, titleSessions: "Coping with Guilt", Content: "- Coping with guilt.\n- Letting go of guilt."))
+        arraySession.append(Session.init(image: UIImageResource.Session9.rawValue, titleSessions: "Coping with Cancer", Content: "- Naming metastatic cancer.\n- Goals of treatment\n- The challenges of living with cancer"))
     }
 }
 

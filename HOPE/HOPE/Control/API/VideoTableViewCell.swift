@@ -22,6 +22,11 @@ class VideoTableViewCell: UITableViewCell {
         thumbnailImageView.layer.cornerRadius = 12
         thumbnailImageView.layer.borderColor = UIColor.lightGray.cgColor
         thumbnailImageView.layer.borderWidth = 1.0
+        
+//        thumbnailImageView.layer.shadowColor = UIColor.placeholderText.cgColor
+//        thumbnailImageView.layer.shadowOpacity = 10
+//        thumbnailImageView.layer.shadowOffset = .zero
+//        thumbnailImageView.layer.shadowRadius = 3
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
