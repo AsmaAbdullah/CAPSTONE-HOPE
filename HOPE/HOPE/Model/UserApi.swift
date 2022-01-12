@@ -23,6 +23,7 @@ class UserApi {
     static func getUser(uid:String,completion: @escaping (User) -> Void) {
        
         let refUsers = Firestore.firestore().collection("Users")
+
         
         refUsers.document(uid).getDocument { document, error in
             if let document = document, document.exists {

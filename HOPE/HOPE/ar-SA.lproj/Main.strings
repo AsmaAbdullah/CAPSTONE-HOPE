@@ -1,0 +1,237 @@
+
+/* Class = "UILabel"; text = "Topic 1"; ObjectID = "0dJ-s0-xA5"; */
+"0dJ-s0-xA5.text" = "الموضوع 1";
+
+/* Class = "UILabel"; text = "Create your account"; ObjectID = "2WN-LR-zS3"; */
+"2WN-LR-zS3.text" = "أنشئ حسابك";
+
+/* Class = "UIButton"; configuration.title = "Most Days"; ObjectID = "6Dn-8r-ts4"; */
+"6Dn-8r-ts4.configuration.title" = "أغلب الأيام";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6Dn-8r-ts4"; */
+"6Dn-8r-ts4.normalTitle" = "زر";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6rc-PC-twf"; */
+"6rc-PC-twf.normalTitle" = "زر";
+
+/* Class = "UIButton"; configuration.title = "Continue"; ObjectID = "74p-KQ-4Vl"; */
+"74p-KQ-4Vl.configuration.title" = "استمر";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "74p-KQ-4Vl"; */
+"74p-KQ-4Vl.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "Important Numbers For You"; ObjectID = "7D1-6Q-7zp"; */
+"7D1-6Q-7zp.text" = "أرقام مهمة لك";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "8OD-Bt-gEP"; */
+"8OD-Bt-gEP.title" = "الصفحة الرئيسية";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "8mL-Rw-oan"; */
+"8mL-Rw-oan.placeholder" = "بريد الالكتروني";
+
+/* Class = "UITabBarItem"; title = "More"; ObjectID = "8vJ-Uj-caP"; */
+"8vJ-Uj-caP.title" = "المزيد";
+
+/* Class = "UILabel"; text = "Are you Psycologist?"; ObjectID = "ABD-eN-MFk"; */
+"ABD-eN-MFk.text" = "هل انت اخصائي نفسي؟";
+
+/* Class = "UIButton"; configuration.title = "Never"; ObjectID = "Agh-up-TBn"; */
+"Agh-up-TBn.configuration.title" = "مطلقا";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Agh-up-TBn"; */
+"Agh-up-TBn.normalTitle" = "زر";
+
+/* Class = "UITabBarItem"; title = "Your sessions"; ObjectID = "Bnu-z8-D68"; */
+"Bnu-z8-D68.title" = "جلساتك";
+
+/* Class = "UINavigationItem"; title = "Your Sessions"; ObjectID = "DHA-aK-FkV"; */
+"DHA-aK-FkV.title" = "جلساتك";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "GBe-P1-HCo"; */
+"GBe-P1-HCo.title" = "الصفحة الرئيسية";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Ghd-j4-0bT"; */
+"Ghd-j4-0bT.text" = "ملصق";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "H9D-nP-f5r"; */
+"H9D-nP-f5r.text" = "ملصق";
+
+/* Class = "UIButton"; configuration.title = "Nearly Everyday"; ObjectID = "HO7-PY-jvq"; */
+"HO7-PY-jvq.configuration.title" = "تقريبا كل يوم";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HO7-PY-jvq"; */
+"HO7-PY-jvq.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "SubHead"; ObjectID = "ILd-nQ-6m9"; */
+"ILd-nQ-6m9.text" = "العنوان الفرعي";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "JAG-0a-s5W"; */
+"JAG-0a-s5W.configuration.title" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JAG-0a-s5W"; */
+"JAG-0a-s5W.normalTitle" = "زر";
+
+/* Class = "UIButton"; configuration.title = "Enroll"; ObjectID = "Jbb-UB-eZ9"; */
+"Jbb-UB-eZ9.configuration.title" = "تسجيل";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Jbb-UB-eZ9"; */
+"Jbb-UB-eZ9.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "KuD-YU-Qbh"; */
+"KuD-YU-Qbh.text" = "ملصق";
+
+/* Class = "UILabel"; text = "Qustions"; ObjectID = "Lgp-7a-xTO"; */
+"Lgp-7a-xTO.text" = "أسئلة";
+
+/* Class = "UILabel"; text = "Session Content"; ObjectID = "MEX-k5-FcC"; */
+"MEX-k5-FcC.text" = "محتوى الجلسة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MfU-eP-MFg"; */
+"MfU-eP-MFg.normalTitle" = "زر";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "NTA-U6-dkr"; */
+"NTA-U6-dkr.placeholder" = "كلمة المرور";
+
+/* Class = "UILabel"; text = "Title of session"; ObjectID = "OFq-Va-vmL"; */
+"OFq-Va-vmL.text" = "عنوان الجلسة";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "PL4-8r-hms"; */
+"PL4-8r-hms.placeholder" = "بريد الالكتروني";
+
+/* Class = "UILabel"; text = "a journey of HOPE "; ObjectID = "PWN-Rc-s0X"; */
+"PWN-Rc-s0X.text" = "رحلة أمل";
+
+/* Class = "UILabel"; text = "Log out"; ObjectID = "QFq-8n-f7j"; */
+"QFq-8n-f7j.text" = "تسجيل خروج";
+
+/* Class = "UILabel"; text = "Dark mode"; ObjectID = "Qye-j8-7z4"; */
+"Qye-j8-7z4.text" = "الوضع المظلم";
+
+/* Class = "UILabel"; text = "Don't have an account?"; ObjectID = "RDG-oa-4VN"; */
+"RDG-oa-4VN.text" = "ليس لديك حساب؟";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "T8R-yS-5Hn"; */
+"T8R-yS-5Hn.text" = "بريد الالكتروني";
+
+/* Class = "UILabel"; text = "Measurment"; ObjectID = "Tmf-wb-QMz"; */
+"Tmf-wb-QMz.text" = "قياس";
+
+/* Class = "UILabel"; text = "Number"; ObjectID = "UYW-68-hpi"; */
+"UYW-68-hpi.text" = "رقم";
+
+/* Class = "UILabel"; text = "you can call now"; ObjectID = "WkZ-sR-zWu"; */
+"WkZ-sR-zWu.text" = "يمكنك الاتصال الآن";
+
+/* Class = "UITabBarItem"; title = "Video"; ObjectID = "X5F-pe-G3f"; */
+"X5F-pe-G3f.title" = "فيديو";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Xlw-j9-eel"; */
+"Xlw-j9-eel.placeholder" = "كلمة المرور";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "Xo5-CH-PU6"; */
+"Xo5-CH-PU6.text" = "لغة";
+
+/* Class = "UINavigationItem"; title = "Session"; ObjectID = "YOT-md-hJh"; */
+"YOT-md-hJh.title" = "جلسة";
+
+/* Class = "UINavigationItem"; title = "Video"; ObjectID = "ZZh-pC-cEv"; */
+"ZZh-pC-cEv.title" = "فيديو";
+
+/* Class = "UIButton"; configuration.title = "Some Days"; ObjectID = "b21-BE-Yox"; */
+"b21-BE-Yox.configuration.title" = "بعض أيام";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "b21-BE-Yox"; */
+"b21-BE-Yox.normalTitle" = "زر";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "bgr-65-JVX"; */
+"bgr-65-JVX.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Associations locations"; ObjectID = "c4c-nz-4m8"; */
+"c4c-nz-4m8.text" = "مواقع الجمعيات";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dcl-kj-zCh"; */
+"dcl-kj-zCh.text" = "ملصق";
+
+/* Class = "UILabel"; text = "Already have an account?"; ObjectID = "emM-HX-MNC"; */
+"emM-HX-MNC.text" = "هل لديك حساب؟";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "i1r-9C-ci5"; */
+"i1r-9C-ci5.text" = "عنوان";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jPM-SY-cJa"; */
+"jPM-SY-cJa.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "Important Numbers For You "; ObjectID = "jQu-3W-76F"; */
+"jQu-3W-76F.text" = "أرقام مهمة لك";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "jpm-2f-yc1"; */
+"jpm-2f-yc1.placeholder" = "الاسم";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "mDp-wW-aNc"; */
+"mDp-wW-aNc.text" = "الاسم";
+
+/* Class = "UILabel"; text = "Disclamimer: These are not a diagnostic instruments and is not intended to replace a consultation with your doctor or a mental health professional."; ObjectID = "nWB-bf-KGQ"; */
+"nWB-bf-KGQ.text" = "إخلاء المسؤولية: هذه ليست أدوات تشخيص ولا تهدف إلى استبدال استشارة طبيبك أو أخصائي الصحة العقلية.";
+
+/* Class = "UIButton"; configuration.title = "Start"; ObjectID = "ouW-U8-tJl"; */
+"ouW-U8-tJl.configuration.title" = "ابدأ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ouW-U8-tJl"; */
+"ouW-U8-tJl.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "ph3-u9-5hM"; */
+"ph3-u9-5hM.text" = "تسجيل الدخول";
+
+/* Class = "UILabel"; text = "Subhead3"; ObjectID = "qfa-zb-rip"; */
+"qfa-zb-rip.text" = "العنوان الفرعي 3";
+
+/* Class = "UIButton"; configuration.title = "Finish"; ObjectID = "rCL-9s-JYY"; */
+"rCL-9s-JYY.configuration.title" = "النهاية";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rCL-9s-JYY"; */
+"rCL-9s-JYY.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "a journey of HOPE "; ObjectID = "rsR-6d-ZbR"; */
+"rsR-6d-ZbR.text" = "رحلة أمل";
+
+/* Class = "UIButton"; configuration.title = "Signup"; ObjectID = "sf8-xA-RtR"; */
+"sf8-xA-RtR.configuration.title" = "التسجيل";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sf8-xA-RtR"; */
+"sf8-xA-RtR.normalTitle" = "زر";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "sgj-N4-Ryf"; */
+"sgj-N4-Ryf.configuration.title" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sgj-N4-Ryf"; */
+"sgj-N4-Ryf.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "Topic 3"; ObjectID = "tac-Px-Dke"; */
+"tac-Px-Dke.text" = "الموضوع 3";
+
+/* Class = "UILabel"; text = "Subhead2"; ObjectID = "tkn-ue-SXa"; */
+"tkn-ue-SXa.text" = "العنوان الفرعي 2";
+
+/* Class = "UILabel"; text = "Defintion"; ObjectID = "udl-tl-wdL"; */
+"udl-tl-wdL.text" = "تعريف";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "vyz-Ny-qvF"; */
+"vyz-Ny-qvF.text" = "أهلا بك";
+
+/* Class = "UIButton"; configuration.title = "Signup"; ObjectID = "wuk-oZ-iIy"; */
+"wuk-oZ-iIy.configuration.title" = "التسجيل";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wuk-oZ-iIy"; */
+"wuk-oZ-iIy.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "yP9-qB-wtQ"; */
+"yP9-qB-wtQ.text" = "ملصق";
+
+/* Class = "UILabel"; text = "Topic 2"; ObjectID = "yrj-5I-HDN"; */
+"yrj-5I-HDN.text" = "الموضوع 2";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "z0F-s0-KfR"; */
+"z0F-s0-KfR.text" = "عنوان";
+
+"OY4-PQ-07G.text" = "نحن معك في رحلة أمل";
+"4LB-EF-VOo.text" = "نحن معك في رحلة أمل";

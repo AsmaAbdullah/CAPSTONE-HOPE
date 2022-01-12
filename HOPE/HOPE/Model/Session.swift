@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//MARK: Class for Core Data
 
 class YourSessions {
     var item = [SessionDetile]()

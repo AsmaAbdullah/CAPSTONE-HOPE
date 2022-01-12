@@ -60,7 +60,7 @@ class SessionContent: UIViewController {
                 
                 let message: MessageView = MessageView.viewFromNib(layout: .cardView)
                 message.configureTheme(.warning)
-                message.configureContent(body: "You Already have added this session")
+                message.configureContent(body: "You Already have added this session".localaized)
                 
                 var config = SwiftMessages.defaultConfig
                 config.presentationContext = .view(view)
@@ -68,7 +68,7 @@ class SessionContent: UIViewController {
                 config.presentationStyle = .top
                 
                 SwiftMessages.show(config: config, view: message)
-                
+
                 return
             }
         }
@@ -80,7 +80,7 @@ class SessionContent: UIViewController {
         let message: MessageView = MessageView.viewFromNib(layout: .cardView)
         message.configureTheme(.success)
                 
-        message.configureContent(body: "Has been successfully added")
+        message.configureContent(body: "Has been successfully added".localaized)
         
         var config = SwiftMessages.defaultConfig
         config.presentationContext = .view(view)
@@ -88,6 +88,7 @@ class SessionContent: UIViewController {
         config.presentationStyle = .top
         
         SwiftMessages.show(config: config, view: message)
+        
     }
     
     // MARK: - CORE-DATA

@@ -15,7 +15,7 @@ struct Session {
     var titleSessions: String
     var Content: String
 }
-// MARK: Struct for sessions
+// MARK: Struct for Sessions
 
 struct SessionDetile {
     var title: String
@@ -28,7 +28,7 @@ struct SessionDetile {
     var thirdSubhead: String
     var thirdContent: String
 }
-
+//MARK: Struct for set Sessions
 struct SetDetile {
     var setTitle: String
     var setImageSession: UIImage
@@ -40,16 +40,8 @@ struct SetDetile {
     var setThirdSubhead: String
     var setThirdContent: String
 }
-
+//MARK: Struct for set phone number
 struct PhoneNumber {
     var title: String
     var number: String
 }
-
-struct MeasuresInfo {
-    var title: String
-    var image: UIImage
-}
-
-
-

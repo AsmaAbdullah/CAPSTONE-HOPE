@@ -72,18 +72,18 @@ class ImportantNumbersVC: UIViewController, UITableViewDelegate, UITableViewData
 //    }
     
     fileprivate func setPhoneNumber() {
-        importantNumber.append(PhoneNumber.init(title: "(937) Service", number: "937"))
-        importantNumber.append(PhoneNumber.init(title: "National Center (NCMH)", number: "920033360"))
-        importantNumber.append(PhoneNumber.init(title: "King Faisal Specialist Hospital", number: "199019"))
-        importantNumber.append(PhoneNumber.init(title: "Saudi Cancer Society", number: "0114402025"))
-        importantNumber.append(PhoneNumber.init(title: "Zahra Association", number: "0114833652"))
-        importantNumber.append(PhoneNumber.init(title: "Sanad Association", number: "920029997"))
-        importantNumber.append(PhoneNumber.init(title: "Basma Association", number: "0165310022"))
-        importantNumber.append(PhoneNumber.init(title: "Atfalona Association", number: "0555886470"))
-        importantNumber.append(PhoneNumber.init(title: "Amass Association", number: "0114415566"))
-        importantNumber.append(PhoneNumber.init(title: "Al-Hayat Association", number: "0545939786"))
-        importantNumber.append(PhoneNumber.init(title: "Tfaul Association", number: "0135621112"))
-        importantNumber.append(PhoneNumber.init(title: "Tahoor Association", number: "0163638181"))
+        importantNumber.append(PhoneNumber.init(title: "(937) Service".localaized, number: "937"))
+        importantNumber.append(PhoneNumber.init(title: "National Center (NCMH)".localaized, number: "920033360"))
+        importantNumber.append(PhoneNumber.init(title: "King Faisal Specialist Hospital".localaized, number: "199019"))
+        importantNumber.append(PhoneNumber.init(title: "Saudi Cancer Society".localaized, number: "0114402025"))
+        importantNumber.append(PhoneNumber.init(title: "Zahra Association".localaized, number: "0114833652"))
+        importantNumber.append(PhoneNumber.init(title: "Sanad Association".localaized, number: "920029997"))
+        importantNumber.append(PhoneNumber.init(title: "Basma Association".localaized, number: "0165310022"))
+        importantNumber.append(PhoneNumber.init(title: "Atfalona Association".localaized, number: "0555886470"))
+        importantNumber.append(PhoneNumber.init(title: "Amass Association".localaized, number: "0114415566"))
+        importantNumber.append(PhoneNumber.init(title: "Al-Hayat Association".localaized, number: "0545939786"))
+        importantNumber.append(PhoneNumber.init(title: "Tfaul Association".localaized, number: "0135621112"))
+        importantNumber.append(PhoneNumber.init(title: "Tahoor Association".localaized, number: "0163638181"))
     }
     
 }

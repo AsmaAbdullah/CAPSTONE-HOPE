@@ -1,0 +1,253 @@
+/* 
+  Localizable.strings
+  HOPE
+
+  Created by Asma on 11/01/2022.
+  
+*/
+
+//MARK: Login
+"Invalid Login" = "خطأ في تسجيل الدخول";
+"Please fill email and password" = "الرجاء إدخال البريد الإلكتروني وكلمة المرور";
+"Ok" = "موافق";
+"Oh!" = "أوه!";
+"This email is not already Signup" = "هذا البريد الإلكتروني لم يتم تسجيله بالفعل";
+"Ok" = "موافق";
+
+//MARK: Signup
+
+"Invalid Signup" = "خطأ في التسجيل";
+"Please fill Name, Email and Password" = "الرجاء إدخال الاسم والبريد الإلكتروني وكلمة المرور";
+"Ok" = "موافق";
+"The email address is already in use by another account." = "عنوان البريد الإلكتروني قيد الاستخدام بالفعل من قبل حساب آخر.";
+
+//MARK: Home
+"Self-Image and Cancer" = "الصورة الذاتية والسرطان";
+"- Physical changes.\n- Emotional changes.\n- Coping with self-image changes." = "- التغيرات الجسدية. - التغيرات العاطفية - التعامل مع تغيرات الصورة الذاتية.";
+
+"Coping With Uncertainty" = "التعامل مع عدم اليقين";
+
+"- Causes of uncertainty.\n- Dealing with the “what ifs” of cancer." = "- أسباب عدم اليقين. - التعامل مع”ماذا لو” السرطان.";
+
+"Managing Stress" = "إدارة الإجهاد";
+
+"- Tips for reducing stress.\n- Stress management strategies.\n- Relaxation techniques." = "- نصائح لتقليل التوتر. - استراتيجيات إدارة الإجهاد. - تقنيات الاسترخاء.";
+
+"Coping with Anger" = "التعامل مع الغضب";
+
+"- Coping with anger.\n- Considering counseling" = "- التعامل مع الغضب. - الإرشاد النفسي";
+
+"Anxiety" = "القلق";
+
+"- Anxiety and cancer.\n- Acute anxiety symptoms.\n- Chronic anxiety symptoms.\n- Treatment types." = "- القلق والسرطان. - أعراض القلق الحاد. - أعراض القلق المزمن. - أنواع العلاج.";
+
+"Depression" = "الإكتئاب";
+
+"- Mood-related symptoms.\n- Behavioral symptoms.\n- Physical symptoms.\n- Treatment of depression." = "- الأعراض المرتبطة بالمزاج. - الأعراض السلوكية. - الأعراض الجسدية. - علاج الاكتئاب.";
+
+"Managing the Fear" = "إدارة الخوف";
+
+"- How can I cope with my fears of side effects?\n- Talking about your fear of cancer side effects.\n- Questions to ask the health care team." = "- كيف يمكنني التعامل مع مخاوفي من الآثار الجانبية؟ - التحدث عن خوفك من الآثار الجانبية للسرطان. - أسئلة لطرحها على فريق الرعاية الصحية.";
+
+"Coping with Guilt" = "التعامل مع الشعور بالذنب";
+
+"- Coping with guilt.\n- Letting go of guilt." = "- التعامل مع الذنب. - التخلي عن الشعور بالذنب.";
+
+"Coping with Cancer" = "التعامل مع السرطان";
+
+"- Naming metastatic cancer.\n- Goals of treatment\n- The challenges of living with cancer" = "- تسمية السرطان المنتشر. - أهداف العلاج. - تحديات التعايش مع السرطان";
+
+//MARK: Session Content
+
+"You Already have added this session" = "لقد أضفت هذه الجلسة بالفعل";
+
+"Has been successfully added" = "تمت الإضافة بنجاح";
+
+//MARK: Your Sessions
+"Self-Image and Cancer" = "الصورة الذاتية والسرطان";
+
+"Self-image is how a person views himself or herself. Because of the many physical and emotional changes after a cancer diagnosis, people may experience positive and negative changes to their self-image." = "الصورة الذاتية هي الطريقة التي ينظر بها الشخص إلى نفسه. وبسبب التغييرات الجسدية والعاطفية العديدة بعد تشخيص الإصابة بالسرطان ، قد يعاني الأشخاص من تغيرات إيجابية وسلبية في صورتهم الذاتية.";
+
+"Physical changes" = "تغيرات فيزيائية";
+
+"Both cancer and its treatment may change how you look. How you feel about your appearance is called body image. Many people with cancer feel self-conscious about changes to their bodies. Some of the more common physical changes of cancer include:\n- Hair loss\n- Weight gain or weight loss\n- Surgery scars\n- Rash, typically from drug therapies\n- Loss of an organ, limb, or breast\n- The need for an ostomy, which is a surgical opening that allows bodily waste to exit the body into a bag\n- Fatigue or loss of energy, which can cause you to give up activities you once enjoyed.\n  Many of these changes will resolve or get better as time passes after treatment. But make sure to share any concerns you have with your health care team. Ask them for more information about ways to relieve these symptoms or the emotional discomfort you may feel because of them." = "قد يغير كل من السرطان وعلاجه من مظهرك. يطلق على شعورك حيال مظهرك صورة الجسد. يشعر الكثير من المصابين بالسرطان بالوعي الذاتي بشأن التغييرات التي تطرأ على أجسامهم. وتشمل بعض التغيرات الجسدية الأكثر شيوعًا للسرطان ما يلي: - الشعر فقدان الوزن - زيادة الوزن أو إنقاص الوزن - ندوب الجراحة - الطفح الجلدي عادةً من العلاجات الدوائية - فقدان عضو أو طرف أو صدر - الحاجة إلى فغر ، وهي فتحة جراحية تسمح بخروج الفضلات الجسدية وضع الجسم في كيس. - التعب أو فقدان الطاقة ، والذي يمكن أن يتسبب في التخلي عن الأنشطة التي كنت تتمتع بها من قبل. العديد من هذه التغييرات ستحل أو تتحسن مع مرور الوقت بعد العلاج. ولكن تأكد من مشاركة أي مخاوف لديك مع فريق الرعاية الصحية الخاص بك. اطلب منهم المزيد من المعلومات حول طرق تخفيف هذه الأعراض أو الانزعاج العاطفي الذي قد تشعر به بسببها ";
+
+"Emotional changes" = "التغييرات العاطفية";
+
+"Cancer disrupts so many parts of a person’s life, from relationships to work and hobbies. Depending on the seriousness of the illness and the chance of recovery, it may also force you to make changes to your future and deal with the chance of dying. During this time, you may feel many different emotions:\n- Sadness, Anxiety\n- Loneliness or a sense of being different from others\n- Fear, Anger, Frustration, Guilt\n- Feeling out of control\n- A change in the way you think about yourself and the future.\n But many people with cancer have also reported positive changes. These positive changes can be emotional, spiritual, or intellectual. For example, you may feel:\n- An appreciation for the strength of your body.\n- Peace, Gratitude\n- Awareness and appreciation that life is short and special.\n- Grateful for new important relationships with caregivers and other patients.\n- A shift in priorities.\n- Clarity about meaning in life and personal goals" = "السرطان يعطل أجزاء كثيرة جدًا من حياة الشخص ، من العلاقات إلى العمل والهوايات. اعتمادًا على خطورة المرض وفرصة الشفاء ، قد يجبرك أيضًا على إجراء تغييرات في مستقبلك والتعامل مع فرصة الموت. خلال هذا الوقت ، قد تشعر بالعديد من المشاعر المختلفة: - الحزن والقلق. - الوحدة أو الشعور بالاختلاف عن الآخرين. - الخوف ، والغضب ، والإحباط ، والشعور بالذنب. - الشعور بالخروج عن السيطرة. - تغيير في طريقة تفكيرك. عن نفسك والمستقبل. لكن العديد من المصابين بالسرطان أبلغوا أيضًا عن تغييرات إيجابية. يمكن أن تكون هذه التغييرات الإيجابية عاطفية أو روحية أو فكرية. على سبيل المثال ، قد تشعر بما يلي: - تقدير لقوة جسمك. - سلام ، امتنان . - الوعي والتقدير بأن الحياة قصيرة ومميزة. - ممتن لعلاقات مهمة جديدة مع مقدمي الرعاية والمرضى الآخرين. - تحول في الأولويات. - وضوح المعنى في الحياة والأهداف الشخصية ";
+
+"Coping with self-image changes" = "التعامل مع تغييرات الصورة الذاتية";
+
+"You may view yourself and your body differently after cancer. These tips may help you cope:\n- Allow time to adjust. Accepting a cancer diagnosis and undergoing treatment may change your life. It takes time to adapt.\n- Talk with others who have been in similar situations.\n- Build a network of friends and family who can support you and help you feel positive.\n- Ask for and accept help. Pass off tasks that take up your energy and are not pleasing to you.\n- Stay calm and, if you are able, embrace humor.\n- Ask your health care team about possible reconstructive surgery, prosthetic devices, and/or cosmetic solutions.\n- As much as possible, remain active.\n- Seek counseling." = "قد تنظر إلى نفسك وجسمك بشكل مختلف بعد السرطان. قد تساعدك هذه النصائح في التأقلم: - إتاحة الوقت للتكيف. قد يؤدي قبول تشخيص السرطان والخضوع للعلاج إلى تغيير حياتك. يستغرق الأمر وقتًا للتكيف. - تحدث مع الآخرين الذين سبق لهم العلاج. في مواقف مماثلة. - بناء شبكة من الأصدقاء والعائلة الذين يمكنهم دعمك ومساعدتك على الشعور بالإيجابية. - اطلب المساعدة وتقبلها. تخلص من المهام التي تستهلك طاقتك ولا ترضيك. - ابق هادئًا وإذا أنت قادر ، احتضن الدعابة. - اسأل فريق الرعاية الصحية الخاص بك عن الجراحة الترميمية الممكنة ، والأجهزة التعويضية ، و / أو الحلول التجميلية. - قدر الإمكان ، حافظ على نشاطك. - اطلب المشورة.";
+
+"Coping With Uncertainty" = "التعامل مع عدم اليقين";
+
+"Many people with cancer may feel a lack of certainty about what the future holds. After a cancer diagnosis, you may feel that your life is less secure than it once was. It is important to ask for support when you are feeling this way." = "قد يشعر الكثير من المصابين بالسرطان بعدم اليقين بشأن ما يخبئه المستقبل. بعد تشخيص السرطان ، قد تشعر أن حياتك أصبحت أقل أمانًا مما كانت عليه في السابق. من المهم أن تطلب الدعم عندما تشعر بهذه الطريقة. ";
+
+"Causes of uncertainty" = "أسباب عدم اليقين";
+
+"Both newly diagnosed patients and long-term survivors have common worries. These may include:\n- Having to put plans on hold. You may feel like you are unable to look to the future. Making plans is difficult for many practical reasons. For instance, it can be hard to plan a family vacation when you may not know exactly when you will have treatment. You may not be able to commit to a lunch date because you cannot predict how you will be feeling. Some people feel unable to make any plans. One approach that works well for many people with cancer is to remain flexible and accept that plans may change.\n- Fear about cancer treatment and side effects. You may be worried or scared of the possible side effects of treatment, such as pain, nausea, or fatigue. Or you may fear becoming dependent on others during cancer treatment or missing activities that you enjoy. Learn more about coping with the fear of treatment side effects.\nLong-term cancer survivors may worry about having late effects. These are side effects of cancer treatment that happen months or years after treatment ends. Talk with your health care team about possible late effects and how they can be managed. There are resources available if you need help.\n- The treatment will not work. No treatment works the same for every person, even those with the same type of cancer. Some treatments are more effective for some people. Other treatments may work but cause side effects." = "كل من المرضى الذين تم تشخيصهم حديثًا والناجين على المدى الطويل لديهم مخاوف مشتركة. قد تشمل هذه: - الاضطرار إلى تعليق الخطط. قد تشعر أنك غير قادر على التطلع إلى المستقبل. وضع الخطط صعب لأسباب عملية كثيرة. على سبيل المثال ، قد يكون من الصعب التخطيط لقضاء إجازة عائلية عندما لا تعرف بالضبط متى ستتلقى العلاج. قد لا تتمكن من الالتزام بموعد غداء لأنك لا تستطيع التنبؤ بما ستشعر به. يشعر بعض الأشخاص بعدم القدرة على القيام بأي الخطط. أحد الأساليب التي تعمل بشكل جيد للعديد من الأشخاص المصابين بالسرطان هي أن تظل مرنًا وتقبل أن الخطط قد تتغير. - الخوف من علاج السرطان والآثار الجانبية. قد تكون قلقًا أو خائفًا من الآثار الجانبية المحتملة للعلاج ، مثل الألم ، الغثيان أو الإرهاق. أو قد تخشى الاعتماد على الآخرين أثناء علاج السرطان أو تفويت الأنشطة التي تستمتع بها. تعرف على المزيد حول التعامل مع الخوف من الآثار الجانبية للعلاج. قد يشعر الناجون من السرطان على المدى الطويل بالقلق بشأن الآثار المتأخرة. هذه هي الآثار الجانبية لعلاج السرطان التي تحدث بعد أشهر أو سنوات من انتهاء العلاج. تحدث مع فريق الرعاية الصحية الخاص بك عن الآثار المتأخرة المحتملة وكيف يمكن إدارتها. هناك موارد متاحة إذا كنت بحاجة إلى مساعدة. - العلاج لن يجدي. لا يوجد علاج يعمل بالطريقة نفسها لكل شخص ، حتى أولئك الذين يعانون من نفس النوع من السرطان. تكون بعض العلاجات أكثر فاعلية بالنسبة لبعض الأشخاص. قد تنجح العلاجات الأخرى ولكنها تسبب آثارًا جانبية ";
+
+"- The treatment will stop working. Many times, people continue to receive a treatment until it stops working. This is especially true for those with cancer that has spread or those with cancer that is controlled with drugs for a long time. It is scary to think that the drug could stop working, even if you know that there are other treatment options.\n- The cancer will come back. A cancer recurrence is when the cancer returns after treatment. It is a top fear of many cancer survivors. If you worry about this, you may find yourself paying attention to every potential symptom you have. In turn, this can increase your general level of anxiety. Learn more about coping with the fear of recurrence.\n- Fear of dying or losing someone you love. Facing the idea of dying can be difficult. Feeling fear is natural when you think about dying or losing someone you love. It’s normal to struggle with a fear of death. Yet, if these feelings become stronger, talk with your health care team about resources to help you cope." = "- سيتوقف العلاج عن العمل. في كثير من الأحيان ، يستمر الأشخاص في تلقي العلاج حتى يتوقف عن العمل. وهذا ينطبق بشكل خاص على المصابين بالسرطان الذي انتشر أو المصابين بالسرطان الذي يتم التحكم فيه بالعقاقير لفترة طويلة. إنه أمر مخيف الاعتقاد بأن الدواء يمكن أن يتوقف عن العمل ، حتى لو كنت تعلم أن هناك خيارات علاج أخرى. - السرطان سوف يعود. تكرار السرطان هو عندما يعود السرطان بعد العلاج. إنه خوف كبير لكثير من الناجين من السرطان. إذا كنت تقلق بشأن هذا ، قد تجد نفسك منتبهًا لكل عرض محتمل لديك. وهذا بدوره يمكن أن يزيد من مستوى القلق العام لديك. تعرف على المزيد حول التعامل مع الخوف من التكرار. - الخوف من الموت أو فقدان شخص تحبه. مواجهة يمكن أن تكون فكرة الموت صعبة. الشعور بالخوف طبيعي عندما تفكر في الموت أو فقدان شخص تحبه. من الطبيعي أن تكافح مع الخوف من الموت. ومع ذلك ، إذا أصبحت هذه المشاعر أقوى ، تحدث مع فريق الرعاية الصحية الخاص بك عن الموارد لمساعدتك على التأقلم ";
+"Dealing with the “what ifs” of cancer" = "التعامل مع ”ماذا لو“ للسرطان";
+
+"Acknowledging the unknowns of cancer may make you feel anxious, angry, sad, or afraid. You may even have physical symptoms from these feelings. For instance, it may cause sleeping problems or make it harder to focus at work. Learning to manage the uncertainty is an important part of staying healthy. These tips may help you cope:\n- Recognize that there are situations you can control and those you cannot. As hard as it sounds, many people find it helpful to let go of those things that they cannot change and focus on their reaction to events.\n- Talk with your health care team if your feelings of uncertainty are affecting your daily life. They can help you find the resources you need to feel better." = "إن التعرف على المجهول المتعلق بالسرطان قد يجعلك تشعر بالقلق أو الغضب أو الحزن أو الخوف. وقد تظهر عليك أعراض جسدية من هذه المشاعر. على سبيل المثال ، قد يتسبب ذلك في مشاكل في النوم أو يجعل التركيز في العمل أكثر صعوبة. تعلم كيفية إدارة عدم اليقين هو جزء مهم من البقاء بصحة جيدة. قد تساعدك هذه النصائح في التأقلم: - أدرك أن هناك مواقف يمكنك التحكم فيها وتلك التي لا يمكنك التحكم فيها. وبقدر ما يبدو الأمر صعبًا ، يجد العديد من الأشخاص أنه من المفيد التخلي عن تلك الأشياء التي لا يستطيعون السيطرة عليها التغيير والتركيز على رد فعلهم تجاه الأحداث. - تحدث مع فريق الرعاية الصحية الخاص بك إذا كانت مشاعر عدم اليقين لديك تؤثر على حياتك اليومية. يمكنهم مساعدتك في العثور على الموارد التي تحتاجها لتشعر بتحسن. ";
+
+"Managing Stress" = "إدارة الإجهاد";
+
+"A disease such as cancer is often one of the most stressful experiences of a person's life. Coping with cancer can be more challenging with added stress from work, family, or financial concerns." = "مرض مثل السرطان غالبًا ما يكون أحد أكثر التجارب إرهاقًا في حياة الشخص. يمكن أن يكون التعامل مع السرطان أكثر صعوبة مع ضغوط إضافية من العمل أو الأسرة أو المخاوف المالية.";
+
+"Tips for reducing stress" = "نصائح لتقليل التوتر";
+
+"Stressors are sources of stress. Some stressors are predictable and, therefore, sometimes avoidable. Consider the following tips for reducing stress:\n- Avoid scheduling conflicts. Use a day planner, your phone, or an online calendar to keep track of appointments and activities.\n- Be aware of your limits. If you do not have the time, energy, or interest, it is okay to politely decline when people ask you to take on tasks.\n- Ask for help. It is also good sense to ask family, friends, and coworkers for help.\n- Prioritize your tasks. Make a list of the things you routinely do, such as work and household chores.\n- Break down tasks into smaller steps. Sometimes large tasks can be done in smaller steps.\n- Concentrate your efforts on things you can control. A stressor may be something you cannot change or control, even with the best planning.\n- Get help with financial problems. Talk with an oncology social worker or a financial advisor who knows about cancer-related insurance and financial matters." = "الضغوطات هي مصادر التوتر. بعض عوامل الضغط يمكن التنبؤ بها ، وبالتالي يمكن تجنبها في بعض الأحيان. ضع في اعتبارك النصائح التالية لتقليل التوتر: - تجنب تعارض المواعيد. استخدم مخططًا لليوم ، أو هاتفك ، أو تقويمًا عبر الإنترنت لتتبع المواعيد والأنشطة - كن على دراية بحدودك. إذا لم يكن لديك الوقت أو الطاقة أو الاهتمام ، فلا بأس أن ترفض بأدب عندما يطلب منك الناس القيام بمهام. - اطلب المساعدة. ومن المنطقي أيضًا أن تطلب من العائلة ، الأصدقاء وزملاء العمل للمساعدة. - حدد أولويات المهام الخاصة بك. قم بعمل قائمة بالأشياء التي تقوم بها بشكل روتيني ، مثل العمل والأعمال المنزلية. - قسّم المهام إلى خطوات أصغر. في بعض الأحيان يمكن إنجاز المهام الكبيرة بخطوات أصغر. - ركز الجهود المبذولة في الأشياء التي يمكنك التحكم فيها. قد يكون عامل الضغط شيئًا لا يمكنك تغييره أو التحكم فيه ، حتى مع التخطيط الأفضل. - احصل على مساعدة في المشكلات المالية. تحدث إلى أخصائي اجتماعي في علم الأورام أو مستشار مالي يعرف عن التأمين المتعلق بالسرطان والشؤون المالية أماه المضايقين ";
+
+"Stress management strategies" = "استراتيجيات إدارة الإجهاد";
+
+"Although you can try to reduce the number of stressors in your life, you cannot completely avoid stress. The following are tips to help reduce stress:\n- Exercise regularly. Moderate exercise such as a 30-minute walk several times a week can help lower stress.\n- Spend time outside. If possible, take a walk outside in a park or other natural setting.\n- Schedule social activities. Make time to socialize with family or friends.\n- Eat well. Maintaining a healthy diet and getting enough rest will give you more energy to deal with daily stressors.\n- Get plenty of sleep. Life is busy and some people may think that sleep is indulgent.\n- Join a support group. Support groups offer you the chance to talk about your feelings and fears with others who share and understand your experiences.\n- Schedule daily relaxing time. Spend time doing an activity you find relaxing.\n- Do things you enjoy. Eat at your favorite restaurant or watch your favorite television show." = "على الرغم من أنه يمكنك محاولة تقليل عدد الضغوطات في حياتك ، إلا أنه لا يمكنك تجنب التوتر تمامًا. فيما يلي بعض النصائح للمساعدة في تقليل التوتر: - ممارسة الرياضة بانتظام. يمكن أن تساعد التمارين المعتدلة مثل المشي لمدة 30 دقيقة عدة مرات في الأسبوع في تقليل الإجهاد. - قضاء الوقت في الخارج. إذا كان ذلك ممكنًا ، يمكنك المشي بالخارج في حديقة أو في مكان طبيعي آخر. - جدولة الأنشطة الاجتماعية. خصص وقتًا للاختلاط مع العائلة أو الأصدقاء. - تناول طعامًا جيدًا. الحفاظ على نظام غذائي صحي والحصول على قسط كاف من الراحة سيعطي لديك المزيد من الطاقة للتعامل مع الضغوطات اليومية. - احصل على قسط كافٍ من النوم. الحياة مزدحمة وقد يعتقد بعض الناس أن النوم متسامح. - انضم إلى مجموعة دعم. تقدم لك مجموعات الدعم فرصة للتحدث عن مشاعرك ومخاوفك مع الآخرين الذين شارك تجاربك وافهمها. - حدد وقتًا للاسترخاء يوميًا. اقض وقتًا في القيام بنشاط تجده مريحًا. - افعل أشياء تستمتع بها. تناول الطعام في مطعمك المفضل أو شاهد برنامجك التلفزيوني المفضل. ";
+
+"Relaxation techniques" = "تقنيات الاسترخاء";
+
+"Many people learn and practice relaxation techniques to lower stress. You can learn most of them in a few sessions with a counselor. such as during a medical procedure:\n- Relaxed or deep breathing.\n- Mental imagery or visualization.\n- Progressive muscle relaxation.\n- Meditation.\n- Biofeedback.\n- Yoga." = "كثير من الناس يتعلمون ويمارسون تقنيات الاسترخاء لتقليل التوتر. يمكنك تعلم معظمها في بضع جلسات مع مستشار. مثل أثناء إجراء طبي: - التنفس العميق أو الاسترخاء. - التخيل العقلي أو التخيل. - الاسترخاء التدريجي للعضلات. - التأمل. - الارتجاع البيولوجي. - اليوجا.";
+
+"Coping with Anger" = "التعامل مع الغضب";
+
+"Many people living with cancer experience anger. Often, the feeling arises when receiving a cancer diagnosis. But it can develop any time throughout treatment and survivorship." = "يعاني الكثير من المصابين بالسرطان من الغضب. وغالبًا ما ينشأ الشعور عند تلقي تشخيص السرطان. ولكن يمكن أن يتطور في أي وقت خلال فترة العلاج والبقاء على قيد الحياة.";
+
+"Coping with anger" = "التعامل مع الغضب";
+
+"Anger is a natural emotional response. You do not need to feel guilt if you experience it. Anger is not bad. But some people deal with it and express it in unhealthy ways.\n Unhealthy expressions of anger\n \n * Unhealthy responses to anger include:\n- Avoiding expressing the difficult emotions.\n- Behaving in ways that hurt others or yourself.\n- Abusing alcohol or drugs.\n Unhealthy responses to anger can lead to depression. Learn more about the signs and symptoms of depression and how to find help." = "الغضب هو رد فعل عاطفي طبيعي. لا داعي للشعور بالذنب إذا مررت به. الغضب ليس سيئًا. لكن بعض الناس يتعاملون معه ويعبرون عنه بطرق غير صحية. تعبيرات الغضب غير الصحية. * الاستجابات غير الصحية للغضب تشمل: - تجنب التعبير عن المشاعر الصعبة. - التصرف بطرق تؤذي الآخرين أو تؤذي نفسك. - تعاطي الكحول أو المخدرات. يمكن أن تؤدي الاستجابات غير الصحية للغضب إلى الاكتئاب. تعرف على المزيد حول علامات وأعراض الاكتئاب وكيفية الحصول على المساعدة. ";
+
+"* Healthy expressions of anger" = "* تعبيرات صحية عن الغضب";
+
+"Healthy anger management involves identifying the emotion and expressing it productively. Consider the following tips when you feel angry:\n- Recognize your anger. Sometimes people act out of anger without acknowledging the emotion's presence.\n- Consider which other feelings lie underneath the anger. Sometimes, people hide other painful feelings under their anger. And they might not even realize they are doing this. Some people feel more comfortable with anger than other feelings, like fear or sadness.\n- Avoid taking out your anger on others. Direct your anger at the cause of the feelings, not at other people.\n- Do not wait for anger to build up. Express your feelings as soon as you recognize them. If you hold them in, you are more likely to express anger in an unhealthy way.\n Find safe ways to express your anger. You can express and release your anger in a number of healthy ways:\n- Discuss the reasons for your anger with a trusted family member or friend.\n- Do a physical activity while feeling your anger at its full intensity.\n- Beat on a pillow with your fists, or find a punching bag.\n- Yell out loud in a car or private room.\n- Explore complementary therapies, such as massage, relaxation techniques, music, or art" = "تتضمن إدارة الغضب الصحية تحديد المشاعر والتعبير عنها بطريقة مثمرة. ضع في اعتبارك النصائح التالية عندما تشعر بالغضب: - التعرف على غضبك. أحيانًا يتصرف الناس بدافع الغضب دون الاعتراف بوجود المشاعر. - فكر في المشاعر الأخرى الكامنة تحت الغضب. أحيانًا ، يخفي الناس مشاعر مؤلمة أخرى تحت غضبهم. وقد لا يدركون حتى أنهم يفعلون ذلك. يشعر بعض الناس براحة أكبر مع الغضب مقارنة بالمشاعر الأخرى ، مثل الخوف أو الحزن. - تجنب إثارة غضبك على الآخرين. وجّه غضبك إلى سبب المشاعر ، ليس لدى الآخرين. - لا تنتظر حتى يتراكم الغضب. عبر عن مشاعرك بمجرد أن تتعرف عليها. إذا كنت تمسك بها ، فمن المرجح أن تعبر عن الغضب بطريقة غير صحية. ابحث طرق آمنة للتعبير عن غضبك. يمكنك التعبير عن غضبك والتخلص منه بعدة طرق صحية: - ناقش أسباب غضبك مع أحد أفراد الأسرة أو الأصدقاء الموثوق بهم. - قم بنشاط بدني أثناء ه الشعور بغضبك بكامل حدته. - اضرب على وسادة بقبضتيك ، أو ابحث عن كيس ملاكمة. - صرخ بصوت عالٍ في السيارة أو الغرفة الخاصة. - اكتشف العلاجات التكميلية ، مثل التدليك أو تقنيات الاسترخاء أو الموسيقى أو الفن";
+
+"Considering counseling." = "النظر في المشورة";
+
+"Many people benefit from counseling, either on their own or in a group setting.\n- Things you can accomplish with a mental health professional include:\n- Finding out what triggers your anger.\n- Avoiding destructive responses.\n- Finding healthy ways to express your feelings.\n- Learning valuable coping skills.\n- Addressing related issues, such as addiction or relationship problems.\n- A counselor can also evaluate whether chronic anger is contributing to clinical depression." = "يستفيد الكثير من الأشخاص من الاستشارة ، سواء بمفردهم أو في إطار جماعي. - تشمل الأشياء التي يمكنك إنجازها مع أخصائي الصحة العقلية ما يلي: - اكتشاف ما يثير غضبك. - تجنب الاستجابات المدمرة. - إيجاد طرق صحية للتعبير عن مشاعرك . - تعلم مهارات التأقلم القيمة. - معالجة القضايا ذات الصلة ، مثل الإدمان أو مشاكل العلاقات. - يمكن للمستشار أيضًا تقييم ما إذا كان الغضب المزمن يساهم في الاكتئاب السريري.";
+
+"Anxiety" = "القلق";
+
+"Anxiety may be described as feeling nervous, on edge, or worried. It is a normal emotion that alerts your body to respond to a threat. But intense and long-term anxiety is a disorder. It may interfere with your daily life and relationships." = "يمكن وصف القلق بأنه الشعور بالتوتر أو القلق أو القلق. إنه شعور طبيعي ينبه جسمك للاستجابة للتهديد. لكن القلق الشديد وطويل الأمد هو اضطراب. وقد يتعارض مع حياتك اليومية وعلاقاتك . ";
+
+"Anxiety and cancer" = "القلق والسرطان";
+
+"Many people with cancer have symptoms of anxiety. A cancer diagnosis may trigger these feelings:\n- Fear of treatment or treatment-related side effects.\n- Fear of cancer returning or spreading after treatment.\n- Uncertainty.\n- Worry over losing independence.\n- Concern about having relationships change.\n- Fear of death.\n \n Anxiety may make it harder to cope with cancer treatment. It may also reduce your ability to make choices about your care. As a result, identifying and managing anxiety are important parts of cancer treatment. \n * Acute anxiety symptoms.\n You may often experience short periods of the symptoms listed below. A panic attack is when a person has all of these symptoms at once:\n- Feeling intense fear or dread.\n- Feeling detached from yourself or your surroundings.\n- Heart palpitations or rapid heartbeat.\n- High blood pressure.\n- Chest pain." = "يعاني الكثير من المصابين بالسرطان من أعراض القلق. قد يؤدي تشخيص السرطان إلى إثارة هذه المشاعر: - الخوف من العلاج أو الآثار الجانبية المرتبطة بالعلاج. - الخوف من عودة السرطان أو انتشاره بعد العلاج. - عدم اليقين. - القلق بشأن فقدان الاستقلالية. - القلق حول تغيير العلاقات. - الخوف من الموت. قد يجعل القلق من الصعب التعامل مع علاج السرطان. وقد يقلل أيضًا من قدرتك على اتخاذ خيارات بشأن رعايتك. ونتيجة لذلك ، يعد تحديد القلق وإدارته جزءًا مهمًا من علاج السرطان. * أعراض القلق الحاد: قد تواجهك غالبًا فترات قصيرة من الأعراض المذكورة أدناه. نوبة الهلع هي عندما يظهر على الشخص كل هذه الأعراض في وقت واحد: - الشعور بالخوف الشديد أو الرهبة. - الشعور بالانفصال عن نفسك أو محيطك. - خفقان القلب أو تسارع في ضربات القلب - ارتفاع ضغط الدم - ألم في الصدر.";
+
+"Chronic anxiety symptoms" = "أعراض القلق المزمن";
+
+"Chronic anxiety typically last for a longer time. They may include acute anxiety episodes along with 1 or more of the symptoms below:\n- Excessive worrying.\n- Restlessness.\n- Muscle tension.\n- Insomnia, which is not being able to fall or stay asleep.\n- Irritability.\n- Fatigue.\n- Difficulty concentrating.\n- Indecision, which is having trouble making decisions.\n \n * Risk factors for anxiety. \n People with cancer are more likely to feel anxiety if they have these risk factors:\n - Previous diagnosis of anxiety or depression.\n- Family history of anxiety or depression.\n- Lack of support of friends or family.\n- Financial burdens" = "عادة ما يستمر القلق المزمن لفترة أطول. وقد تشمل نوبات القلق الحاد إلى جانب واحد أو أكثر من الأعراض التالية: - القلق المفرط. - الأرق. - توتر العضلات. - الأرق ، وهو عدم القدرة على النوم أو الاستمرار في النوم . - التهيج. - التعب. - صعوبة التركيز. - التردد ، مما يؤدي إلى صعوبة اتخاذ القرارات. * عوامل الخطر للقلق. - الأشخاص المصابون بالسرطان هم أكثر عرضة للشعور بالقلق إذا كانت لديهم عوامل الخطر هذه: - التشخيص السابق للقلق أو الاكتئاب . - تاريخ عائلي من القلق أو الاكتئاب. - عدم وجود دعم من الأصدقاء أو الأسرة. - أعباء مالية ";
+
+"Treatment types" = "أنواع العلاج";
+
+"There are a variety of ways to cope with anxiety. Many are used together.\n- Relaxation techniques. Relaxation techniques may be used alone or along with other types of treatment.\n- Psychological Treatment. Mental health professionals include licensed counselors, psychologists, and psychiatrists. They provide tools to improve coping skills, develop a support system, and reshape negative thoughts. Options include individual therapy, couples or family therapy, and group therapy.\n- Medication. If your anxiety symptoms are moderate to severe, you may benefit from medication. Different types of medications are available." = "هناك مجموعة متنوعة من الطرق للتعامل مع القلق. يتم استخدام العديد منها معًا. - تقنيات الاسترخاء. يمكن استخدام تقنيات الاسترخاء وحدها أو جنبًا إلى جنب مع أنواع العلاج الأخرى. - العلاج النفسي. يشمل أخصائيو الصحة العقلية المستشارين المرخصين وعلماء النفس والأطباء النفسيين . إنها توفر أدوات لتحسين مهارات التأقلم ، وتطوير نظام دعم ، وإعادة تشكيل الأفكار السلبية. وتشمل الخيارات العلاج الفردي ، والعلاج بالأزواج أو الأسرة ، والعلاج الجماعي. - الأدوية. إذا كانت أعراض القلق لديك معتدلة إلى شديدة ، فقد تستفيد من الأدوية . أنواع مختلفة من الأدوية متوفرة. ";
+
+"Depression" = "الإكتئاب";
+
+"Some people with cancer may experience depression before, during, or after cancer treatment. Depression is a type of mood disorder. It may make it harder to cope with cancer treatment." = "قد يعاني بعض الأشخاص المصابين بالسرطان من الاكتئاب قبل أو أثناء أو بعد علاج السرطان. الاكتئاب هو نوع من اضطرابات المزاج. وقد يجعل من الصعب التعامل مع علاج السرطان.";
+
+"Mood-related symptoms" = "الأعراض المرتبطة بالمزاج";
+
+"- Feeling down.\n- Feeling sad.\n- Feeling hopeless.\n- Feeling irritable.\n- Feeling numb.\n- Feeling worthless.\n \n * Behavioral symptoms:\n- Loss of interest in activities that you used to enjoy.\n- Frequent crying.\n- Withdrawal from friends or family.\n- Loss of motivation to do daily activities.\n \n * Cognitive symptoms:\n- Trouble focusing.\n- Difficulty making decisions.\n- Memory problems.\n- Negative thoughts. In extreme situations, these may include thoughts that life is not worth living or thoughts of hurting yourself." = "- الشعور بالإحباط. - الشعور بالحزن. - الشعور باليأس. - الشعور بالضيق. - الشعور بالخدر. - الشعور بعدم القيمة. * الأعراض السلوكية: - فقدان الاهتمام بالأنشطة التي كنت تستمتع بها. - البكاء المتكرر. - الانسحاب من الأصدقاء أو الأسرة. - فقدان الدافع للقيام بالأنشطة اليومية. * الأعراض المعرفية: - صعوبة في التركيز. - صعوبة اتخاذ القرارات. - مشاكل الذاكرة. - الأفكار السلبية. في المواقف المتطرفة ، قد تشمل هذه الأفكار أن الحياة لا تستحق العيش أو أفكار الأذى نفسك.";
+
+"Physical symptoms" = "الأعراض الجسدية";
+
+"- Fatigue.\n- Appetite loss.\n- Insomnia, which is not being able to fall asleep and stay asleep.\n- Hypersomnia, which is feeling very sleepy most of the time.\n- Sexual problems, such as lower sexual desire. \n The cognitive and physical symptoms listed above may be side effects of the cancer or cancer treatment. As a result, doctors place more emphasis on mood-related and behavior symptoms when diagnosing depression in a person with cancer.\n * Risk factors for depression.\n People with cancer are more likely to have depression if they have these risk factors:\n- Previous diagnosis of depression or anxiety.\n- Family history of depression or anxiety.\n- Lack of support from friends or family.\n- Financial burdens" = "- التعب. - فقدان الشهية. - الأرق ، وهو عدم القدرة على النوم والاستمرار في النوم. - فرط النوم ، وهو الشعور بالنعاس الشديد في معظم الأوقات. - مشاكل جنسية ، مثل انخفاض الرغبة الجنسية. - المعرفية والجسدية قد تكون الأعراض المذكورة أعلاه آثارًا جانبية للسرطان أو علاج السرطان. ونتيجة لذلك ، يركز الأطباء بشكل أكبر على الأعراض المرتبطة بالمزاج والسلوك عند تشخيص الاكتئاب لدى شخص مصاب بالسرطان. * عوامل خطر الإصابة بالاكتئاب. الأشخاص المصابون بالسرطان هم أكثر عرضة الإصابة بالاكتئاب إذا كانت لديهم عوامل الخطر التالية: - التشخيص السابق للاكتئاب أو القلق. - التاريخ العائلي للاكتئاب أو القلق. - الافتقار إلى الدعم من الأصدقاء أو العائلة. - الأعباء المالية ";
+
+"Treatment of depression" = "علاج الاكتئاب";
+
+"People with depression usually benefit from specialized treatment. For people with moderate or severe depression, a mix of psychological treatment and medication is often the most effective approach. For some people with mild depression, talking with a mental health professional may be enough to relieve depressive symptoms.\n- Psychological treatment. Mental health professionals include licensed counselors, psychologists, and psychiatrists.\n- Options include individual therapy, couples or family therapy, and group therapy.\n- Medications. Different types of antidepressant medications are available. Your doctor will select the most appropriate antidepressant based on these factors:\n- Your needs, Potential side effects, Other medications you take, and Your medical history." = "يستفيد الأشخاص المصابون بالاكتئاب عادةً من العلاج المتخصص. بالنسبة للأشخاص الذين يعانون من اكتئاب متوسط أو شديد ، غالبًا ما يكون مزيج من العلاج النفسي والأدوية هو النهج الأكثر فعالية. بالنسبة لبعض الأشخاص المصابين بالاكتئاب الخفيف ، قد يكون التحدث مع أخصائي الصحة العقلية كافياً للتخفيف أعراض الاكتئاب. - العلاج النفسي. يشمل أخصائيو الصحة العقلية المستشارين والأطباء النفسيين والأطباء النفسيين المرخص لهم. - تشمل الخيارات العلاج الفردي ، والأزواج أو العلاج الأسري ، والعلاج الجماعي. - الأدوية. تتوفر أنواع مختلفة من الأدوية المضادة للاكتئاب. سيحدد طبيبك ما يلي أنسب مضاد للاكتئاب بناءً على هذه العوامل: - احتياجاتك ، والآثار الجانبية المحتملة ، والأدوية الأخرى التي تتناولها ، وتاريخك الطبي. ";
+
+"Managing the Fear" = "إدارة الخوف";
+
+"It is normal to be afraid of side effects when you start cancer treatment. You may have heard stories from family and friends who have had cancer about their experiences." = "من الطبيعي أن تخاف من الآثار الجانبية عند بدء علاج السرطان. ربما سمعت قصصًا من العائلة والأصدقاء الذين أصيبوا بالسرطان حول تجاربهم.";
+
+"How can I cope with my fears of side effects?" = "كيف يمكنني التعامل مع مخاوفي من الآثار الجانبية؟";
+
+"Remember that the long-term goal of treatment is to help you, not hurt you. Many cancer treatments used today are less intense and take less time than in the past. And many side effects last only a short time in general.\n Here are some tips for coping with the fear of side effects.\n- Take an active role in your treatment planning, also called shared decision making. These conversations with your doctor should include possible side effects of different treatment approaches.\n- Ask when to expect which side effects during and after your treatment period so you know what to watch for and won't be surprised if they occur.\n- Ask a member of your cancer care team for a list of possible symptoms that may require immediate medical care.\n- Write down all of your questions and concerns, no matter how big or small, including ones that you may have heard from a friend or family member.\n- Communicate often. Let your doctor, nurse, and other providers know what you're thinking and experiencing so they can help." = "تذكر أن الهدف طويل المدى من العلاج هو مساعدتك ، وليس إيذائك. العديد من علاجات السرطان المستخدمة اليوم أقل حدة وتستغرق وقتًا أقل مما كانت عليه في الماضي. والعديد من الآثار الجانبية تستمر لفترة قصيرة فقط بشكل عام. فيما يلي بعض النصائح للتعامل مع الخوف من الآثار الجانبية. - قم بدور نشط في تخطيط العلاج الخاص بك ، والذي يسمى أيضًا اتخاذ القرار المشترك. يجب أن تتضمن هذه المحادثات مع طبيبك الآثار الجانبية المحتملة لأساليب العلاج المختلفة. - اسأل متى تتوقع الآثار الجانبية أثناء فترة العلاج وبعدها حتى تعرف ما يجب مراقبته ولن تتفاجأ في حالة حدوثه. - اسأل أحد أعضاء فريق رعاية مرضى السرطان للحصول على قائمة بالأعراض المحتملة التي قد تتطلب رعاية طبية فورية. - دوِّن كل ما يلي أسئلتك ومخاوفك ، مهما كانت كبيرة أو صغيرة ، بما في ذلك تلك التي ربما تكون قد سمعتها من صديق أو أحد أفراد الأسرة. - تواصل كثيرًا. دع طبيبك وممرضتك ومقدمي الخدمات الآخرين يعرفون ما تفكر فيه وتختبره يمكن أن تساعدنا ";
+
+"Talking about your fear of cancer side effects" = "التحدث عن خوفك من الآثار الجانبية للسرطان";
+
+"In addition to talking with your cancer care team, it can be helpful to communicate with others too. Talk with your family and loved ones about your fear of side effects and other worries. Their support can make you feel less anxious and your loved ones can better understand your feelings. Be sure to share information provided by your health care team about what to expect. Together, you can think through possible caregiving needs and solutions or other plans.\n \n You might want to talk with your supervisor or human resources person at your workplace about your treatment and possible side effects. This conversation may cover how you can adjust your schedule during treatment if you need to.\n Ask your cancer care team about meeting with a social worker who can help you navigate these types of conversations. It can also help to talk to someone who has been through the same type of treatment you will go through." = "بالإضافة إلى التحدث مع فريق رعاية مرضى السرطان ، قد يكون من المفيد التواصل مع الآخرين أيضًا. تحدث مع عائلتك وأحبائك عن خوفك من الآثار الجانبية ومخاوف أخرى. قد يجعلك دعمهم تشعر بقلق أقل وأحبائك يمكن أن تفهم مشاعرك بشكل أفضل. تأكد من مشاركة المعلومات التي قدمها فريق الرعاية الصحية الخاص بك حول ما يمكن توقعه. معًا ، يمكنك التفكير في احتياجات وحلول تقديم الرعاية المحتملة أو الخطط الأخرى. قد ترغب في التحدث مع مشرفك أو مسؤول الموارد البشرية على مكان عملك حول علاجك والآثار الجانبية المحتملة. قد تغطي هذه المحادثة كيف يمكنك تعديل جدولك أثناء العلاج إذا احتجت إلى ذلك. اسأل فريق رعاية مرضى السرطان حول مقابلة أخصائي اجتماعي يمكنه مساعدتك في التنقل في هذه الأنواع من المحادثات. يمكن أن تساعد أيضًا في التحدث إلى شخص خضع لنفس النوع من العلاج الذي ستخضع له ";
+
+"Questions to ask the health care team" = "أسئلة لطرحها على فريق الرعاية الصحية";
+
+"- What symptoms can I expect from this specific type and stage of cancer?\n- What side effects are common from each treatment in my cancer treatment plan?\n- When is it likely that side effects will occur? How long will they last?\n- Is there anything I can do to prepare for these side effects?\n- What can the health care team do to prevent or relieve side effects?\n- Who should I tell if I begin experiencing side effects from treatment? How soon?\n- What side effects or symptoms are considered emergencies?\n- Who do I contact if I have questions about a side effect? Who can I contact after hours when the clinic is closed?" = "- ما الأعراض التي يمكن أن أتوقعها من هذا النوع المحدد ومرحلة السرطان؟ - ما الآثار الجانبية الشائعة من كل علاج في خطة علاج السرطان الخاصة بي؟ - متى يحتمل حدوث هذه الآثار الجانبية؟ ما هي المدة التي ستستمر فيها؟ - هل هل هناك أي شيء يمكنني القيام به للاستعداد لهذه الآثار الجانبية؟ - ما الذي يمكن لفريق الرعاية الصحية فعله للوقاية من الآثار الجانبية أو تخفيفها؟ - من الذي يجب أن أخبره إذا بدأت أعاني من الآثار الجانبية من العلاج؟ ما هو أقرب وقت؟ - ما الآثار الجانبية أو الأعراض تعتبر حالات طوارئ؟ - بمن أتصل إذا كانت لدي أسئلة حول أحد الآثار الجانبية؟ بمن يمكنني الاتصال بعد ساعات من إغلاق العيادة؟ ";
+
+
+"Coping with Guilt" = "التعامل مع الشعور بالذنب";
+
+"Many people living with cancer experience guilt. Guilt is a feeling of blame and regret that is usually hard to accept and express." = "يشعر الكثير من المصابين بالسرطان بالذنب. الشعور بالذنب هو شعور باللوم والندم يصعب عادةً قبوله والتعبير عنه";
+
+"Many people living with cancer experience guilt. Guilt is a feeling of blame and regret that is usually hard to accept and express. Guilt often leads people to replay 'what if' and 'if only' scenarios in their minds to figure out what they could have done differently.\n People with cancer may feel guilt at various times for different reasons. For example, you may feel guilty because:\n- You could have noticed symptoms earlier or gone to the doctor sooner.\n- You worry that you are a burden to your family or caregivers.\n- The treatment you received did not work the way you had hoped.\n- The cancer comes with financial costs or causes you to spend time away from work for treatment.\n- You survived cancer while others did not. This is also called “survivor’s guilt.”\n- You blame yourself or feel embarrassed or ashamed of lifestyle choices and habits that may have increased your risk of developing cancer." = "يشعر الكثير من الأشخاص المصابين بالسرطان بالذنب. الشعور بالذنب هو شعور باللوم والندم يصعب عادةً قبوله والتعبير عنه. غالبًا ما يؤدي الشعور بالذنب الناس إلى تكرار سيناريوهات “ ماذا لو “ و“إذا كان فقط “ في أذهانهم لمعرفة ما هم يمكن أن يفعلوا بشكل مختلف. قد يشعر الأشخاص المصابون بالسرطان بالذنب في أوقات مختلفة لأسباب مختلفة. على سبيل المثال ، قد تشعر بالذنب لأن: - ربما لاحظت الأعراض في وقت سابق أو ذهبت إلى الطبيب في وقت قريب. - تشعر بالقلق من أنك تتحمل عبئًا على عائلتك أو مقدمي الرعاية. - العلاج الذي تلقيته لم يعمل بالطريقة التي كنت تأملها. - يأتي السرطان مع تكاليف مالية أو يتسبب في قضاء بعض الوقت بعيدًا عن العمل لتلقي العلاج. - لقد نجت من السرطان بينما لم يفعل الآخرون. هذا أيضًا يسمى “ذنب الناجي“. - تلوم نفسك أو تشعر بالحرج أو الخجل من اختيارات نمط الحياة والعادات التي قد تزيد من خطر الإصابة بالسرطان ";
+
+"Coping with guilt" = "التعامل مع الذنب";
+
+"Feelings of guilt are common, but it is not healthy to keep thinking about them. Feeling very guilty about events outside of your control and not being able to let go of guilt can lead to depression. Although depression is more common among people with cancer, it should not be considered a normal part of living with cancer." = "الشعور بالذنب أمر شائع ، ولكن من غير الصحي الاستمرار في التفكير فيها. قد يؤدي الشعور بالذنب الشديد حيال أحداث خارجة عن إرادتك وعدم القدرة على التخلي عن الشعور بالذنب إلى الإصابة بالاكتئاب. على الرغم من أن الاكتئاب أكثر شيوعًا بين الأشخاص المصابين بالسرطان ، لا ينبغي اعتباره جزءًا طبيعيًا من التعايش مع السرطان ";
+
+"Letting go of guilt" = "التخلي عن الذنب";
+
+"Letting go of guilt can help improve your well-being and your ability to cope with cancer. Consider the following tips to reduce guilty feelings:\n- Remember that cancer is not your fault—or anyone else’s. Experts do not fully understand why most types of cancer develop. Sometimes people with cancer feel guilty about specific lifestyle choices they made, such as cigarette smoking.\n- Know that your feelings of guilt will come and go. Just like all difficult emotions triggered by a diagnosis of cancer, your feelings of guilt will change over time.\n- Share your feelings. Talk about the guilt you are feeling with someone you trust or with a counselor or social worker." = "إن التخلي عن الشعور بالذنب يمكن أن يساعد في تحسين صحتك وقدرتك على التعامل مع السرطان. ضع في اعتبارك النصائح التالية لتقليل الشعور بالذنب: - تذكر أن السرطان ليس خطأك - أو خطأ أي شخص آخر. لا يفهم الخبراء تمامًا سبب وجود معظم الأنواع الإصابة بالسرطان. يشعر المصابون بالسرطان أحيانًا بالذنب بشأن خيارات نمط الحياة المحددة التي اتخذوها ، مثل تدخين السجائر. - اعلم أن شعورك بالذنب سيأتي ويذهب. تمامًا مثل كل المشاعر الصعبة التي يثيرها تشخيص السرطان ، فإن شعورك بالذنب سوف يتغير بمرور الوقت. - شارك مشاعرك. تحدث عن الذنب الذي تشعر به مع شخص تثق به أو مع مستشار أو أخصائي اجتماعي. ";
+
+"Coping with Cancer" = "التعامل مع السرطان";
+
+"Metastasis occurs when cancer spreads to a different part of the body from where it started. Metastasis should not be confused with “locally advanced cancer.” That is cancer that has spread to nearby tissues or lymph nodes." = "يحدث الانبثاث عندما ينتشر السرطان إلى جزء مختلف من الجسم من حيث بدأ. لا ينبغي الخلط بين ورم خبيث “سرطان متقدم موضعيًا“. هذا هو السرطان الذي انتشر إلى الأنسجة المجاورة أو العقد الليمفاوية. ";
+
+"Naming metastatic cancer" = "تسمية السرطان النقيلي";
+
+"You may find the naming of metastatic cancer confusing. Doctors name a metastasis for the original cancer. For example, breast cancer that spreads to the bone is not bone cancer. It is called metastatic breast cancer. \n * What does it mean to have metastatic cancer?\n In the past, many people did not live long with metastatic cancer. Even with today’s better treatments, recovery is not always possible. But doctors can often treat cancer even if they cannot cure it. A good quality of life is possible for months or even years.\n * How is metastatic cancer treated?\n Treatment depends on the type of cancer, the available treatment options, and your wishes. It also depends on your age, general health, treatment you had before, and other factors. Treatments for metastatic cancer include surgery, chemotherapy, hormone therapy, immunotherapy, and radiation therapy." = "قد تجد أن تسمية السرطان النقيلي محيرة. يسمي الأطباء ورم خبيث للسرطان الأصلي. على سبيل المثال ، سرطان الثدي الذي ينتشر إلى العظام ليس سرطان العظام. يطلق عليه سرطان الثدي النقيلي. * ماذا يعني أن يكون لديك نقائل السرطان؟ في الماضي ، لم يكن الكثير من الناس يعيشون طويلاً وهم مصابون بالسرطان النقيلي. وحتى مع العلاجات الأفضل اليوم ، فإن التعافي ليس ممكنًا دائمًا. ولكن يمكن للأطباء في كثير من الأحيان علاج السرطان حتى لو لم يتمكنوا من علاجه. ويمكن الحصول على نوعية حياة جيدة لأشهر أو حتى سنوات. * كيف يتم علاج السرطان النقيلي؟ يعتمد العلاج على نوع السرطان وخيارات العلاج المتاحة ورغباتك. كما يعتمد أيضًا على عمرك وصحتك العامة والعلاج الذي تلقيته من قبل وعوامل أخرى. يشمل السرطان الجراحة والعلاج الكيميائي والعلاج الهرموني والعلاج المناعي والعلاج الإشعاعي ";
+
+"Goals of treatment" = "أهداف العلاج";
+
+"For many people with cancer, the goal of treatment is to try to cure the cancer. This means getting rid of the cancer and never having it come back. With metastatic cancer, curing the cancer may not be a realistic goal. However, it might still be a hope or dream. It is reasonable to ask your doctor if curing the cancer is the goal.\n \n If curing the cancer is not the goal of treatment, the goal is to help a person live as well as possible for as long as possible. Getting more specific, this goal can be broken into 4 parts:\n- To have the fewest possible side effects from the cancer.\n- To have the fewest possible side effects from the cancer treatment.\n- For the person with cancer to have the best quality of life.\n- For the person with cancer to live as long as possible with the cancer.\n Each person values these items differently. It is important to tell your health care team what is important to you.\n Getting treatment for metastatic cancer can help you live longer and feel better. But getting treatment is always your decision." = "بالنسبة للعديد من المصابين بالسرطان ، فإن الهدف من العلاج هو محاولة علاج السرطان. وهذا يعني التخلص من السرطان وعدم عودته أبدًا. مع السرطان النقيلي ، قد لا يكون علاج السرطان هدفًا واقعيًا. ومع ذلك ، فإنه قد يظل أملًا أو حلمًا. فمن المعقول أن تسأل طبيبك عما إذا كان علاج السرطان هو الهدف. إذا لم يكن علاج السرطان هو الهدف من العلاج ، فالهدف هو مساعدة الشخص على العيش بشكل أفضل قدر الإمكان. ممكن. للحصول على مزيد من التحديد ، يمكن تقسيم هذا الهدف إلى 4 أجزاء: - للحصول على أقل عدد ممكن من الآثار الجانبية من السرطان. - للحصول على أقل عدد ممكن من الآثار الجانبية من علاج السرطان. - لكي يحصل الشخص المصاب بالسرطان على أفضل النتائج نوعية الحياة. - لكي يعيش الشخص المصاب بالسرطان أطول فترة ممكنة مع السرطان. كل شخص يقدر هذه العناصر بشكل مختلف. من المهم أن تخبر فريق الرعاية الصحية الخاص بك بما هو مهم بالنسبة لك. الحصول على علاج من السرطان النقيلي يمكن أن يساعدك عش أطول وأشعر بتحسن ، لكن جيتي إن العلاج هو قرارك دائمًا ";
+
+"The challenges of living with cancer" = "تحديات التعايش مع السرطان";
+
+"Living with metastatic cancer is challenging. The challenges are different for everyone, but they can include:\n- Feeling upset that the cancer came back. You might feel hopeless, angry, sad, or like no one understands what you are going through, even family.\n- Worrying that treatment will not help and the cancer will get worse.\n- Dealing with tests, doctor’s appointments, and decisions.\n- Talking with family and friends about the cancer.\n- Needing help with daily activities if you feel exhausted or have side effects from treatment.\n- Finding emotional and spiritual support.\n- Coping with the cost of more treatment. Even if you have insurance, it might not cover everything." = "العيش مع السرطان النقيلي يمثل تحديًا. تختلف التحديات بالنسبة للجميع ، ولكنها يمكن أن تشمل: - الشعور بالضيق من عودة السرطان. قد تشعر باليأس أو الغضب أو الحزن أو أنه لا أحد يفهم ما تمر به ، حتى الأسرة. - القلق من أن العلاج لن يساعد وأن السرطان سيزداد سوءًا. - التعامل مع الاختبارات ومواعيد الطبيب والقرارات. - التحدث مع العائلة والأصدقاء حول السرطان. - الحاجة إلى المساعدة في الأنشطة اليومية إذا شعرت بالإرهاق أو كان لديك جانب الآثار المترتبة على العلاج. - العثور على الدعم العاطفي والروحي. - التعامل مع تكلفة المزيد من العلاج. حتى لو كان لديك تأمين ، فقد لا يغطي كل شيء. ";
+
+
+//MARK: Profile
+
+"The application will be restarted" = "سيتم إعادة تشغيل التطبيق";
+"Choose your preferred language" = "اختر لغتك المفضلة";
+"Cancel" = "إلغاء";
+"Logout" = "تسجيل الخروج";
+"Are you sure to log out?" = "هل أنت متأكد من تسجيل الخروج؟";
+"OK" = "موافق";
+"Cancel" = "إلغاء";
+
+
+//MARK: Important Number
+"(937) Service" = "خدمة (937)";
+"National Center (NCMH)" = "المركز الوطني (NCMH)";
+"King Faisal Specialist Hospital" = "مستشفى الملك فيصل التخصصي";
+"Saudi Cancer Society" = "الجمعية السعودية لمكافحة السرطان";
+"Zahra Association" = "جمعية زهرة";
+"Sanad Association" = "جمعية سند";
+"Basma Association" = "جمعية بسمة";
+"Atfalona Association" = "جمعية أطفالنا";
+"Amass Association" = "ّجمعية أمس";
+"Al-Hayat Association" = "جمعية الحياة";
+"Tfaul Association" = "جمعية تفاؤل";
+"Tahoor Association" = "جمعية طهور";
+
+
+//MARK: Locations
+
+"Basma Association" = "جمعية بسمة";
+"Zahra Association" = "جمعية زهرة";
+"Saudi Cancer Society" = "الجمعية السعودية لمكافحة السرطان";
+"Al-Iman Association" = "جمعية الايمان";
+"Tafaul Association" = "جمعية تفاؤل";
+"National Center for Mental Health Promotion" = "المركز الوطني لتعزيز الصحة النفسية";
+"Atfalona Association" = "جمعية أطفالنا";
+"Amass Association Friends of Cancer Patients" = "أمسّ جمعية أصدقاء مرضى السرطان";
+"Tahoor Association" = "جمعية طهور";
+"Sanad Children's Cancer Support Association" = "جمعية سند لدعم سرطان الأطفال";
+"Balsam Association" = "جمعية بلسم";
+
+
+//MARK: Number Cell
+
+"The Number Has Been Copied" = "تم نسخ الرقم";
+
+

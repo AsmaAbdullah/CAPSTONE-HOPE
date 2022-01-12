@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
+
 class ProfileTableVC: UITableViewController {
     
     var profile: User?
@@ -38,7 +39,6 @@ class ProfileTableVC: UITableViewController {
 
         }
         
-        
         if (indexPath.section == 2) && (indexPath.row == 0) {
             performSegue(withIdentifier: "toNumbers", sender: nil)
         }
@@ -47,25 +47,16 @@ class ProfileTableVC: UITableViewController {
         }
     }
     
+
+
+    
     @IBAction func changeLanguage(_ sender: UIButton) {
         
-        let chengelangu = UIAlertController(title: NSLocalizedString("The application will be restarted", comment: ""), message: NSLocalizedString( "Choose your preferred language",comment: ""), preferredStyle: .actionSheet)
-        chengelangu.addAction(UIAlertAction(title: "Einglish", style: .default, handler: { action in
-            let currentlang = Locale.current.languageCode
-            let newLanguage = currentlang == "en" ? "ar" : "en"
-            UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
-            exit(0)
-        }))
-        chengelangu.addAction(UIAlertAction(title: "عربي", style: .default, handler: {action in
-            let currentlang = Locale.current.languageCode
-            let newLanguage = currentlang == "en" ? "ar" : "ar"
-            UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
-            exit(0)
-        }))
-        chengelangu.addAction(UIAlertAction(title:NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: nil))
-        present(chengelangu, animated: true, completion: nil)
-    }
-    
+        if let appSettings = URL(string: UIApplication.openSettingsURLString), UIApplication.shared.canOpenURL(appSettings) {
+            UIApplication.shared.open(appSettings)
+        }
+        }
+
     
     @IBAction func changeToDarkMode(_ sender: UISwitch) {
         if #available(iOS 13.0, *) {
@@ -81,11 +72,12 @@ class ProfileTableVC: UITableViewController {
     
     
     
+    
     @IBAction func logOut(_ sender: UIButton) {
         
         
-        let alertController = UIAlertController(title: "Logout", message: "Are you sure to log out?", preferredStyle: .actionSheet)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+        let alertController = UIAlertController(title: "Logout".localaized, message: "Are you sure to log out?".localaized, preferredStyle: .actionSheet)
+        alertController.addAction(UIAlertAction(title: "OK".localaized, style: .default, handler: { action in
            
             let firebaseAuth = Auth.auth()
             do {
@@ -95,7 +87,7 @@ class ProfileTableVC: UITableViewController {
                 print("Error signing out: %@", signOutError)
             }
         }))
-        alertController.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Cancel".localaized, style: .destructive, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
     

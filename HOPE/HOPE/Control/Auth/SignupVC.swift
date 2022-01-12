@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import SwiftMessages
 
 class SignupVC: UIViewController {
 
@@ -45,15 +46,25 @@ class SignupVC: UIViewController {
     // MARK: - Signup Button
 
     @IBAction func signupTapped(_ sender: UIButton) {
-        
         if nameSignup.text?.isEmpty == true || emailSignup.text?.isEmpty == true || passwordSignup.text?.isEmpty == true {
-            let alert = UIAlertController(title: "Invalid Signup", message: "Please fill name, email and password", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-            self.present(alert, animated: true)
+            
+            let message: MessageView = MessageView.viewFromNib(layout: .cardView)
+            message.configureTheme(.warning)
+            message.configureContent(body: "Please fill Name, Email and Password".localaized)
+            var config = SwiftMessages.defaultConfig
+//                    config.presentationContext = .view(view)
+            config.duration = .automatic
+            config.presentationStyle = .top
+            
+            SwiftMessages.show(config: config, view: message)
+            return
+            
+//            let alert = UIAlertController(title: "Invalid Signup".localaized, message: "Please fill name, email and password".localaized, preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "Ok".localaized, style: .default, handler: nil))
+//            self.present(alert, animated: true)
         } else {
             signup()
         }
-        performSegue(withIdentifier: "toHome", sender: nil)
     }
     
     // MARK: -  Button to go to the Login page ..
@@ -68,9 +79,26 @@ class SignupVC: UIViewController {
     // MARK: - Auth for create account ..
     
     func signup() {
+        
         Auth.auth().createUser(withEmail: emailSignup.text ?? "", password: passwordSignup.text ?? "") { authResult, error in
             if let error = error {
+                //==============
+                let message: MessageView = MessageView.viewFromNib(layout: .cardView)
+                message.configureTheme(.error)
+                message.configureContent(body:"The email address is already in use by another account.".localaized)
+                var config = SwiftMessages.defaultConfig
+    //                    config.presentationContext = .view(view)
+                config.duration = .automatic
+                config.presentationStyle = .top
+                
+                SwiftMessages.show(config: config, view: message)
+                return
+                
+//                let alert = UIAlertController(title: "", message: "Error", preferredStyle: .alert)
+//                alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+//                self.present(alert, animated: true, completion: nil)
                 print(error.localizedDescription)
+                
             } else {
                 UserApi.addUser(name: self.nameSignup.text ?? "", uid: authResult?.user.uid ?? "", email: self.emailSignup.text ?? "", isPsyco: self.isPsyco, completion: { check in
                     if check {

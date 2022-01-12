@@ -28,8 +28,8 @@ class NumberTableViewCell: UITableViewCell {
         
         let message: MessageView = MessageView.viewFromNib(layout: .cardView)
         message.configureTheme(.info)
-        message.configureContent(body: "The Number Has Been Copied")
-        message.configureContent(title: "", body: "The Number Has Been Copied", iconImage: .checkmark)
+//        message.configureContent(body: "The Number Has Been Copied".localaized)
+        message.configureContent(title: "", body: "The Number Has Been Copied".localaized, iconImage: .checkmark)
         
         var config = SwiftMessages.defaultConfig
         config.presentationContext = .automatic

@@ -18,3 +18,4 @@ var arrayCollection = [
     UIImage(resource: .ads5),
     UIImage(resource: .ads6)
 ]
+
