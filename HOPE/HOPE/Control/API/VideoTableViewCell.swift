@@ -23,10 +23,6 @@ class VideoTableViewCell: UITableViewCell {
         thumbnailImageView.layer.borderColor = UIColor.lightGray.cgColor
         thumbnailImageView.layer.borderWidth = 1.0
         
-//        thumbnailImageView.layer.shadowColor = UIColor.placeholderText.cgColor
-//        thumbnailImageView.layer.shadowOpacity = 10
-//        thumbnailImageView.layer.shadowOffset = .zero
-//        thumbnailImageView.layer.shadowRadius = 3
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -37,59 +33,59 @@ class VideoTableViewCell: UITableViewCell {
         
         self.video = v
         
-        //Ensure that we have a video
+        //MARK: Ensure that we have a video
         guard self.video != nil else {
             return
         }
         
-        //Set the title label
+        //MARK: Set the title label
         self.titleLabel.text = video?.title
         
-        //Set the data
-//        let df = DateFormatter()
-//        df.dateFormat = "EEEE, MMM d, yyyy"
-//        self.dateLabel.text = df.string(from: video!.published)
+        //MARK: Set the data
+        //        let df = DateFormatter()
+        //        df.dateFormat = "EEEE, MMM d, yyyy"
+        //        self.dateLabel.text = df.string(from: video!.published)
         
-        //Set the thumbnail
+        //MARK: Set the thumbnail
         guard self.video!.thumbnail != "" else {
             return
         }
         
-        //Check Cache before downloading data
+        //MARK: Check Cache before downloading data
         if let cacheData = CacheManager.getVideoCache(self.video!.thumbnail) {
-            //Set the thumbnail imageview
+            //MARK: Set the thumbnail imageview
             self.thumbnailImageView.image = UIImage(data: cacheData)
             return
         }
         
-        //Download the thumbnail data
+        //MARK: Download the thumbnail data
         let url = URL(string: self.video!.thumbnail)
         
-        //Get the shared URL Session object
+        //MARK: Get the shared URL Session object
         let session = URLSession.shared
         
-        //Data task
+        //MARK: Data task
         let dataTask = session.dataTask(with: url!) { data, response, error in
             if error == nil && data != nil {
                 
-                //Save the data in the cache
+                //MARK: Save the data in the cache
                 CacheManager.setVideoCache(url!.absoluteString, data)
                 
-                //Check that the downloaded url matches the video thumbnail url that cell is currently set to display
+                //MARK: Check that the downloaded url matches the video thumbnail url that cell is currently set to display
                 if url?.absoluteString != self.video?.thumbnail {
-                    //Video cell has been recycled for another video and no longer matches the thumbnail that was downloaded
+                    //MARK: Video cell has been recycled for another video and no longer matches the thumbnail that was downloaded
                     return
                 }
                 
-                //Create image object
+                //MARK: Create image object
                 let image = UIImage(data: data!)
-                //Set the imageview
+                //MARK: Set the imageview
                 DispatchQueue.main.async {
                     self.thumbnailImageView.image = image
                 }
             }
         }
-        //Start data task
+        //MARK: Start data task
         dataTask.resume()
     }
 }

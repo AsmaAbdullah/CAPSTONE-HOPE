@@ -22,15 +22,14 @@ class NumberTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    //MARK: Action button to copy the number
     @IBAction func clickToCall(_ sender: UIButton) {
         
         UIPasteboard.general.string = numberLabel.text
         
         let message: MessageView = MessageView.viewFromNib(layout: .cardView)
         message.configureTheme(.info)
-//        message.configureContent(body: "The Number Has Been Copied".localaized)
         message.configureContent(title: "", body: "The Number Has Been Copied".localaized, iconImage: .checkmark)
-        
         var config = SwiftMessages.defaultConfig
         config.presentationContext = .automatic
         config.duration = .automatic

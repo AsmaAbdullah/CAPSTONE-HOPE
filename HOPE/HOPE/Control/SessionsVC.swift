@@ -12,6 +12,7 @@ class SessionsVC: UIViewController {
     
     var selectedListSession: SetDetile!
     
+    //MARK: Outlet for title, image, definition and button
     @IBOutlet weak var sessionTitle: UILabel!
     @IBOutlet weak var sessionImage: UIImageView!
     @IBOutlet weak var theDefinition: UILabel!
@@ -34,19 +35,23 @@ class SessionsVC: UIViewController {
         animationDefinition()
         animationButtone()
         
-        
-        
-        
     }
+    
+    
+    //MARK: Button to go to the next page
+    
     @IBAction func continueSession(_ sender: UIButton) {
         performSegue(withIdentifier: "toSessionDetile", sender: nil)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let vc = segue.destination as? SessionTopicVC {
             vc.selectedListSession = selectedListSession
         }
     }
+    
+    //MARK: Functions for animations the displayed data
     
     func animationTitle(){
         sessionTitle.transform = CGAffineTransform.init(translationX: 0, y: 100)

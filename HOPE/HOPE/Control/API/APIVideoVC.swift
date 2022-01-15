@@ -8,12 +8,12 @@
 import UIKit
 
 class APIVideoVC: UIViewController, UITableViewDelegate, UITableViewDataSource, ModelDelegate {
-
     
-
+    
+    
     var model = Model()
     var videos = [Video]()
-
+    
     @IBOutlet weak var videoTableView: UITableView!
     
     
@@ -22,23 +22,23 @@ class APIVideoVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         
         model.getVideos()
         
-        //Set itself as the datasource and the delegate
+        //MARK: Set itself as the datasource and the delegate
         videoTableView.delegate = self
         videoTableView.dataSource = self
         
-        //Set itself as the delegate of the model
+        //MARK: Set itself as the delegate of the model
         model.delegate = self
     }
     //MARK: Model Delegate Methods
     
     func videosFetched(_ videos: [Video]) {
-        // Set the returend videos to our video property
+        //MARK: Set the returend videos to our video property
         self.videos =  videos
-        //Refresh the tablevIEW
+        //MARK: Refresh the tablevIEW
         self.videoTableView.reloadData()
-
-//        DispatchQueue.main.async {
-//        }
+        
+        //        DispatchQueue.main.async {
+        //        }
     }
     
     //MARK: TableView Methods
@@ -51,11 +51,11 @@ class APIVideoVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "videoCell", for: indexPath) as! VideoTableViewCell
         
-        //Configure the cell with the data
+        //MARK: Configure the cell with the data
         let video = self.videos[indexPath.row]
         cell.setCell(video)
         
-        //Return the cell
+        //MARK: Return the cell
         return cell
     }
     
@@ -66,18 +66,18 @@ class APIVideoVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        //Confirm that a video was selected
+        //MARK: Confirm that a video was selected
         guard videoTableView.indexPathForSelectedRow != nil else {
             return
         }
         
-        //Get a reference to the video that was tapped on
+        //MARK: Get a reference to the video that was tapped on
         let selectedVideo = videos[videoTableView.indexPathForSelectedRow!.row]
         
-        //Get a reference to the detail VC
+        //MARK: Get a reference to the detail VC
         let vc = segue.destination as! VideoDetailVC
         
-        //Set the video property of the detail VC
+        //MARK: Set the video property of the detail VC
         vc.video = selectedVideo
         
     }

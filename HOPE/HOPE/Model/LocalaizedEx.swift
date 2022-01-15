@@ -7,6 +7,8 @@
 
 import Foundation
 
+//MARK: Extension String to translate the application into another language
+
 extension String {
     var localaized: String {
         return NSLocalizedString(self, comment: "")

@@ -11,22 +11,7 @@ class ImportantNumbersVC: UIViewController, UITableViewDelegate, UITableViewData
    
     var importantNumber = [PhoneNumber]()
     
-//    let numbers = [
-//        Support(facilityName: ["(937) Service"], phoneNumber: PhoneNumber("937")),
-//        Support(facilityName: ["National Center (NCMH)"], phoneNumber: PhoneNumber("920033360")),
-//        Support(facilityName: ["Atfalona Association"], phoneNumber: PhoneNumber("0555886470")),
-//        Support(facilityName: ["Zahra Association"], phoneNumber: PhoneNumber("0114833652")),
-//        Support(facilityName: ["Amass Association"], phoneNumber: PhoneNumber("0114415566")),
-//        Support(facilityName: ["Saudi Cancer Society"], phoneNumber: PhoneNumber("0114402025")),
-//        Support(facilityName: ["Al-Hayat Association"], phoneNumber: PhoneNumber("0545939786")),
-//        Support(facilityName: ["Tfaul Association"], phoneNumber: PhoneNumber("0135621112")),
-//        Support(facilityName: ["Tahoor Association"], phoneNumber: PhoneNumber("0163638181")),
-//        Support(facilityName: ["Sanad Association"], phoneNumber: PhoneNumber("920029997")),
-//        Support(facilityName: ["Basma Association"], phoneNumber: PhoneNumber("0165310022")),
-//        Support(facilityName: ["King Faisal Specialist Hospital"], phoneNumber: PhoneNumber("199019")),
-//    ]
-    
-    
+    //MARK: Outlet table view..
     
     @IBOutlet weak var numberTableView: UITableView!
     
@@ -34,11 +19,8 @@ class ImportantNumbersVC: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         numberTableView.delegate = self
         numberTableView.dataSource = self
-        
+    
         setPhoneNumber()
-        
-        
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,18 +41,8 @@ class ImportantNumbersVC: UIViewController, UITableViewDelegate, UITableViewData
         return 85
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let number = numbers[indexPath.row]
-//
-//      UIApplication.shared.open(number.phoneNumber.url) { success in
-//        if success {
-//          self.isOpeningPhoneURL = true
-//        } else {
-//          tableView.deselectRow(at: indexPath, animated: true)
-//        }
-//      }
-//    }
-    
+    //MARK: Function for the data displayed in the application
+
     fileprivate func setPhoneNumber() {
         importantNumber.append(PhoneNumber.init(title: "(937) Service".localaized, number: "937"))
         importantNumber.append(PhoneNumber.init(title: "National Center (NCMH)".localaized, number: "920033360"))

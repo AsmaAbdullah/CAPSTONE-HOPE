@@ -137,16 +137,12 @@
 			isa = PBXGroup;
 			children = (
 				044B201D27615A370095734C /* Model */,
+				04BF129A279360920047D55B /* View */,
 				044B2014276093950095734C /* Control */,
 				043FD79D275F3BA500D91C48 /* AppDelegate.swift */,
 				043FD79F275F3BA500D91C48 /* SceneDelegate.swift */,
-				043FD7A3275F3BA500D91C48 /* Main.storyboard */,
-				043FD7A6275F3BA800D91C48 /* Assets.xcassets */,
-				043FD7A8275F3BA800D91C48 /* LaunchScreen.storyboard */,
 				043FD7AB275F3BA800D91C48 /* Info.plist */,
 				043FD7B1275F7D1200D91C48 /* GoogleService-Info.plist */,
-				044B201C276155840095734C /* Image */,
-				04F798DC278D607F0098FBEB /* Localizable.strings */,
 			);
 			path = HOPE;
 			sourceTree = "<group>";
@@ -242,6 +238,18 @@
 				04927CD5277BA7230081FB4F /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04BF129A279360920047D55B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				043FD7A3275F3BA500D91C48 /* Main.storyboard */,
+				043FD7A8275F3BA800D91C48 /* LaunchScreen.storyboard */,
+				043FD7A6275F3BA800D91C48 /* Assets.xcassets */,
+				044B201C276155840095734C /* Image */,
+				04F798DC278D607F0098FBEB /* Localizable.strings */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

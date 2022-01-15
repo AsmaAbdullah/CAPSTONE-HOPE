@@ -12,16 +12,10 @@ import FirebaseAuth
 
 class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var arraySession = [Session]()
-//    var selectedSession: Session!
-    
     var listSession = [SessionDetile]()
     var selectedListSession: SetDetile?
+    var yourSessionsList: [YourSessionsList] = []
     
-
-    //    var listSession = [SessionDetile]()
-    //    var selectedListSessions: Sessions!
-        
     
     // MARK: - CORE-DATA
     
@@ -36,25 +30,25 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         return container
     }()
     
-    var yourSessionsList: [YourSessionsList] = []
+    //MARK: Outlet for table view..
     
     @IBOutlet weak var yourSessionTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         yourSessionTable.delegate = self
         yourSessionTable.dataSource = self
         
         setListSession()
         
-
+        
     }
-
+    
     
     override func viewWillAppear(_ animated: Bool) {
         self.fetchAllLists()
         self.yourSessionTable.reloadData()
-        
     }
     
     
@@ -83,7 +77,6 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 100
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
@@ -97,7 +90,7 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             //        selectedListSession = listSession[indexPath.row]
             performSegue(withIdentifier: "toSession", sender: nil)
         }
-
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -105,34 +98,30 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         if let vc = segue.destination as? SessionsVC {
             vc.selectedListSession = selectedListSession
         }
-        //        if segue.identifier == "toSessionDetiles" {
-        //            let destunation = segue.destination as! SessionsVC
-        //            destunation.selectedSession = selectedSession
-        //        }
-        
     }
-
+    
+    //MARK: The function of deleting the session from the account
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
-        
         if editingStyle == .delete {
-
-                let sessions = yourSessionsList[indexPath.row]
-                yourSessionsList.remove(at: indexPath.row)
-                yourSessionTable.deleteRows(at: [indexPath], with: .automatic)
-                
-                //MARK: Delete from core data object
-                let context = persistentContainer.viewContext
-                context.delete(sessions)
-                do {
-                    try context.save()
-                } catch let saveErr {
-                    print("failed to delete", saveErr)
-                }
+            
+            let sessions = yourSessionsList[indexPath.row]
+            yourSessionsList.remove(at: indexPath.row)
+            yourSessionTable.deleteRows(at: [indexPath], with: .automatic)
+            
+            //MARK: Delete from core data object
+            let context = persistentContainer.viewContext
+            context.delete(sessions)
+            do {
+                try context.save()
+            } catch let saveErr {
+                print("failed to delete", saveErr)
+            }
         }
     }
     
-        
+    
     //MARK: - Fetch for COREDATA
     
     func fetchAllLists() {
@@ -145,8 +134,9 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             print(error)
         }
     }
-
-
+    
+    
+    //MARK: Function for the data displayed in the application
     
     fileprivate func setListSession() {
         listSession.append(SessionDetile.init(title: "Self-Image and Cancer".localaized, imageSession: UIImage(resource: .Session1)!, definition: "Self-image is how a person views himself or herself. Because of the many physical and emotional changes after a cancer diagnosis, people may experience positive and negative changes to their self-image.".localaized, firstSubHead: "Physical changes".localaized, firstContent: "Both cancer and its treatment may change how you look. How you feel about your appearance is called body image. Many people with cancer feel self-conscious about changes to their bodies. Some of the more common physical changes of cancer include:\n- Hair loss\n- Weight gain or weight loss\n- Surgery scars\n- Rash, typically from drug therapies\n- Loss of an organ, limb, or breast\n- The need for an ostomy, which is a surgical opening that allows bodily waste to exit the body into a bag\n- Fatigue or loss of energy, which can cause you to give up activities you once enjoyed.\n  Many of these changes will resolve or get better as time passes after treatment. But make sure to share any concerns you have with your health care team. Ask them for more information about ways to relieve these symptoms or the emotional discomfort you may feel because of them.".localaized, secondSubhead: "Emotional changes", secondContent: "Cancer disrupts so many parts of a person’s life, from relationships to work and hobbies. Depending on the seriousness of the illness and the chance of recovery, it may also force you to make changes to your future and deal with the chance of dying. During this time, you may feel many different emotions:\n- Sadness, Anxiety\n- Loneliness or a sense of being different from others\n- Fear, Anger, Frustration, Guilt\n- Feeling out of control\n- A change in the way you think about yourself and the future.\n But many people with cancer have also reported positive changes. These positive changes can be emotional, spiritual, or intellectual. For example, you may feel:\n- An appreciation for the strength of your body.\n- Peace, Gratitude\n- Awareness and appreciation that life is short and special.\n- Grateful for new important relationships with caregivers and other patients.\n- A shift in priorities.\n- Clarity about meaning in life and personal goals".localaized, thirdSubhead: "Coping with self-image changes".localaized, thirdContent: "You may view yourself and your body differently after cancer. These tips may help you cope:\n- Allow time to adjust. Accepting a cancer diagnosis and undergoing treatment may change your life. It takes time to adapt.\n- Talk with others who have been in similar situations.\n- Build a network of friends and family who can support you and help you feel positive.\n- Ask for and accept help. Pass off tasks that take up your energy and are not pleasing to you.\n- Stay calm and, if you are able, embrace humor.\n- Ask your health care team about possible reconstructive surgery, prosthetic devices, and/or cosmetic solutions.\n- As much as possible, remain active.\n- Seek counseling.".localaized))
@@ -168,6 +158,3 @@ class YourSessionsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         listSession.append(SessionDetile.init(title: "Coping with Cancer".localaized, imageSession: UIImage(resource: .Session9)!, definition: "Metastasis occurs when cancer spreads to a different part of the body from where it started. Metastasis should not be confused with “locally advanced cancer.” That is cancer that has spread to nearby tissues or lymph nodes.".localaized, firstSubHead: "Naming metastatic cancer".localaized, firstContent: "You may find the naming of metastatic cancer confusing. Doctors name a metastasis for the original cancer. For example, breast cancer that spreads to the bone is not bone cancer. It is called metastatic breast cancer. \n * What does it mean to have metastatic cancer?\n In the past, many people did not live long with metastatic cancer. Even with today’s better treatments, recovery is not always possible. But doctors can often treat cancer even if they cannot cure it. A good quality of life is possible for months or even years.\n * How is metastatic cancer treated?\n Treatment depends on the type of cancer, the available treatment options, and your wishes. It also depends on your age, general health, treatment you had before, and other factors. Treatments for metastatic cancer include surgery, chemotherapy, hormone therapy, immunotherapy, and radiation therapy.".localaized, secondSubhead: "Goals of treatment".localaized, secondContent: "For many people with cancer, the goal of treatment is to try to cure the cancer. This means getting rid of the cancer and never having it come back. With metastatic cancer, curing the cancer may not be a realistic goal. However, it might still be a hope or dream. It is reasonable to ask your doctor if curing the cancer is the goal.\n \n If curing the cancer is not the goal of treatment, the goal is to help a person live as well as possible for as long as possible. Getting more specific, this goal can be broken into 4 parts:\n- To have the fewest possible side effects from the cancer.\n- To have the fewest possible side effects from the cancer treatment.\n- For the person with cancer to have the best quality of life.\n- For the person with cancer to live as long as possible with the cancer.\n Each person values these items differently. It is important to tell your health care team what is important to you.\n Getting treatment for metastatic cancer can help you live longer and feel better. But getting treatment is always your decision.".localaized, thirdSubhead: "The challenges of living with cancer".localaized, thirdContent: "Living with metastatic cancer is challenging. The challenges are different for everyone, but they can include:\n- Feeling upset that the cancer came back. You might feel hopeless, angry, sad, or like no one understands what you are going through, even family.\n- Worrying that treatment will not help and the cancer will get worse.\n- Dealing with tests, doctor’s appointments, and decisions.\n- Talking with family and friends about the cancer.\n- Needing help with daily activities if you feel exhausted or have side effects from treatment.\n- Finding emotional and spiritual support.\n- Coping with the cost of more treatment. Even if you have insurance, it might not cover everything.".localaized))
     }
 }
-
-
-

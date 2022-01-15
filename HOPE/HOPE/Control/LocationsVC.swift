@@ -10,6 +10,8 @@ import MapKit
 
 class LocationsVC: UIViewController {
     
+    //MARK: Outlet MKMap ..
+    
     @IBOutlet weak var mapAssociations: MKMapView!
     
     override func viewDidLoad() {

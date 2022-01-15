@@ -11,7 +11,9 @@ import Firebase
 import SwiftMessages
 
 class SignupVC: UIViewController {
-
+    
+    //MARK: Outlet for name, email and password
+    
     @IBOutlet weak var nameSignup: UITextField!
     @IBOutlet weak var emailSignup: UITextField!
     @IBOutlet weak var passwordSignup: UITextField!
@@ -22,19 +24,14 @@ class SignupVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //MARK: Gesture Recognizer TAP
+        
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//
-//        //MARK: Confirm the existence of the account
-//        if Auth.auth().currentUser != nil {
-//            performSegue(withIdentifier: "toHome", sender: nil)
-//        }
-//    }
-
-    // MARK: - Switch
+    
+    // MARK: - Switch to make sure that the user is a psychological
     
     @IBAction func switchUser(_ sender: UISwitch) {
         if sender.isOn {
@@ -43,8 +40,9 @@ class SignupVC: UIViewController {
     }
     
     
-    // MARK: - Signup Button
-
+    //MARK: - A button to check whether the data is filled in
+    
+    
     @IBAction func signupTapped(_ sender: UIButton) {
         if nameSignup.text?.isEmpty == true || emailSignup.text?.isEmpty == true || passwordSignup.text?.isEmpty == true {
             
@@ -52,23 +50,20 @@ class SignupVC: UIViewController {
             message.configureTheme(.warning)
             message.configureContent(body: "Please fill Name, Email and Password".localaized)
             var config = SwiftMessages.defaultConfig
-//                    config.presentationContext = .view(view)
+            //                    config.presentationContext = .view(view)
             config.duration = .automatic
             config.presentationStyle = .top
             
             SwiftMessages.show(config: config, view: message)
             return
             
-//            let alert = UIAlertController(title: "Invalid Signup".localaized, message: "Please fill name, email and password".localaized, preferredStyle: .alert)
-//            alert.addAction(UIAlertAction(title: "Ok".localaized, style: .default, handler: nil))
-//            self.present(alert, animated: true)
         } else {
             signup()
         }
     }
     
     // MARK: -  Button to go to the Login page ..
-
+    
     @IBAction func loginTapped(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "login")
@@ -87,16 +82,13 @@ class SignupVC: UIViewController {
                 message.configureTheme(.error)
                 message.configureContent(body:"The email address is already in use by another account.".localaized)
                 var config = SwiftMessages.defaultConfig
-    //                    config.presentationContext = .view(view)
+                //                    config.presentationContext = .view(view)
                 config.duration = .automatic
                 config.presentationStyle = .top
                 
                 SwiftMessages.show(config: config, view: message)
                 return
                 
-//                let alert = UIAlertController(title: "", message: "Error", preferredStyle: .alert)
-//                alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
-//                self.present(alert, animated: true, completion: nil)
                 print(error.localizedDescription)
                 
             } else {
@@ -105,7 +97,7 @@ class SignupVC: UIViewController {
                         print("Done Saving")
                         self.performSegue(withIdentifier: "toHome", sender: nil)
                     }
-            })
+                })
             }
             guard error == nil else {
                 print("Error \(String(describing: error?.localizedDescription))")

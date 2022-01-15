@@ -274,7 +274,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Session" id="YOT-md-hJh"/>
                     <connections>
-                        <outlet property="enrollButton" destination="Jbb-UB-eZ9" id="HYI-8a-emC"/>
                         <outlet property="imageSession" destination="uCp-vk-Nnk" id="sd2-TA-Zdc"/>
                         <outlet property="sessionContent" destination="MEX-k5-FcC" id="yer-cl-qvx"/>
                         <outlet property="titleSession" destination="OFq-Va-vmL" id="WCr-Yq-cyQ"/>
@@ -317,7 +316,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouW-U8-tJl">
-                                <rect key="frame" x="100" y="591" width="214" height="31"/>
+                                <rect key="frame" x="100" y="581" width="214" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Start" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" name="Font"/>
@@ -337,7 +336,7 @@
                             <constraint firstItem="ouW-U8-tJl" firstAttribute="leading" secondItem="4yb-7b-fqs" secondAttribute="leading" constant="100" id="M6U-0H-7NU"/>
                             <constraint firstItem="udl-tl-wdL" firstAttribute="top" secondItem="wfz-qL-EWM" secondAttribute="bottom" constant="15" id="Ms1-uJ-tnF"/>
                             <constraint firstItem="4yb-7b-fqs" firstAttribute="trailing" secondItem="i1r-9C-ci5" secondAttribute="trailing" constant="20" id="fPo-9f-VH8"/>
-                            <constraint firstItem="ouW-U8-tJl" firstAttribute="top" secondItem="udl-tl-wdL" secondAttribute="bottom" constant="20" id="faA-AR-afK"/>
+                            <constraint firstItem="ouW-U8-tJl" firstAttribute="top" secondItem="udl-tl-wdL" secondAttribute="bottom" constant="10" id="faA-AR-afK"/>
                             <constraint firstItem="4yb-7b-fqs" firstAttribute="trailing" secondItem="udl-tl-wdL" secondAttribute="trailing" constant="20" id="gN9-8c-CWN"/>
                             <constraint firstItem="udl-tl-wdL" firstAttribute="leading" secondItem="4yb-7b-fqs" secondAttribute="leading" constant="20" id="iQB-DQ-uGo"/>
                             <constraint firstItem="i1r-9C-ci5" firstAttribute="top" secondItem="4yb-7b-fqs" secondAttribute="top" constant="10" id="q3O-oI-1Tw"/>
@@ -1486,7 +1485,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCL-9s-JYY">
-                                <rect key="frame" x="100" y="231" width="214" height="31"/>
+                                <rect key="frame" x="100" y="221" width="214" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Finish" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" name="Font"/>
@@ -1500,7 +1499,7 @@
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="tac-Px-Dke" firstAttribute="top" secondItem="qfa-zb-rip" secondAttribute="bottom" constant="20" id="0qC-bp-h8a"/>
-                            <constraint firstItem="rCL-9s-JYY" firstAttribute="top" secondItem="tac-Px-Dke" secondAttribute="bottom" constant="20" id="Fn3-eA-rbp"/>
+                            <constraint firstItem="rCL-9s-JYY" firstAttribute="top" secondItem="tac-Px-Dke" secondAttribute="bottom" constant="10" id="Fn3-eA-rbp"/>
                             <constraint firstItem="qfa-zb-rip" firstAttribute="top" secondItem="nRF-FR-VyW" secondAttribute="top" constant="20" id="K2T-Vg-2zH"/>
                             <constraint firstItem="nRF-FR-VyW" firstAttribute="trailing" secondItem="tac-Px-Dke" secondAttribute="trailing" constant="20" id="Laz-QR-sDM"/>
                             <constraint firstItem="tac-Px-Dke" firstAttribute="leading" secondItem="nRF-FR-VyW" secondAttribute="leading" constant="20" id="OVz-gw-kJU"/>
@@ -1562,7 +1561,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vjQ-Al-YFW"/>
+        <segue reference="O4F-Dr-fUV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="2336" height="5056"/>

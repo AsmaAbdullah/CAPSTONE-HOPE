@@ -129,7 +129,7 @@
 "Xlw-j9-eel.placeholder" = "كلمة المرور";
 
 /* Class = "UILabel"; text = "Language"; ObjectID = "Xo5-CH-PU6"; */
-"Xo5-CH-PU6.text" = "لغة";
+"Xo5-CH-PU6.text" = "اللغة";
 
 /* Class = "UINavigationItem"; title = "Session"; ObjectID = "YOT-md-hJh"; */
 "YOT-md-hJh.title" = "جلسة";
@@ -234,4 +234,5 @@
 "z0F-s0-KfR.text" = "عنوان";
 
 "OY4-PQ-07G.text" = "نحن معك في رحلة أمل";
+
 "4LB-EF-VOo.text" = "نحن معك في رحلة أمل";

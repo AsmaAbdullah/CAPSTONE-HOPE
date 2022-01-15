@@ -8,7 +8,7 @@
 
 //MARK: Login
 "Invalid Login" = "خطأ في تسجيل الدخول";
-"Please fill email and password" = "الرجاء إدخال البريد الإلكتروني وكلمة المرور";
+"Please fill Email and Password" = "الرجاء إدخال البريد الإلكتروني وكلمة المرور";
 "Ok" = "موافق";
 "Oh!" = "أوه!";
 "This email is not already Signup" = "هذا البريد الإلكتروني لم يتم تسجيله بالفعل";
@@ -207,9 +207,6 @@
 
 //MARK: Profile
 
-"The application will be restarted" = "سيتم إعادة تشغيل التطبيق";
-"Choose your preferred language" = "اختر لغتك المفضلة";
-"Cancel" = "إلغاء";
 "Logout" = "تسجيل الخروج";
 "Are you sure to log out?" = "هل أنت متأكد من تسجيل الخروج؟";
 "OK" = "موافق";
@@ -225,10 +222,11 @@
 "Sanad Association" = "جمعية سند";
 "Basma Association" = "جمعية بسمة";
 "Atfalona Association" = "جمعية أطفالنا";
-"Amass Association" = "ّجمعية أمس";
+"Amass Association" = "جمعية أمسّ";
 "Al-Hayat Association" = "جمعية الحياة";
 "Tfaul Association" = "جمعية تفاؤل";
 "Tahoor Association" = "جمعية طهور";
+
 
 
 //MARK: Locations

@@ -8,18 +8,16 @@
 import UIKit
 
 class SessionTopicVC: UIViewController {
-
+    
     var selectedListSession: SetDetile!
     
     
+    //MARK: Outlet for title and content
     @IBOutlet weak var firstSubTitleSession: UILabel!
     @IBOutlet weak var firstSessionContent: UILabel!
     @IBOutlet weak var secondSubTitleSession: UILabel!
     @IBOutlet weak var secondSessionContent: UILabel!
     
-    
-    
-    @IBOutlet weak var sessionImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,18 +26,29 @@ class SessionTopicVC: UIViewController {
         firstSessionContent.text = selectedListSession.setFirstContent
         secondSubTitleSession.text = selectedListSession.setSecondSubhead
         secondSessionContent.text = selectedListSession.setSecondContent
-        //===========================================
+        
         firstSubTitleSession.alpha = 0
         firstSessionContent.alpha = 0
         secondSubTitleSession.alpha = 0
         secondSessionContent.alpha = 0
-
+        
     }
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 1, animations: { self.firstSubTitleSession.alpha = 1
+        }) { (true) in
+            self.animationContent()
+        }
+    }
+    
+    
+    //MARK: Button to go to the next page
+    
     @IBAction func continueSession(_ sender: UIButton) {
-        
         performSegue(withIdentifier: "toEndOfSession", sender: nil)
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -49,23 +58,16 @@ class SessionTopicVC: UIViewController {
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        UIView.animate(withDuration: 1, animations: { self.firstSubTitleSession.alpha = 1
-        }) { (true) in
-                self.animationContent()
-            }
+    //MARK: Functions for animations the displayed data
+    
+    func animationContent() {
+        UIView.animate(withDuration: 1, animations: {
+            self.firstSessionContent.alpha = 1
+        }, completion: { (true) in
+            self.animationTitle()
+            
+        })
     }
-        
-        func animationContent() {
-            UIView.animate(withDuration: 1, animations: {
-                self.firstSessionContent.alpha = 1
-            }, completion: { (true) in
-                self.animationTitle()
-                
-            })
-        }
     
     func animationTitle() {
         UIView.animate(withDuration: 1, animations: {
@@ -81,8 +83,8 @@ class SessionTopicVC: UIViewController {
             self.secondSessionContent.alpha = 1
         })
     }
-        
-
+    
+    
     
     
 }

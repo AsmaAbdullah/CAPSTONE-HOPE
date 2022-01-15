@@ -11,27 +11,14 @@ import CoreData
 
 class HomeVC: UIViewController {
     
+    
     var arraySession = [Session]()
     var selectedSession: Session!
-    
     var timer: Timer?
     var currentItemIndex = 0
-    
-    // MARK:  CORE-DATA
     var yourSessionsList: [YourSessionsList] = []
-    // MARK:  SAVE CORE DATA
-    let persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "BeneficiarySessions")
-        container.loadPersistentStores (completionHandler: { desc, error in
-            if let readError = error {
-                print(readError)
-            }
-        })
-        return container
-    }()
     
-    
-    // MARK:
+    // MARK: Outlet for collection view and table view
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var sessionTableView: UITableView!
@@ -44,8 +31,6 @@ class HomeVC: UIViewController {
 //            UserApi.getUser(uid: uid) { user in
 //            }
 //        }
-        
-        
         collectionView.delegate = self
         collectionView.dataSource = self
         sessionTableView.delegate = self
@@ -55,7 +40,16 @@ class HomeVC: UIViewController {
         setSessions()
     }
     
-    
+    // MARK:  SAVE CORE DATA
+    let persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "BeneficiarySessions")
+        container.loadPersistentStores (completionHandler: { desc, error in
+            if let readError = error {
+                print(readError)
+            }
+        })
+        return container
+    }()
     
     // MARK:  Array of TableView
     fileprivate func setSessions() {
@@ -74,6 +68,7 @@ class HomeVC: UIViewController {
 
 
 // MARK: - Extension for CollectionView
+
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
@@ -91,7 +86,6 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         collectionView.scrollToItem(at: IndexPath(item: currentItemIndex, section: 0), at: .centeredHorizontally, animated: true)
     }
     
-    // MARK: w
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrayCollection.count
@@ -104,7 +98,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         return item
     }
     
-    // MARK:   Size Item
+    // MARK:  Size Item
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
@@ -141,7 +135,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         
         selectedSession = arraySession[indexPath.row]
         performSegue(withIdentifier: "toContent", sender: nil)
-        
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -151,7 +145,8 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    // MARK:  CORE-DATA
+    // MARK:  CORE-DATA | The function of saving data in the coredata
+    
     func createNewList(titleSession: String, imageSession: String){
         let context = persistentContainer.viewContext
         context.performAndWait {

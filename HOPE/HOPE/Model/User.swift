@@ -17,21 +17,21 @@ class User {
 extension User {
     
     static func getUser(dict: [String: Any]) -> User {
-       
+        
         let user = User()
         
         user.name = dict["name"] as? String
         user.email = dict["email"] as? String
         user.isPsyco = dict["isPsyco"] as? Bool
-       
+        
         return user
     }
     static func CreateUser(name:String, email:String, isPsyco:Bool) -> [String: Any] {
-       
+        
         let newUser = ["name":name,
                        "email" :email,
                        "isPsyco": isPsyco,
-                    ] as [String : Any]
+        ] as [String : Any]
         return newUser
     }
 }

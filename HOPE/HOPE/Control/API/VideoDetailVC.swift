@@ -11,13 +11,13 @@ import WebKit
 class VideoDetailVC: UIViewController {
     
     var video: Video?
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var textView: UITextView!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,41 +28,41 @@ class VideoDetailVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        //Clear the fields
+        //MARK: Clear the fields
         titleLabel.text = ""
         dateLabel.text = ""
         textView.text = ""
         
         
-        //Chech if there's a video
+        //MARK: Chech if there's a video
         guard video != nil else {
             return
         }
         
-        //Create the embed URL
-//        let embedUrlString = "https://www.youtube.com/embed/" + video!.videoId
+        //MARK: Create the embed URL
+        //        let embedUrlString = "https://www.youtube.com/embed/" + video!.videoId
         
-        //Load it into webview
+        //MARK: Load it into webview
         let url = URL(string: "https://www.youtube.com/embed/" + video!.videoId)
         let request = URLRequest(url: url!)
         webView.load(request)
         
-        //Set the title
+        //MARK: Set the title
         
         titleLabel.text = video!.title
         
-        //Set the date
+        //MARK: Set the date
         
         let df = DateFormatter()
         df.dateFormat = "EEEE, MMM d, yyyy"
         dateLabel.text = df.string(from: video!.published)
         
-        //Set the description
+        //MARK: Set the description
         
         textView.text = video!.description
         
     }
     
     
-
+    
 }

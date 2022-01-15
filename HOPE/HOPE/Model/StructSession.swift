@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-// MARK: Struct for tableview
+//MARK: Struct for tableview
 
 struct Session {
     var image: String
     var titleSessions: String
     var Content: String
 }
-// MARK: Struct for Sessions
+//MARK: Struct for Sessions
 
 struct SessionDetile {
     var title: String

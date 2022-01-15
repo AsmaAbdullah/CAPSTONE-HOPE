@@ -10,6 +10,8 @@ import FirebaseFirestore
 
 class UserApi {
     
+    //MARK: A function to add data to the Firestore Database
+    
     static func addUser(name:String,uid:String,email:String, isPsyco: Bool, completion: @escaping (Bool) -> Void) {
         
         let refUsers = Firestore.firestore().collection("Users")
@@ -20,10 +22,12 @@ class UserApi {
         completion(true)
         
     }
+    
+    //MARK: 
     static func getUser(uid:String,completion: @escaping (User) -> Void) {
-       
+        
         let refUsers = Firestore.firestore().collection("Users")
-
+        
         
         refUsers.document(uid).getDocument { document, error in
             if let document = document, document.exists {

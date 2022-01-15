@@ -16,12 +16,13 @@ class SessionContent: UIViewController {
     
     var selectedSession: Session!
     var arraySession = [Session]()
+    var yourSessionsList: [YourSessionsList] = []
 
+    //MARK: Outlet for image, title, content of the sessions
     
     @IBOutlet weak var imageSession: UIImageView!
     @IBOutlet weak var titleSession: UILabel!
     @IBOutlet weak var sessionContent: UILabel!
-    @IBOutlet weak var enrollButton: UIButton!
     
     
     // MARK: - SAVE CORE DATA
@@ -38,18 +39,38 @@ class SessionContent: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         imageSession.image = UIImage(named: selectedSession.image)
         titleSession.text = selectedSession.titleSessions
         sessionContent.text = selectedSession.Content
-        
-        
+                
         imageSession.layer.cornerRadius = 12
         imageSession.layer.borderColor = UIColor.lightGray.cgColor
         imageSession.layer.borderWidth = 1.0
     }
     
-    @IBAction func enrollSession(_ sender: UIButton) {
     
+    //MARK: Action to add the session to your sessions page
+    
+    @IBAction func enrollSession(_ sender: UIButton) {
+        
+        //MARK: Add the session to your sessions
+        
+        
+        createNewList(titleSession: selectedSession.titleSessions, imageSession:  selectedSession.image)
+        
+        let message: MessageView = MessageView.viewFromNib(layout: .cardView)
+        message.configureTheme(.success)
+        
+        message.configureContent(body: "Has been successfully added".localaized)
+        
+        var config = SwiftMessages.defaultConfig
+        config.presentationContext = .view(view)
+        config.duration = .automatic
+        config.presentationStyle = .top
+        
+        SwiftMessages.show(config: config, view: message)
+                
         
         //MARK: Checks if the session is already added or not
         
@@ -68,31 +89,14 @@ class SessionContent: UIViewController {
                 config.presentationStyle = .top
                 
                 SwiftMessages.show(config: config, view: message)
-
-                return
             }
         }
+        }
         
-        //MARK: Add the session to your sessions
-        
-        createNewList(titleSession: selectedSession.titleSessions, imageSession:  selectedSession.image)
-        
-        let message: MessageView = MessageView.viewFromNib(layout: .cardView)
-        message.configureTheme(.success)
-                
-        message.configureContent(body: "Has been successfully added".localaized)
-        
-        var config = SwiftMessages.defaultConfig
-        config.presentationContext = .view(view)
-        config.duration = .automatic
-        config.presentationStyle = .top
-        
-        SwiftMessages.show(config: config, view: message)
-        
-    }
+
     
-    // MARK: - CORE-DATA
-    
+    //MARK:  CORE-DATA | The function of saving data in the coredata
+
     func createNewList(titleSession: String, imageSession: String){
         
         let context = persistentContainer.viewContext
@@ -110,12 +114,13 @@ class SessionContent: UIViewController {
     }
     
     
+    
     func fetchAllLists() -> [YourSessionsList]{
         let context = persistentContainer.viewContext
         var yourSessionsList : [YourSessionsList] = []
         
         do {
-           yourSessionsList = try context.fetch(YourSessionsList.fetchRequest())
+            yourSessionsList = try context.fetch(YourSessionsList.fetchRequest())
         } catch {
             print(error)
         }
