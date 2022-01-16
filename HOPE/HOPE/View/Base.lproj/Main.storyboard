@@ -960,6 +960,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="Font"/>
                     </tabBar>
                     <connections>
                         <segue destination="42o-Jb-iD1" kind="relationship" relationship="viewControllers" id="5ZZ-2t-guQ"/>
@@ -1561,6 +1562,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="x2i-Q2-EN9"/>
         <segue reference="O4F-Dr-fUV"/>
     </inferredMetricsTieBreakers>
     <resources>
