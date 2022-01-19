@@ -29,4 +29,4 @@ https://www.figma.com/file/cZ2VSSNgt0xhrmhdmSmYhC/HOPE?node-id=0%3A1
 - Support Dark Mode.
 
 
-![1](https://user-images.githubusercontent.com/91872065/150086173-ff39fcb7-425b-46dd-be28-fad86b44df7c.png)
+![1](https://user-images.githubusercontent.com/91872065/150086426-98599ca2-2474-4d67-a4e6-4c02434a2510.png)
