@@ -29,4 +29,7 @@ https://www.figma.com/file/cZ2VSSNgt0xhrmhdmSmYhC/HOPE?node-id=0%3A1
 - Support Dark Mode.
 
 
-![1](https://user-images.githubusercontent.com/91872065/150086426-98599ca2-2474-4d67-a4e6-4c02434a2510.png)
+![1](https://user-images.githubusercontent.com/91872065/150086426-98599ca2-2474-4d67-a4e6-4c02434a2510.png) ![2](https://user-images.githubusercontent.com/91872065/150086471-4ed4331d-6abe-4f72-894c-daba3450cf4c.png) ![3](https://user-images.githubusercontent.com/91872065/150086520-9876ef63-a290-45b3-b592-de9b4c71de06.png) ![4](https://user-images.githubusercontent.com/91872065/150086571-52ba4aa8-8efb-47be-9ae0-b241615b5f79.png) ![5](https://user-images.githubusercontent.com/91872065/150086608-e9e0b072-7a6a-470c-96f2-ed8e7d1d9711.png) 
+![6](https://user-images.githubusercontent.com/91872065/150086655-5bcf0e3a-5a00-4e3d-8b6e-ed49fe22a97c.png) ![7](https://user-images.githubusercontent.com/91872065/150086678-93050e9a-a5be-426e-bc04-b3c3c3f11e98.png) ![8](https://user-images.githubusercontent.com/91872065/150086704-f01f4876-76a2-45ee-84b6-310fa831bab0.png) ![9](https://user-images.githubusercontent.com/91872065/150086736-bcc90da9-7ccf-42f7-884a-ef94dbd575bd.png)
+
+
